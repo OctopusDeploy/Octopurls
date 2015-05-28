@@ -14,15 +14,14 @@ namespace Octopurls
         {
             this.redirects = redirects;
         }
-        // GET: api/values
-        [HttpGet]
-        [Route("")]
+        
+        [HttpGet("")]
         public IDictionary<string, string> Get()
         {
+            Console.WriteLine("Found {0} redirects", redirects.Urls.Count);
             return redirects.Urls;
         }
 
-        // GET api/values/5
         [HttpGet("{url}")]
         public IActionResult Get(string url)
         {
