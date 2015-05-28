@@ -16,10 +16,9 @@ namespace Octopurls
         }
         
         [HttpGet("")]
-        public IDictionary<string, string> Get()
+        public IActionResult Get()
         {
-            Console.WriteLine("Found {0} redirects", redirects.Urls.Count);
-            return redirects.Urls;
+            return new RedirectResult("http://www.octopusdeploy.com");
         }
 
         [HttpGet("{url}")]
