@@ -73,12 +73,5 @@ namespace Octopurls
                 }
             }
         }
-
-        [HttpGetAttribute("list")]
-        public Dictionary<string, string> List()
-        {
-            Console.WriteLine("There are {0} redirects registered", redirects.Urls.Count);
-            return redirects.Urls;
-        }
     }
 }
