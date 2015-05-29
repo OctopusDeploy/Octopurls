@@ -7,6 +7,7 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Routing;
+using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Runtime;
@@ -18,20 +19,41 @@ namespace Octopurls
     {
         public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
+            var configuration = new Configuration()
+                .AddJsonFile("config.raygun.json", optional: true)
+                .AddEnvironmentVariables();
+
+            Configuration = configuration;
+
             var redirectsPath = Path.Combine(appEnv.ApplicationBasePath, "redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
-                Redirects = new Redirects 
-                { 
-                    Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase) 
+                Redirects = new Redirects
+                {
+                    Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase)
                 };
             }
         }
+
+        public IConfiguration Configuration { get; set; }
+
         public Redirects Redirects {get; private set;}
 
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services, IHostingEnvironment env)
         {
+            var raygunConfig = Configuration.GetSubKey("RaygunSettings");
+            var raygunSettings = new RaygunSettings();
+            if(raygunConfig != null)
+            {
+                Console.WriteLine("Found local Raygun settings, ApiKey: {0}", raygunConfig.Get("ApiKey"));
+                raygunSettings.ApiKey = raygunConfig.Get("ApiKey");
+            }
+            else
+            {
+                raygunSettings.ApiKey = Configuration["RAYGUN_APIKEY"];
+            }
+            services.AddSingleton(_ => raygunSettings);
             services.AddSingleton(_ => Redirects);
             services.AddMvc();
         }
