@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Mindscape.Raygun4Net;
 using Newtonsoft.Json;
+using Microsoft.Framework.ConfigurationModel;
 
 namespace Octopurls
 {
@@ -16,11 +17,13 @@ namespace Octopurls
     {
         readonly Redirects redirects;
         readonly RaygunSettings raygun;
+        readonly IConfiguration configuration;
 
-        public UrlsController(Redirects redirects, RaygunSettings raygun)
+        public UrlsController(Redirects redirects, RaygunSettings raygun, IConfiguration configuration)
         {
             this.redirects = redirects;
             this.raygun = raygun;
+            this.configuration = configuration;
         }
 
         [HttpGet("")]
@@ -69,7 +72,7 @@ namespace Octopurls
                 catch(Exception ex)
                 {
                     Console.WriteLine(ex);
-                    return HttpBadRequest();
+                    return HttpBadRequest(ex);
                 }
             }
         }

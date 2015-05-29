@@ -20,7 +20,6 @@ namespace Octopurls
         public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
             var configuration = new Configuration()
-                .AddJsonFile("config.raygun.json", optional: true)
                 .AddEnvironmentVariables();
 
             Configuration = configuration;
@@ -42,19 +41,13 @@ namespace Octopurls
 
         public void ConfigureServices(IServiceCollection services, IHostingEnvironment env)
         {
-            var raygunConfig = Configuration.GetSubKey("RaygunSettings");
             var raygunSettings = new RaygunSettings();
-            if(raygunConfig != null)
-            {
-                Console.WriteLine("Found local Raygun settings, ApiKey: {0}", raygunConfig.Get("ApiKey"));
-                raygunSettings.ApiKey = raygunConfig.Get("ApiKey");
-            }
-            else
-            {
-                raygunSettings.ApiKey = Configuration["RAYGUN_APIKEY"];
-            }
+            raygunSettings.ApiKey = Configuration.Get("RAYGUN_APIKEY");
             services.AddSingleton(_ => raygunSettings);
+
             services.AddSingleton(_ => Redirects);
+            services.AddSingleton(_ => Configuration);
+            
             services.AddMvc();
         }
 
