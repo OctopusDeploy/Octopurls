@@ -1,0 +1,31 @@
+@model Dictionary<string, string>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>404 Not Found | Octopurls</title>
+    <link rel="stylesheet" href="/css/styles.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1>404</h1>
+      <h3>Oops...the shortened URL <strong>@ViewBag.Url</strong> has been eaten by the <strong>Octopusaurus</strong></h3>
+    </header>
+    <img src="/images/cute-octopus.jpg" alt="cute octopus" />
+    <div class="suggestions-section">
+      @if(@Model.Any())
+      {
+        <p>Did you mean...</p>
+        <ul class="suggestions-list">
+          @foreach(var suggestion in @Model)
+          {
+            <li><a href="@suggestion.Value">@suggestion.Key</a></li>
+          }
+        </ul>
+      }
+    </div>
+    <footer>
+      <p>This missing link has been reported to the <a href="http://octopusdeploy.com">Octopus Deploy</a> team.</p>
+    </footer>
+  </body>
+</html>

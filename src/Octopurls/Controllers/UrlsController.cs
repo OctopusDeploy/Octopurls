@@ -51,23 +51,29 @@ namespace Octopurls
                 Console.WriteLine(kne);
                 try
                 {
-                    var message = RaygunMessageBuilder.New
-                        .SetVersion("1.0.0")
-                        .SetUserCustomData(new Dictionary<string, string> { {"Url", url} })
-                        .SetExceptionDetails(kne)
-                        .Build();
-                    
-                    var content = JsonConvert.SerializeObject(message);
-
-                    var httpClient = new HttpClient();
-                    httpClient.DefaultRequestHeaders
-                        .Accept
-                        .Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    httpClient.DefaultRequestHeaders.Add("X-ApiKey", raygun.ApiKey);
+                    if (!String.IsNullOrWhiteSpace(raygun.ApiKey))
+                    {
+                        var message = RaygunMessageBuilder.New
+                            .SetVersion("1.0.0")
+                            .SetUserCustomData(new Dictionary<string, string> { {"Url", url} })
+                            .SetExceptionDetails(kne)
+                            .Build();
                         
-                    var result = await httpClient.PostAsync("https://api.raygun.io/entries", new StringContent(content));
-                    result.EnsureSuccessStatusCode();
-                    return HttpNotFound();
+                        var content = JsonConvert.SerializeObject(message);
+    
+                        var httpClient = new HttpClient();
+                        httpClient.DefaultRequestHeaders
+                            .Accept
+                            .Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        httpClient.DefaultRequestHeaders.Add("X-ApiKey", raygun.ApiKey);
+    
+                        var result = await httpClient.PostAsync("https://api.raygun.io/entries", new StringContent(content));
+                        result.EnsureSuccessStatusCode();
+                    }
+                    var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
+                    var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
+                    ViewBag.Url = url;
+                    return View("404", suggestions);
                 }
                 catch(Exception ex)
                 {
