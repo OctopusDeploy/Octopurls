@@ -23,6 +23,7 @@
 	"CryptoRequiresUserProfile": "https://github.com/OctopusDeploy/Issues/issues/353",
 	"SemVer": "http://semver.org/",
 	"ManageAzure": "https://manage.windowsazure.com/",
+	"WindowsAzure": "http://docs.octopusdeploy.com/display/OD/Windows+Azure",
 	"Gravatar": "https://gravatar.com/",
 	"WhyADSetupFails": "https://github.com/OctopusDeploy/Issues/issues/193",
 	"HttpPortInUse": "https://github.com/OctopusDeploy/Issues/issues/313",
