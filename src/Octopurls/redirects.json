@@ -51,5 +51,6 @@
 	"NuGetPackageHostingOptions": "http://octopusdeploy.com/documentation/packaging",
 	"WhatIsIncludedInAnonymousUsageStatistics": "http://octopusdeploy.com/documentation/security/outbound",
 	"Suggestions": "https://octopusdeploy.uservoice.com/",
-	"TrainingVideos": "http://octopusdeploy.wistia.com/projects/gguvhmqn6b"
+	"TrainingVideos": "http://octopusdeploy.wistia.com/projects/gguvhmqn6b",
+	"GettingStarted": "http://docs.octopusdeploy.com/display/OD/Getting+started"
 }
