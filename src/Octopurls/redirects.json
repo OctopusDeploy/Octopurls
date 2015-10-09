@@ -56,5 +56,6 @@
 	"Upgrade2To3": "http://docs.octopusdeploy.com/display/OD/Upgrading+from+Octopus+2.6",
 	"HighAvailability": "http://docs.octopusdeploy.com/display/OD/High+Availability+Octopus",
 	"SecurityAndEncryption": "http://docs.octopusdeploy.com/display/OD/Security+and+encryption",
-	"NuGetVersioning": "https://docs.nuget.org/create/versioning"
+	"NuGetVersioning": "https://docs.nuget.org/create/versioning",
+	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#tags"
 }
