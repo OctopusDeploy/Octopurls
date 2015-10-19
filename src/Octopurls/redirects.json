@@ -57,5 +57,6 @@
 	"HighAvailability": "http://docs.octopusdeploy.com/display/OD/High+Availability+Octopus",
 	"SecurityAndEncryption": "http://docs.octopusdeploy.com/display/OD/Security+and+encryption",
 	"NuGetVersioning": "https://docs.nuget.org/create/versioning",
-	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#tags"
+	"ChannelVersionRules": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-versionrules",
+	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-tags"
 }
