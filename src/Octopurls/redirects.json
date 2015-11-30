@@ -58,5 +58,6 @@
 	"SecurityAndEncryption": "http://docs.octopusdeploy.com/display/OD/Security+and+encryption",
 	"NuGetVersioning": "https://docs.nuget.org/create/versioning",
 	"ChannelVersionRules": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-versionrules",
-	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-tags"
+	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-tags",
+	"SupportedPackages": "http://docs.octopusdeploy.com/display/OD/Supported+Packages"
 }
