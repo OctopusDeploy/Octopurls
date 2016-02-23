@@ -59,5 +59,6 @@
 	"NuGetVersioning": "https://docs.nuget.org/create/versioning",
 	"ChannelVersionRules": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-versionrules",
 	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-tags",
-	"SupportedPackages": "http://docs.octopusdeploy.com/display/OD/Supported+Packages"
+	"SupportedPackages": "http://docs.octopusdeploy.com/display/OD/Supported+Packages",
+	"NewAzureResourceGroupPowerShell": "https://msdn.microsoft.com/en-us/library/mt603739.aspx"
 }
