@@ -60,5 +60,8 @@
 	"ChannelVersionRules": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-versionrules",
 	"ChannelVersionRuleTags": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-tags",
 	"SupportedPackages": "http://docs.octopusdeploy.com/display/OD/Supported+Packages",
-	"NewAzureResourceGroupPowerShell": "https://msdn.microsoft.com/en-us/library/mt603739.aspx"
+	"NewAzureResourceGroupPowerShell": "https://msdn.microsoft.com/en-us/library/mt603739.aspx",
+   "DocumentationCreatingAzureAccount": "http://docs.octopusdeploy.com/display/OD/Creating+an+Azure+Account",
+   "AzureServiceManagementCmdlets": "https://msdn.microsoft.com/en-us/library/dn708504.aspx",
+   "AzureResourceManagerCmdlets": "https://msdn.microsoft.com/en-us/library/mt125356.aspx"
 }
