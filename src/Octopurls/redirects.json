@@ -64,5 +64,6 @@
    	"DocumentationCreatingAzureAccount": "http://docs.octopusdeploy.com/display/OD/Creating+an+Azure+Account",
    	"AzureServiceManagementCmdlets": "https://msdn.microsoft.com/en-us/library/dn708504.aspx",
    	"AzureResourceManagerCmdlets": "https://msdn.microsoft.com/en-us/library/mt125356.aspx",
-   	"FIPS": "http://docs.octopusdeploy.com/display/OD/FIPS+and+Octopus+Deploy"
+   	"FIPS": "http://docs.octopusdeploy.com/display/OD/FIPS+and+Octopus+Deploy",
+   	"StandaloneScripts": "http://docs.octopusdeploy.com/display/OD/Standalone+scripts"
 }
