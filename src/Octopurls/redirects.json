@@ -66,5 +66,6 @@
    	"AzureResourceManagerCmdlets": "https://msdn.microsoft.com/en-us/library/mt125356.aspx",
    	"FIPS": "http://docs.octopusdeploy.com/display/OD/FIPS+and+Octopus+Deploy",
    	"StandaloneScripts": "http://docs.octopusdeploy.com/display/OD/Standalone+scripts",
-	"WhatIsEAP": "http://docs.octopusdeploy.com/display/ODEAP/What+is+the+EAP"
+	"WhatIsEAP": "http://docs.octopusdeploy.com/display/ODEAP/What+is+the+EAP",
+	"UpgradeDenied": "http://docs.octopusdeploy.com/display/ODEAP/Octopus+Deploy+EAP"
 }
