@@ -67,5 +67,6 @@
    	"FIPS": "http://docs.octopusdeploy.com/display/OD/FIPS+and+Octopus+Deploy",
    	"StandaloneScripts": "http://docs.octopusdeploy.com/display/OD/Standalone+scripts",
 	"WhatIsEAP": "http://docs.octopusdeploy.com/display/ODEAP/What+is+the+EAP",
-	"UpgradeDenied": "http://docs.octopusdeploy.com/display/ODEAP/Octopus+Deploy+EAP"
+	"UpgradeDenied": "http://docs.octopusdeploy.com/display/ODEAP/Octopus+Deploy+EAP",
+	"Artifacts": "http://docs.octopusdeploy.com/display/OD/Artifacts"
 }
