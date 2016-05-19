@@ -7,7 +7,7 @@ public class Fuzzy
 	public static List<string> Search(
 	    string word,
 	    List<string> wordList,
-	    double fuzzyness = 0.7)
+	    double fuzzyness = 0.6)
 	{
 	    List<string> foundWords =
 	        (
