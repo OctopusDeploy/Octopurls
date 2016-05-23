@@ -1,31 +1,27 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
-using Microsoft.AspNet.Routing;
-using Microsoft.Framework.ConfigurationModel;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
-using Microsoft.Framework.Runtime;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Octopurls
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
+        public Startup(IHostingEnvironment env)
         {
-            var configuration = new Configuration()
-                .AddEnvironmentVariables();
+            var configuration = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
+                .Build();
 
             Configuration = configuration;
 
-            var redirectsPath = Path.Combine(appEnv.ApplicationBasePath, "redirects.json");
+            var redirectsPath = Path.Combine(Directory.GetCurrentDirectory(), "redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
@@ -40,10 +36,10 @@ namespace Octopurls
 
         public Redirects Redirects {get; private set;}
 
-        public void ConfigureServices(IServiceCollection services, IHostingEnvironment env)
+        public void ConfigureServices(IServiceCollection services)
         {
             var raygunSettings = new RaygunSettings();
-            raygunSettings.ApiKey = Configuration.Get("RAYGUN_APIKEY");
+            raygunSettings.ApiKey = Configuration.Get("RAYGUN_APIKEY", string.Empty);
             services.AddSingleton(_ => raygunSettings);
 
             services.AddSingleton(_ => Redirects);
@@ -55,9 +51,16 @@ namespace Octopurls
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole();
+            
+            if(env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
 
             app.UseStaticFiles();
             app.UseMvc();
         }
+        
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }

@@ -1,32 +1,35 @@
 {
-    "webroot": "wwwroot",
     "version": "1.0.0-*",
 
     "dependencies": {
-        "Microsoft.AspNet.Diagnostics": "1.0.0-beta4",
-        "Microsoft.AspNet.Mvc": "6.0.0-beta4",
-        "Microsoft.AspNet.Server.IIS": "1.0.0-beta4",
-        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta4",
-        "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
-        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-        "Microsoft.Framework.Logging.Console": "1.0.0-beta4",
-        "Microsoft.Framework.Runtime": "1.0.0-beta4",
-        "Microsoft.Net.Http": "1.0.0-*",
-        "Microsoft.Net.Http.Client": "1.0.0-*",
-        "Kestrel": "1.0.0-beta4",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+        "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-rc1-final",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+        "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+        "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+        "Microsoft.Dnx.Runtime": "1.0.0-rc1-final",
+        "Microsoft.Net.Http": "2.2.10-rc",
+        "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
         "Mindscape.Raygun4Net": "5.0.2"
     },
 
     "commands": {
         "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
-        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5001"
+        "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5001"
     },
 
     "frameworks": {
-        "dnx451": {}
+        "dnx451": {
+            "dependencies": {
+                "Microsoft.Bcl": "1.1.10",
+                "Microsoft.Bcl.Build": "1.0.21"
+            }
+        }
     },
 
-    "exclude": [
+  "exclude": [
     "wwwroot",
     "node_modules",
     "bower_components"

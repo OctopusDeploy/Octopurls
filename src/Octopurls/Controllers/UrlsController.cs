@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Mindscape.Raygun4Net;
 using Newtonsoft.Json;
-using Microsoft.Framework.ConfigurationModel;
+using Microsoft.Extensions.Configuration;
 
 namespace Octopurls
 {
@@ -35,7 +35,7 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
-            Console.WriteLine("Finding redirect for shortened URL '{0}'", url);
+            Console.WriteLine("Finding redirect for shortened URL '{0}' among {1} redirects", url, redirects.Urls.Count);
             try
             {
                 string redirectUrl;
