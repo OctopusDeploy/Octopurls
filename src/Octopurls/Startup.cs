@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
+using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -13,7 +14,8 @@ namespace Octopurls
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
+        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
             var configuration = new ConfigurationBuilder()
                 .AddEnvironmentVariables()
@@ -21,7 +23,7 @@ namespace Octopurls
 
             Configuration = configuration;
 
-            var redirectsPath = Path.Combine(Directory.GetCurrentDirectory(), "redirects.json");
+            var redirectsPath = Path.Combine(appEnv.ApplicationBasePath, "redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
@@ -61,6 +63,5 @@ namespace Octopurls
             app.UseMvc();
         }
         
-        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }

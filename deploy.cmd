@@ -93,6 +93,7 @@ call %DNX_RUNTIME%\bin\dnu restore "%DEPLOYMENT_SOURCE%" %SCM_DNU_RESTORE_OPTION
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 4. Run DNU Bundle
+SET DNU_PUBLISH_AZURE=1
 call %DNX_RUNTIME%\bin\dnu publish "src\Octopurls\project.json" --runtime %DNX_RUNTIME% --out "%DEPLOYMENT_TEMP%" %SCM_DNU_PUBLISH_OPTIONS%
 IF !ERRORLEVEL! NEQ 0 goto error
 
