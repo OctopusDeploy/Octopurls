@@ -1,5 +1,5 @@
 {
-	"SQLServer": "http://docs.octopusdeploy.com/display/OD3/SQL+Server+Database+Requirements",
+	"SQLServer": "http://docs.octopusdeploy.com/display/OD/SQL+Server+Database+Requirements",
 	"MigrateData": "http://docs.octopusdeploy.com/display/OD/Data+migration",
 	"DataMigration": "http://docs.octopusdeploy.com/display/OD3/Data+migration",
 	"BackupRestore": "http://docs.octopusdeploy.com/display/OD/Backup+and+restore",
