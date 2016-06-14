@@ -69,5 +69,6 @@
 	"WhatIsEAP": "http://docs.octopusdeploy.com/display/ODEAP/What+is+the+EAP",
 	"UpgradeDenied": "http://docs.octopusdeploy.com/display/ODEAP/Octopus+Deploy+EAP",
 	"Artifacts": "http://docs.octopusdeploy.com/display/OD/Artifacts",
-	"MultiTenantDeployments": "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments"
+	"MultiTenantDeployments": "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments",
+	"MultiTenantVariables": "http://docs.octopusdeploy.com/display/OD/Working+with+tenant-specific+variables"
 }
