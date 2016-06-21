@@ -71,5 +71,9 @@
 	"Artifacts": "http://docs.octopusdeploy.com/display/OD/Artifacts",
 	"MultiTenantDeployments": "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments",
 	"MultiTenantVariables": "http://docs.octopusdeploy.com/display/OD/Working+with+tenant-specific+variables",
-	"MultiTenantTags": "http://docs.octopusdeploy.com/display/OD/Working+with+groups+of+tenants+using+tags"
+	"MultiTenantTags": "http://docs.octopusdeploy.com/display/OD/Working+with+groups+of+tenants+using+tags",
+	"MultiTenantProjectTenantRequired" : "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments+FAQ#Multi-tenantdeploymentsFAQ-CanIrequireatenantforalldeploymentsofaproject?",
+	"MultiTenantUntenantedDeploymentTarget" : "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments+FAQ#Multi-tenantdeploymentsFAQ-CanIconfiguredeploymenttargetstoworkwithuntenanteddeployments?",
+	"MultiTenantHostingModel" : "http://docs.octopusdeploy.com/display/OD/Designing+a+multi-tenant+hosting+model",
+	"MultiTenantDeploySimpleMultiTenantProject" : "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project"
 }
