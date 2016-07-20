@@ -78,5 +78,6 @@
 	"MultiTenantDeploySimpleMultiTenantProject" : "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project",
 	"MigrateAzureTargets" : "http://docs.octopus.com/display/OD/Migrate+Azure+Targets+into+Azure+Steps",
 	"TenantTags": "http://docs.octopusdeploy.com/display/OD/Tenant+Tags",
-	"SensitiveVariables": "http://docs.octopusdeploy.com/display/OD/Sensitive+variables"
+	"SensitiveVariables": "http://docs.octopusdeploy.com/display/OD/Sensitive+variables",
+	"ElasticTransientEnvironments": "http://docs.octopusdeploy.com/display/OD/Elastic+and+Transient+Environments"
 }
