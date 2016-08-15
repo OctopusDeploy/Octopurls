@@ -82,5 +82,6 @@
 	"ElasticTransientEnvironments": "http://docs.octopusdeploy.com/display/OD/Elastic+and+Transient+Environments",
 	"KeepingDeploymentTargetsUpToDate": "http://docs.octopusdeploy.com/display/OD/Keeping+deployment+targets+up+to+date",
 	"OfflinePackageDrop": "http://docs.octopusdeploy.com/display/OD/Offline+Package+Drop",
-	"SSHTargets": "http://docs.octopusdeploy.com/display/OD/SSH+Targets"
+	"SSHTargets": "http://docs.octopusdeploy.com/display/OD/SSH+Targets",
+	"CloudRegionTargets": "http://docs.octopusdeploy.com/display/OD/Cloud+Regions"
 }
