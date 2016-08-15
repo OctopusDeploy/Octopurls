@@ -83,5 +83,6 @@
 	"KeepingDeploymentTargetsUpToDate": "http://docs.octopusdeploy.com/display/OD/Keeping+deployment+targets+up+to+date",
 	"OfflinePackageDrop": "http://docs.octopusdeploy.com/display/OD/Offline+Package+Drop",
 	"SSHTargets": "http://docs.octopusdeploy.com/display/OD/SSH+Targets",
-	"CloudRegionTargets": "http://docs.octopusdeploy.com/display/OD/Cloud+Regions"
+	"CloudRegionTargets": "http://docs.octopusdeploy.com/display/OD/Cloud+Regions",
+	"DeploymentTargets": "http://docs.octopusdeploy.com/display/OD/Deployment+targets"
 }
