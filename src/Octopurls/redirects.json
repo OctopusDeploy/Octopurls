@@ -80,5 +80,6 @@
 	"TenantTags": "http://docs.octopusdeploy.com/display/OD/Tenant+Tags",
 	"SensitiveVariables": "http://docs.octopusdeploy.com/display/OD/Sensitive+variables",
 	"ElasticTransientEnvironments": "http://docs.octopusdeploy.com/display/OD/Elastic+and+Transient+Environments",
-	"KeepingDeploymentTargetsUpToDate": "http://docs.octopusdeploy.com/display/OD/Keeping+deployment+targets+up+to+date"
+	"KeepingDeploymentTargetsUpToDate": "http://docs.octopusdeploy.com/display/OD/Keeping+deployment+targets+up+to+date",
+	"OfflinePackageDrop": "http://docs.octopusdeploy.com/display/OD/Offline+Package+Drop"
 }
