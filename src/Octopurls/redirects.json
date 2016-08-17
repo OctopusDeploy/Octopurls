@@ -76,5 +76,6 @@
 	"MultiTenantUntenantedDeploymentTarget" : "http://docs.octopusdeploy.com/display/OD/Multi-tenant+deployments+FAQ#Multi-tenantdeploymentsFAQ-CanIconfiguredeploymenttargetstoworkwithuntenanteddeployments?",
 	"MultiTenantHostingModel" : "http://docs.octopusdeploy.com/display/OD/Designing+a+multi-tenant+hosting+model",
 	"MultiTenantDeploySimpleMultiTenantProject" : "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project",
-   "MigrateAzureTargets" : "http://docs.octopus.com/display/OD/Migrate+Azure+Targets+into+Azure+Steps"
+   	"MigrateAzureTargets" : "http://docs.octopus.com/display/OD/Migrate+Azure+Targets+into+Azure+Steps",
+   	"AutoDeployTroubleshooting" : "http://docs.octopusdeploy.com/display/OD/Keeping+deployment+targets+up+to+date#Keepingdeploymenttargetsuptodate-Troubleshooting"
 }
