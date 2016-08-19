@@ -85,5 +85,6 @@
 	"OfflinePackageDrop": "http://docs.octopusdeploy.com/display/OD/Offline+Package+Drop",
 	"SSHTargets": "http://docs.octopusdeploy.com/display/OD/SSH+Targets",
 	"CloudRegionTargets": "http://docs.octopusdeploy.com/display/OD/Cloud+Regions",
-	"DeploymentTargets": "http://docs.octopusdeploy.com/display/OD/Deployment+targets"
+	"DeploymentTargets": "http://docs.octopusdeploy.com/display/OD/Deployment+targets",
+	"ProjectTenantedDeploymentMode": "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project"
 }
