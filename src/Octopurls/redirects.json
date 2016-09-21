@@ -88,5 +88,6 @@
 	"DeploymentTargets": "http://docs.octopusdeploy.com/display/OD/Deployment+targets",
 	"ProjectTenantedDeploymentMode": "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project",
 	"LibraryVariableSets": "http://docs.octopusdeploy.com/display/OD/Library+variable+sets",
-	"AutoReleaseCreation": "http://docs.octopusdeploy.com/display/OD/Automatic+Release+Creation"
+	"AutoReleaseCreation": "http://docs.octopusdeploy.com/display/OD/Automatic+Release+Creation",
+	"Subscriptions": "http://docs.octopusdeploy.com/display/OD/Subscriptions"
 }
