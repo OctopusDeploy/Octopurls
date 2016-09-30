@@ -89,5 +89,13 @@
 	"ProjectTenantedDeploymentMode": "http://docs.octopusdeploy.com/display/OD/Deploying+a+simple+multi-tenant+project",
 	"LibraryVariableSets": "http://docs.octopusdeploy.com/display/OD/Library+variable+sets",
 	"AutoReleaseCreation": "http://docs.octopusdeploy.com/display/OD/Automatic+Release+Creation",
-	"Subscriptions": "http://docs.octopusdeploy.com/display/OD/Subscriptions"
+	"Subscriptions": "http://docs.octopusdeploy.com/display/OD/Subscriptions",
+	"AuthAzureAD": "http://docs.octopusdeploy.com/display/OD/Azure+AD+authentication",
+	"AuthGoogleApps": "http://docs.octopusdeploy.com/display/OD/GoogleApps+authentication",
+	"ShowConfiguration": "http://docs.octopusdeploy.com/display/OD/Show+Configuration",
+	"ManagingUsersAndTeams": "http://docs.octopusdeploy.com/display/OD/Managing+users+and+teams",
+	"ServerExtensions": "http://docs.octopusdeploy.com/display/OD/Server+Extensibility",
+	"ServerExtensionsAuthoring": "http://docs.octopusdeploy.com/display/OD/Authoring+an+Octopus+Deploy+server+extension",
+	"ServerExtensionsCustomising": "http://docs.octopusdeploy.com/display/OD/Customising+an+Octopus+Deploy+server+extension",
+	"ServerExtensionsInstalling": "http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension"
 }
