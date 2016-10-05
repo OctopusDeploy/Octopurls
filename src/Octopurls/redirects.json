@@ -90,6 +90,7 @@
 	"LibraryVariableSets": "http://docs.octopusdeploy.com/display/OD/Library+variable+sets",
 	"AutoReleaseCreation": "http://docs.octopusdeploy.com/display/OD/Automatic+Release+Creation",
 	"Subscriptions": "http://docs.octopusdeploy.com/display/OD/Subscriptions",
+	"AuthGuest": "http://docs.octopus.com/display/OD/Guest+login",
 	"AuthAzureAD": "http://docs.octopusdeploy.com/display/OD/Azure+AD+authentication",
 	"AuthGoogleApps": "http://docs.octopusdeploy.com/display/OD/GoogleApps+authentication",
 	"ShowConfiguration": "http://docs.octopusdeploy.com/display/OD/Show+Configuration",
