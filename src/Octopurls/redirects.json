@@ -100,6 +100,7 @@
 	"ServerExtensionsAuthoring": "http://docs.octopusdeploy.com/display/OD/Authoring+an+Octopus+Deploy+server+extension",
 	"ServerExtensionsCustomising": "http://docs.octopusdeploy.com/display/OD/Customising+an+Octopus+Deploy+server+extension",
 	"ServerExtensionsInstalling": "http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension",
-	"CommunityContributedStepTemplates": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates",
-	"CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE"
+	"CommunityLibrary": "http://library.octopusdeploy.com",
+	"CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE",
+	"CommunityContributedStepTemplates": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates"
 }
