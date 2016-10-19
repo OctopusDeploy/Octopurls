@@ -103,5 +103,6 @@
 	"CommunityLibrary": "http://library.octopusdeploy.com",
 	"CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE",
 	"CommunityContributedStepTemplates": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates",
-	"CommunityContributedStepTemplatesTroubleshooting": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates#Communitycontributedsteptemplates-Troubleshooting"
+	"CommunityContributedStepTemplatesTroubleshooting": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates#Communitycontributedsteptemplates-Troubleshooting",
+	"WindowsManagementFramework3Download": "https://www.microsoft.com/en-us/download/details.aspx?id=34595"
 }
