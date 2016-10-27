@@ -106,5 +106,6 @@
 	"CommunityContributedStepTemplatesTroubleshooting": "http://docs.octopusdeploy.com/display/OD/Community+contributed+step+templates#Communitycontributedsteptemplates-Troubleshooting",
 	"WindowsManagementFramework3Download": "https://www.microsoft.com/en-us/download/details.aspx?id=34595",
 	"IISWebsitesAndApplications": "http://docs.octopusdeploy.com/display/OD/IIS+Websites+and+Application+Pools",
-	"DeployingToTransientTargets": "http://docs.octopusdeploy.com/display/OD/Deploying+to+transient+targets"
+	"DeployingToTransientTargets": "http://docs.octopusdeploy.com/display/OD/Deploying+to+transient+targets",
+	"DockerGuide": "http://docs.octopusdeploy.com/display/OD/Docker"
 }
