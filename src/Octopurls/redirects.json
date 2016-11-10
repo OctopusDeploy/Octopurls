@@ -109,5 +109,6 @@
 	"DeployingToTransientTargets": "http://docs.octopusdeploy.com/display/OD/Deploying+to+transient+targets",
 	"DockerGuide": "http://docs.octopusdeploy.com/display/OD/Docker",
 	"AutomaticDeploymentTriggers": "http://docs.octopusdeploy.com/display/OD/Automatic+Deployment+Triggers",
-	"AuthenticationProviders": "http://docs.octopus.com/display/OD/Authentication+Providers"
+	"AuthenticationProviders": "http://docs.octopus.com/display/OD/Authentication+Providers",
+	"VersioningInOctopusDeploy": "http://docs.octopusdeploy.com/display/OD/Versioning+in+Octopus+Deploy"
 }
