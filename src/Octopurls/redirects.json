@@ -54,7 +54,7 @@
 	"TrainingVideos": "http://octopusdeploy.wistia.com/projects/gguvhmqn6b",
 	"GettingStarted": "http://docs.octopusdeploy.com/display/OD/Getting+started",
 	"Upgrade2To3": "http://docs.octopusdeploy.com/display/OD/Upgrading+from+Octopus+2.6",
-	"HighAvailability": "http://docs.octopusdeploy.com/display/OD/High+Availability+Octopus",
+	"HighAvailability": "http://docs.octopusdeploy.com/display/OD/High+Availability",
 	"SecurityAndEncryption": "http://docs.octopusdeploy.com/display/OD/Security+and+encryption",
 	"NuGetVersioning": "https://docs.nuget.org/create/versioning",
 	"ChannelVersionRules": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-versionrules",
