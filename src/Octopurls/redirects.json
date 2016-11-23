@@ -112,5 +112,6 @@
 	"AuthenticationProviders": "http://docs.octopus.com/display/OD/Authentication+Providers",
 	"VersioningInOctopusDeploy": "http://docs.octopusdeploy.com/display/OD/Versioning+in+Octopus+Deploy",
 	"ManagingHighAvailabilityNodes": "http://docs.octopusdeploy.com/display/OD/Managing+High+Availability+Nodes",
-	"UserRoles": "http://docs.octopusdeploy.com/display/OD/User+Roles"
+	"UserRoles": "http://docs.octopusdeploy.com/display/OD/User+Roles",
+	"RedGateSQLRelease": "http://docs.octopusdeploy.com/display/OD/SQL+Server+databases#SQLServerdatabases-RedGateSQLRelease"
 }
