@@ -114,5 +114,5 @@
 	"ManagingHighAvailabilityNodes": "http://docs.octopusdeploy.com/display/OD/Managing+High+Availability+Nodes",
 	"UserRoles": "http://docs.octopusdeploy.com/display/OD/User+Roles",
 	"RedGateSQLRelease": "http://docs.octopusdeploy.com/display/OD/SQL+Server+databases#SQLServerdatabases-RedGateSQLRelease",
-	"HATroubleshooting": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+for+High+Availability"
+	"TroubleshootingNodeLimitsExceededError": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Node+Limits+Exceeded+Error"
 }
