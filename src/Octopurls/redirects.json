@@ -114,5 +114,6 @@
 	"ManagingHighAvailabilityNodes": "http://docs.octopusdeploy.com/display/OD/Managing+High+Availability+Nodes",
 	"UserRoles": "http://docs.octopusdeploy.com/display/OD/User+Roles",
 	"RedGateSQLRelease": "http://docs.octopusdeploy.com/display/OD/SQL+Server+databases#SQLServerdatabases-RedgateSQLRelease",
-	"TroubleshootingNodeLimitsExceededError": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Node+Limits+Exceeded+Error"
+	"TroubleshootingNodeLimitsExceededError": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Node+Limits+Exceeded+Error",
+	"AzureServicePrincipalAccount": "http://docs.octopus.com/display/OD/Creating+an+Azure+Service+Principal+Account"
 }
