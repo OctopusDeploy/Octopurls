@@ -117,5 +117,6 @@
 	"TroubleshootingNodeLimitsExceededError": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Node+Limits+Exceeded+Error",
 	"AzureServicePrincipalAccount": "http://docs.octopus.com/display/OD/Creating+an+Azure+Service+Principal+Account",
 	"TroubleshootMissingPackages": "http://docs.octopusdeploy.com/display/OD/Troubleshoot+missing+packages",
-	"PackageDeltaCompression": "http://docs.octopusdeploy.com/display/OD/Delta+compression+for+package+transfers"
+	"PackageDeltaCompression": "http://docs.octopusdeploy.com/display/OD/Delta+compression+for+package+transfers",
+	"ExternalGroupsAndRoles": "http://docs.octopusdeploy.com/display/OD/External+Groups+and+Roles"
 }
