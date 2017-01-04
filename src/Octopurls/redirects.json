@@ -119,5 +119,6 @@
 	"TroubleshootMissingPackages": "http://docs.octopusdeploy.com/display/OD/Troubleshoot+missing+packages",
 	"PackageDeltaCompression": "http://docs.octopusdeploy.com/display/OD/Delta+compression+for+package+transfers",
 	"ExternalGroupsAndRoles": "http://docs.octopusdeploy.com/display/OD/External+Groups+and+Roles",
-	"TroubleshootingAD": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Active+Directory+integration"
+	"TroubleshootingAD": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Active+Directory+integration",
+	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing"
 }
