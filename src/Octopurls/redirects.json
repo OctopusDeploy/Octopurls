@@ -120,5 +120,6 @@
 	"PackageDeltaCompression": "http://docs.octopusdeploy.com/display/OD/Delta+compression+for+package+transfers",
 	"ExternalGroupsAndRoles": "http://docs.octopusdeploy.com/display/OD/External+Groups+and+Roles",
 	"TroubleshootingAD": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Active+Directory+integration",
-	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing"
+	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing",
+	"VariableSunstitutionSyntax": "http://docs.octopusdeploy.com/display/OD/Variable+Substitution+Syntax"
 }
