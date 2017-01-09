@@ -121,5 +121,6 @@
 	"ExternalGroupsAndRoles": "http://docs.octopusdeploy.com/display/OD/External+Groups+and+Roles",
 	"TroubleshootingAD": "http://docs.octopusdeploy.com/display/OD/Troubleshooting+Active+Directory+integration",
 	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing",
-	"VariableSubstitutionSyntax": "http://docs.octopusdeploy.com/display/OD/Variable+Substitution+Syntax"
+	"VariableSubstitutionSyntax": "http://docs.octopusdeploy.com/display/OD/Variable+Substitution+Syntax",
+	"LatestPackage": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-ManuallyCreatingReleases"
 }
