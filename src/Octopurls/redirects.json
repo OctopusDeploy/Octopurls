@@ -123,5 +123,6 @@
 	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing",
 	"VariableSubstitutionSyntax": "http://docs.octopusdeploy.com/display/OD/Variable+Substitution+Syntax",
 	"LatestPackage": "http://docs.octopusdeploy.com/display/OD/Channels#Channels-ManuallyCreatingReleases",
-	"ChangingDatabaseCollation": "http://docs.octopus.com/display/OD/Changing+the+Collation+of+the+Octopus+Database"
+	"ChangingDatabaseCollation": "http://docs.octopus.com/display/OD/Changing+the+Collation+of+the+Octopus+Database",
+	"VstsExtension": "https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks"
 }
