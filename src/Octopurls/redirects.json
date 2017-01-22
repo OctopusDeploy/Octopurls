@@ -16,7 +16,7 @@
 	"UninstallFirst": "http://docs.octopusdeploy.com/display/OD/Upgrading+from+Octopus+2.0",
 	"GuestMode": "http://docs.octopusdeploy.com/display/OD/Guest+login",
 	"BuiltInFeed": "http://docs.octopusdeploy.com/display/OD/Package+repositories",
-	"Renew": "https://octopusdeploy.com/purchase",
+	"Renew": "https://octopusdeploy.com/upgrade",
 	"LicenseUpgrade": "http://octopusdeploy.com/licenses/upgrade",
 	"Purchase": "https://octopusdeploy.com/purchase",
 	"ApiDocs": "https://github.com/OctopusDeploy/OctopusDeploy-Api/wiki",
