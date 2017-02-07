@@ -126,5 +126,6 @@
 	"ChangingDatabaseCollation": "http://docs.octopus.com/display/OD/Changing+the+Collation+of+the+Octopus+Database",
 	"VstsExtension": "https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks",
 	"Watchdog": "http://docs.octopus.com/display/OD/Service+Watchdog",
+	"Diagnostics": "https://octopus.com/docs/administration/diagnostics",
 	"ImmutableInfrastructure": "https://octopus.com/docs/guides/elastic-and-transient-environments/immutable-infrastructure"
 }
