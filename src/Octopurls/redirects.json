@@ -127,5 +127,6 @@
   "VstsExtension": "https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks",
   "Watchdog": "http://docs.octopus.com/display/OD/Service+Watchdog",
   "SystemIntegrityCheck": "https://octopus.com/docs/administration/diagnostics#system-integrity-check",
-  "ImmutableInfrastructure": "https://octopus.com/docs/guides/elastic-and-transient-environments/immutable-infrastructure"
+  "ImmutableInfrastructure": "https://octopus.com/docs/guides/elastic-and-transient-environments/immutable-infrastructure",
+  "AzureEnvironments": "https://octopus.com/docs/guides/azure-deployments/azure-environments"
 }
