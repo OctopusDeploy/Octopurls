@@ -29,7 +29,7 @@ namespace Octopurls
         [HttpGet("")]
         public IActionResult Get()
         {
-            return new RedirectResult("http://octopusdeploy.com");
+            return new RedirectResult("https://octopus.com");
         }
 
         [HttpGet("{url}")]
