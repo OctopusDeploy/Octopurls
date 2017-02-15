@@ -29,7 +29,7 @@ namespace Octopurls
         [HttpGet("")]
         public IActionResult Get()
         {
-            return new RedirectResult("http://www.octopusdeploy.com");
+            return new RedirectResult("http://octopusdeploy.com");
         }
 
         [HttpGet("{url}")]
@@ -38,9 +38,21 @@ namespace Octopurls
             Console.WriteLine("Finding redirect for shortened URL '{0}' among {1} redirects", url, redirects.Urls.Count);
             try
             {
-                string redirectUrl;
-                if ((redirects.Urls.TryGetValue(url, out redirectUrl)))
+                string tmpRedirectUrl;
+              if (redirects.Urls.TryGetValue(url, out tmpRedirectUrl))
                 {
+                    string redirectUrl;
+                    if (Request.Query.Count <= 0)
+                    {
+                         redirectUrl = tmpRedirectUrl;
+                    }
+                    else
+                    {
+                        // Append Query String if supplied
+                        var uriBuilder = new UriBuilder(tmpRedirectUrl);
+                        uriBuilder.Query = string.Join("&", Request.Query.Select(x => $"{x.Key}={x.Value}").ToArray());
+                        redirectUrl = uriBuilder.ToString();
+                    }
                     Console.WriteLine("Found shortened URL '{0}' which redirects to '{1}'", url, redirectUrl);
                     return new RedirectResult(redirectUrl);
                 }
