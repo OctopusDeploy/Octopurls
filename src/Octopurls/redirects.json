@@ -84,6 +84,8 @@
   "KeepingDeploymentTargetsUpToDate": "https://octopus.com/docs/guides/elastic-and-transient-environments/keeping-deployment-targets-up-to-date",
   "OfflinePackageDrop": "https://octopus.com/docs/deployment-targets/offline-package-drop",
   "SSHTargets": "https://octopus.com/docs/deployment-targets/ssh-targets",
+  "SSHTargetRequirements": "https://octopus.com/docs/deployment-targets/ssh-targets#SSHTargets-Requirements",
+  "NakedScripting": "https://octopus.com/docs/deploying-applications/custom-scripts/naked-scripting",
   "CloudRegionTargets": "https://octopus.com/docs/deployment-targets/cloud-regions",
   "DeploymentTargets": "https://octopus.com/docs/deployment-targets",
   "ProjectTenantedDeploymentMode": "https://octopus.com/docs/guides/multi-tenant-deployments/multi-tenant-deployment-guide/deploying-a-simple-multi-tenant-project",
