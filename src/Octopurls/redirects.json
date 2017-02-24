@@ -86,6 +86,7 @@
   "SSHTargets": "https://octopus.com/docs/deployment-targets/ssh-targets",
   "SSHTargetRequirements": "https://octopus.com/docs/deployment-targets/ssh-targets#SSHTargets-Requirements",
   "NakedScripting": "https://octopus.com/docs/deploying-applications/custom-scripts/naked-scripting",
+  "RawScripting": "https://octopus.com/docs/deploying-applications/custom-scripts/raw-scripting",
   "CloudRegionTargets": "https://octopus.com/docs/deployment-targets/cloud-regions",
   "DeploymentTargets": "https://octopus.com/docs/deployment-targets",
   "ProjectTenantedDeploymentMode": "https://octopus.com/docs/guides/multi-tenant-deployments/multi-tenant-deployment-guide/deploying-a-simple-multi-tenant-project",
