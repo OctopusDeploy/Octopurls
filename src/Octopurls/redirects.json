@@ -141,5 +141,6 @@
 	"ExportCertificate": "http://octopus.com/docs/deploying-applications/certificates/export-certificate",
 	"PFXFiles": "https://en.wikipedia.org/wiki/PKCS_12",
 	"PEMFiles": "http://how2ssl.com/articles/working_with_pem_files/",
-	"DERFiles": "https://en.wikipedia.org/wiki/X.690#DER_encoding"
+	"DERFiles": "https://en.wikipedia.org/wiki/X.690#DER_encoding",
+	"TentacleUpdateAccount": "https://octopus.com/docs/key-concepts/environments/machine-policies#MachinePolicies-TentacleUpdateAccount"
 }
