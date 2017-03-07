@@ -126,6 +126,7 @@
   "TroubleshootingAD": "https://octopus.com/docs/administration/authentication-providers/troubleshooting-active-directory-integration",
 	"ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing",
   "VariableSubstitutionSyntax": "https://octopus.com/docs/reference/variable-substitution-syntax",
+  "VariableSubstitutionSyntaxExtended": "https://octopus.com/docs/reference/variable-substitution-syntax#VariableSubstitutionSyntax-ExtendedSyntax",
   "LatestPackage": "https://octopus.com/docs/key-concepts/projects/channels#Channels-ManuallyCreatingReleases",
 	"ChangingDatabaseCollation": "http://docs.octopus.com/display/OD/Changing+the+Collation+of+the+Octopus+Database",
 	"VstsExtension": "https://marketplace.visualstudio.com/items?itemName=octopusdeploy.octopus-deploy-build-release-tasks",
