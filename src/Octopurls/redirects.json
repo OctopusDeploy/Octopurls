@@ -143,5 +143,5 @@
 	"PFXFiles": "https://en.wikipedia.org/wiki/PKCS_12",
 	"PEMFiles": "http://how2ssl.com/articles/working_with_pem_files/",
 	"DERFiles": "https://en.wikipedia.org/wiki/X.690#DER_encoding",
-	"TentacleUpdateAccount": "https://octopus.com/docs/key-concepts/environments/machine-policies#MachinePolicies-TentacleUpdateAccount"
+	"TentacleUpdateAccount": "https://octopus.com/docs/key-concepts/environments/machine-policies#MachinePolicies-TentacleUpdateAccount","ServiceFabricSdkDownload": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only"
 }
