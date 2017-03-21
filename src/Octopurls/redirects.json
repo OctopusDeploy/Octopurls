@@ -148,6 +148,7 @@
   "OnboardingInfrastructureLearnMore": "https://octopus.com/docs/key-concepts/environments",
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/deployment-targets",
   "OnboardingPackageLearnMore": "https://octopus.com/docs/packaging-applications",
+  "OnboardingProjectsLearnMore": "https://octopus.com/docs/key-concepts/projects",
   "OnboardingProjectLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
   "OnboardingDeployLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
 	"StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates#StepTemplates-Updatingsteptemplates"
