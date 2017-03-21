@@ -147,10 +147,11 @@
   "ServiceFabricSdkDownload": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only",
   "OnboardingInfrastructureLearnMore": "https://octopus.com/docs/key-concepts/environments",
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/deployment-targets",
-  "OnboardingPackageLearnMore": "https://octopus.com/docs/packaging-applications",
+  "OnboardingPackagesLearnMore": "https://octopus.com/docs/packaging-applications",
   "OnboardingProjectsLearnMore": "https://octopus.com/docs/key-concepts/projects",
-  "OnboardingProjectLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
-  "OnboardingDeployLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
+  "OnboardingDeploymentProcessLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
+  "OnboardingVariablesLearnMore": "https://octopus.com/docs/deploying-applications/variables",
+  "OnboardingReleasesLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
 	"StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates#StepTemplates-Updatingsteptemplates"
 	
 }
