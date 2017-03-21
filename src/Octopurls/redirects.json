@@ -152,6 +152,6 @@
   "OnboardingDeploymentProcessLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
   "OnboardingVariablesLearnMore": "https://octopus.com/docs/deploying-applications/variables",
   "OnboardingReleasesLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
-	"StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates#StepTemplates-Updatingsteptemplates"
+	"StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates/updating-step-templates"
 	
 }
