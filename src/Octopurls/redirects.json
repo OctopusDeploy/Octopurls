@@ -154,6 +154,12 @@
   "OnboardingDeploymentProcessLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
   "OnboardingVariablesLearnMore": "https://octopus.com/docs/deploying-applications/variables",
   "OnboardingReleasesLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
-	"StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates/updating-step-templates"
-
+    "StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates/updating-step-templates",
+    "ServiceFabricGuide" : "https://octopus.com/docs/guides/service-fabric/",
+    "ServiceFabricPackaging" : "https://octopus.com/docs/guides/service-fabric/packaging/",
+    "ServiceFabricVersioning" : "https://octopus.com/docs/guides/service-fabric/version-automation-with-service-fabric-application-packages/",
+    "ServiceFabricDeployingApps" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/",
+    "ServiceFabricDeployingAppsAuthAzureAd" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-azure-active-directory/",
+    "ServiceFabricDeployingAppsAuthClientCerts" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-client-certificates/",
+    "ServiceFabricDeployingAppsPackages" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/deploying-a-package-to-a-service-fabric-cluster/"
 }
