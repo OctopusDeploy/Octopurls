@@ -152,6 +152,7 @@
   "OnboardingPackageRepositoriesLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories",  
   "OnboardingProjectsLearnMore": "https://octopus.com/docs/key-concepts/projects",
   "OnboardingDeploymentProcessLearnMore": "https://octopus.com/docs/key-concepts/projects/deployment-processes",
+  "OnboardingAddStepsLearnMore": "https://octopus.com/docs/deploying-applications/adding-steps",
   "OnboardingVariablesLearnMore": "https://octopus.com/docs/deploying-applications/variables",
   "OnboardingReleasesLearnMore": "https://octopus.com/docs/key-concepts/projects/releases",
   "OnboardingPackagingOctopackLearnMore": "https://octopus.com/docs/packaging-applications/nuget-packages/using-octopack",
