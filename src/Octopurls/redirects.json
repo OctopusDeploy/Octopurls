@@ -158,6 +158,7 @@
   "OnboardingPackagingDotnetCoreLearnMore": "https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-pack",
   "OnboardingPackagingOctoExeLearnMore": "https://octopus.com/docs/packaging-applications/nuget-packages/using-octo.exe",
   "OnboardingPackagingZipItUpLearnMore": "https://octopus.com/docs/packaging-applications/supported-packages",
+  "OnboardingPackagingJavaLearnMore": "https://octopus.com/docs/guides/deploying-java-applications",
   "OnboardingPackagingTeamCityLearnMore": "https://octopus.com/docs/api-and-integration/teamcity",
   "OnboardingPackagingVstsLearnMore": "https://octopus.com/docs/api-and-integration/visual-studio-team-services-vsts",
   "OnboardingPackagingTfsLearnMore": "https://octopus.com/docs/api-and-integration/team-foundation-server-tfs",
