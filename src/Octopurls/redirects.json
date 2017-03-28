@@ -177,5 +177,6 @@
   "ServiceFabricDeployingApps" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/",
   "ServiceFabricDeployingAppsAuthAzureAd" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-azure-active-directory/",
   "ServiceFabricDeployingAppsAuthClientCerts" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-client-certificates/",
-  "ServiceFabricDeployingAppsPackages" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/deploying-a-package-to-a-service-fabric-cluster/"
+  "ServiceFabricDeployingAppsPackages" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/deploying-a-package-to-a-service-fabric-cluster/",
+  "CustomInstallationDirectory": "https://octopus.com/docs/deploying-applications/custom-installation-directory"
 }
