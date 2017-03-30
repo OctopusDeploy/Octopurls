@@ -179,5 +179,6 @@
   "ServiceFabricDeployingAppsAuthAzureAd" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-azure-active-directory/",
   "ServiceFabricDeployingAppsAuthClientCerts" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-client-certificates/",
   "ServiceFabricDeployingAppsPackages" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/deploying-a-package-to-a-service-fabric-cluster/",
-  "CustomInstallationDirectory": "https://octopus.com/docs/deploying-applications/custom-installation-directory"
+  "CustomInstallationDirectory": "https://octopus.com/docs/deploying-applications/custom-installation-directory",
+  "DebuggingPowershellScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/debugging-powershell-scripts.md"
 }
