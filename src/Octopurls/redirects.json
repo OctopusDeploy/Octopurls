@@ -147,7 +147,7 @@
   "ServiceFabricSdkDownload": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only",
   "OnboardingEnvironmentsLearnMore": "https://octopus.com/docs/key-concepts/environments",
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/deployment-targets",
-  "OnboardingAzureAccountsLearnMore": "https://octopus.com/docs/key-concepts/environments/accounts/azure-subscription-account",
+  "OnboardingAccountsLearnMore": "https://octopus.com/docs/key-concepts/environments/accounts",
   "OnboardingPackagesLearnMore": "https://octopus.com/docs/packaging-applications",
   "OnboardingPackageRepositoriesLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories",  
   "OnboardingProjectsLearnMore": "https://octopus.com/docs/key-concepts/projects",
