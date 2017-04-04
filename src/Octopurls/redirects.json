@@ -171,7 +171,7 @@
   "OnboardingFeedsMyGetLearnMore": "http://www.myget.org/",
   "OnboardingFeedsVstsLearnMore": "https://www.visualstudio.com/en-us/docs/package/overview",
   "OnboardingVersioningLearnMore": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
-  "OctopusTweetNow": "https://twitter.com/intent/tweet", 
+  "OctopusTweetNow": "https://twitter.com/intent/tweet",
   "StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates/updating-step-templates",
   "ServiceFabricGuide" : "https://octopus.com/docs/guides/service-fabric/",
   "ServiceFabricPackaging" : "https://octopus.com/docs/guides/service-fabric/packaging/",
@@ -184,5 +184,6 @@
   "DebuggingPowershellScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/debugging-powershell-scripts.md",
   "WalkthroughChannelHotfix": "https://octopus.com/blog/channels-walkthrough#scenario-3-hotfix-deployments",
   "WalkthroughChannelFeatureBranch": "https://octopus.com/blog/channels-walkthrough#scenario-5-feature-branch-deployments",
-  "RetentionPolicies": "https://octopus.com/docs/administration/retention-policies"
+  "RetentionPolicies": "https://octopus.com/docs/administration/retention-policies",
+  "DebuggingPowershellScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/debugging-powershell-scripts"
 }
