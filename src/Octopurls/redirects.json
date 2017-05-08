@@ -189,5 +189,6 @@
   "RetentionPolicies": "https://octopus.com/docs/administration/retention-policies",
   "DebuggingPowershellScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/debugging-powershell-scripts",
   "MasteringMarkdown": "https://guides.github.com/features/mastering-markdown/",
-  "HSTS": "https://octopus.com/docs/how-to/expose-the-octopus-web-portal-over-https#HSTS"
+  "HSTS": "https://octopus.com/docs/how-to/expose-the-octopus-web-portal-over-https#HSTS",
+  "CertificateMismatch": "https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ebd2bcf4-09ee-4b80-9492-82a465dbb345/incorrect-custom-certificate-on-mysitescmazurewebsitesnet?forum=windowsazurewebsitespreview"	
 }
