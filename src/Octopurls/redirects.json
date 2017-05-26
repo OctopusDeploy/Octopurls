@@ -181,7 +181,6 @@
   "ServiceFabricDeployingAppsAuthClientCerts" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/connecting-securely-with-client-certificates/",
   "ServiceFabricDeployingAppsPackages" : "https://octopus.com/docs/deploying-applications/deploying-to-service-fabric/deploying-a-package-to-a-service-fabric-cluster/",
   "CustomInstallationDirectory": "https://octopus.com/docs/deploying-applications/custom-installation-directory",
-  "DebuggingPowershellScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/debugging-powershell-scripts.md",
   "WalkthroughChannelHotfix": "https://octopus.com/blog/channels-walkthrough#scenario-3-hotfix-deployments",
   "WalkthroughChannelFeatureBranch": "https://octopus.com/blog/channels-walkthrough#scenario-5-feature-branch-deployments",
   "WebSocketComms": "https://octopus.com/docs/installation/installing-tentacles/polling-tentacles-web-sockets",
