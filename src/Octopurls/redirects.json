@@ -191,5 +191,6 @@
   "HSTS": "https://octopus.com/docs/how-to/expose-the-octopus-web-portal-over-https#HSTS",
   "CertificateMismatch": "https://social.msdn.microsoft.com/Forums/sqlserver/en-US/ebd2bcf4-09ee-4b80-9492-82a465dbb345/incorrect-custom-certificate-on-mysitescmazurewebsitesnet?forum=windowsazurewebsitespreview",
   "OctoExeCreateRelease": "https://octopus.com/docs/api-and-integration/octo.exe-command-line/creating-releases",
-  "CSRF": "https://octopus.com/docs/reference/csrf-and-octopus-deploy"
+  "CSRF": "https://octopus.com/docs/reference/csrf-and-octopus-deploy",
+  "DynamicPackageFeeds" : "https://octopus.com/docs/deploying-applications/deploying-packages/dynamically-selecting-packages"
 }
