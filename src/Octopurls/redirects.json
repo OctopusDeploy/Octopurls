@@ -194,5 +194,6 @@
   "CSRF": "https://octopus.com/docs/reference/csrf-and-octopus-deploy",
   "DynamicPackageFeeds" : "https://octopus.com/docs/deploying-applications/deploying-packages/dynamically-selecting-packages",
   "LetsEncryptOrg": "https://letsencrypt.org/",
+  "LetsEncryptTermsOfService": "https://letsencrypt.org/repository",
   "LetsEncryptIntegration": "https://octopus.com/docs/how-to/configure-lets-encrypt-integration"
 }
