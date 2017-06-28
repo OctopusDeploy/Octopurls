@@ -32,6 +32,12 @@ namespace Octopurls
             return new RedirectResult("https://octopus.com");
         }
 
+        [HttpGet("ping")]
+        public ContentResult GetPong() // This is so we can pingdom monitor just this app, and not follow redirects
+        {
+            return Content("pong", "text/plain", Encoding.UTF8);
+        }
+
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
