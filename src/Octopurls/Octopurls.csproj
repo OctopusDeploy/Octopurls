@@ -5,6 +5,8 @@
 
     <ItemGroup>
         <Folder Include="wwwroot\" />
+        <None Include="redirects.json" CopyToOutputDirectory="PreserveNewest" />
+        <None Include="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
     <ItemGroup>
