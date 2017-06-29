@@ -46,7 +46,7 @@ Param(
     [string]$Configuration = "Release",
     [ValidateSet("Quiet", "Minimal", "Normal", "Verbose", "Diagnostic")]
     [string]$Verbosity = "Verbose",
-    [switch]$Experimental,
+    [switch]$Experimental = $true,
     [Alias("DryRun","Noop")]
     [switch]$WhatIf,
     [switch]$Mono,
@@ -179,7 +179,7 @@ if(-Not $SkipToolPackageRestore.IsPresent) {
         $md5Hash | Out-File $PACKAGES_CONFIG_MD5 -Encoding "ASCII"
     }
     Write-Verbose -Message ($NuGetOutput | out-string)
-    
+
     Pop-Location
 }
 
