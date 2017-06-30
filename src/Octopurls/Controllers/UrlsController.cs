@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Mindscape.Raygun4Net;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Configuration;
 
@@ -16,13 +15,11 @@ namespace Octopurls
     public class UrlsController : Controller
     {
         readonly Redirects redirects;
-        readonly RaygunSettings raygun;
         readonly IConfiguration configuration;
 
-        public UrlsController(Redirects redirects, RaygunSettings raygun, IConfiguration configuration)
+        public UrlsController(Redirects redirects, IConfiguration configuration)
         {
             this.redirects = redirects;
-            this.raygun = raygun;
             this.configuration = configuration;
         }
 
@@ -39,7 +36,7 @@ namespace Octopurls
         }
 
         [HttpGet("{url}")]
-        public async Task<IActionResult> Get(string url)
+        public IActionResult Get(string url)
         {
             Console.WriteLine("Finding redirect for shortened URL '{0}' among {1} redirects", url, redirects.Urls.Count);
             try
@@ -69,25 +66,6 @@ namespace Octopurls
                 Console.WriteLine(kne);
                 try
                 {
-                    if (!String.IsNullOrWhiteSpace(raygun.ApiKey))
-                    {
-                        var message = RaygunMessageBuilder.New
-                            .SetVersion("1.0.0")
-                            .SetUserCustomData(new Dictionary<string, string> { {"Url", url} })
-                            .SetExceptionDetails(kne)
-                            .Build();
-                        
-                        var content = JsonConvert.SerializeObject(message);
-    
-                        var httpClient = new HttpClient();
-                        httpClient.DefaultRequestHeaders
-                            .Accept
-                            .Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        httpClient.DefaultRequestHeaders.Add("X-ApiKey", raygun.ApiKey);
-    
-                        var result = await httpClient.PostAsync("https://api.raygun.io/entries", new StringContent(content));
-                        result.EnsureSuccessStatusCode();
-                    }
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
                     ViewBag.Url = url;
@@ -96,7 +74,7 @@ namespace Octopurls
                 catch(Exception ex)
                 {
                     Console.WriteLine(ex);
-                    return HttpBadRequest(ex);
+                    return BadRequest(ex);
                 }
             }
         }

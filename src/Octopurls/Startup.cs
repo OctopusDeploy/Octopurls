@@ -1,29 +1,30 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
-using Microsoft.Extensions.PlatformAbstractions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Octopurls
 {
     public class Startup
     {
-        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
-        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
+        public Startup(IHostingEnvironment env)
         {
-            var configuration = new ConfigurationBuilder()
-                .AddEnvironmentVariables()
-                .Build();
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
 
-            Configuration = configuration;
+            Configuration = builder.Build();
 
-            var redirectsPath = Path.Combine(appEnv.ApplicationBasePath, "redirects.json");
+            var redirectsPath = Path.Combine(env.ContentRootPath, "redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
@@ -40,28 +41,41 @@ namespace Octopurls
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var raygunSettings = new RaygunSettings();
-            raygunSettings.ApiKey = Configuration.Get("RAYGUN_APIKEY", string.Empty);
-            services.AddSingleton(_ => raygunSettings);
-
             services.AddSingleton(_ => Redirects);
             services.AddSingleton(_ => Configuration);
-            
+
             services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole();
-            
             if(env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseBrowserLink();
             }
 
             app.UseStaticFiles();
             app.UseMvc();
         }
-        
+
+        public static void Main(string[] args)
+        {
+            BuildWebHost(args).Run();
+        }
+
+        public static IWebHost BuildWebHost(string[] args) =>
+            new WebHostBuilder()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .ConfigureLogging((context, factory) =>
+                {
+                    factory.AddConsole();
+                    factory.AddDebug();
+                })
+                .UseIISIntegration()
+                .UseKestrel()
+                .UseStartup<Startup>()
+                .Build();
+
     }
 }
