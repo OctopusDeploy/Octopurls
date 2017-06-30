@@ -77,8 +77,6 @@ Task("Build")
             Configuration = configuration,
             ArgumentCustomization = args => args
                 .Append($"/p:Version={nugetVersion}")
-                .Append($"/p:AssemblyVersion={nugetVersion}")
-                .Append($"/p:FileVersion={gitVersionInfo.AssemblySemVer}")
                 .Append($"/p:InformationalVersion={gitVersionInfo.InformationalVersion}")
                 .Append("--verbosity normal")
         });
