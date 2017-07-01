@@ -8,19 +8,26 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Octopurls.Models;
+using Newtonsoft.Json.Serialization;
+using System.Reflection;
+using Microsoft.Extensions.Logging;
 
 namespace Octopurls
 {
     [Route("")]
     public class UrlsController : Controller
     {
+        readonly ILogger logger;
         readonly Redirects redirects;
-        readonly IConfiguration configuration;
+        readonly SlackSettings slackSettings;
 
-        public UrlsController(Redirects redirects, IConfiguration configuration)
+        public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory logger)
         {
+            this.logger = logger.CreateLogger("Octopurls.UrlsController");
             this.redirects = redirects;
-            this.configuration = configuration;
+            slackSettings = slackSettingsAccessor.Value;
         }
 
         [HttpGet("")]
@@ -36,13 +43,15 @@ namespace Octopurls
         }
 
         [HttpGet("{url}")]
-        public IActionResult Get(string url)
+        public async Task<IActionResult> Get(string url)
         {
-            Console.WriteLine("Finding redirect for shortened URL '{0}' among {1} redirects", url, redirects.Urls.Count);
+            if (url == "favicon.ico") return NoContent();
+
+            logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
             {
                 string tmpRedirectUrl;
-              if (redirects.Urls.TryGetValue(url, out tmpRedirectUrl))
+                if (redirects.Urls.TryGetValue(url, out tmpRedirectUrl))
                 {
                     string redirectUrl;
                     if (Request.Query.Count <= 0)
@@ -56,16 +65,18 @@ namespace Octopurls
                         uriBuilder.Query = string.Join("&", Request.Query.Select(x => $"{x.Key}={x.Value}").ToArray());
                         redirectUrl = uriBuilder.ToString();
                     }
-                    Console.WriteLine("Found shortened URL '{0}' which redirects to '{1}'", url, redirectUrl);
+                    logger.LogDebug($"Found shortened URL '{url}' which redirects to '{redirectUrl}'");
                     return new RedirectResult(redirectUrl);
                 }
-                throw new KeyNotFoundException("Could not find shortened URL '" + url + "' in the list of configured redirects.");
+                throw new KeyNotFoundException($"Could not find shortened URL '{url}' in the list of configured redirects.");
             }
             catch (KeyNotFoundException kne)
             {
-                Console.WriteLine(kne);
+                logger.LogDebug(kne, "KeyNotFoundException caught");
                 try
                 {
+                    await SendMissingUrlNotification(url, kne, Request.Headers["Referer"]);
+
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
                     ViewBag.Url = url;
@@ -73,10 +84,65 @@ namespace Octopurls
                 }
                 catch(Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    logger.LogError(ex, "An unexpected error occurred");
                     return BadRequest(ex);
                 }
             }
+        }
+
+        private async Task SendMissingUrlNotification(string url, KeyNotFoundException kne, string[] referers)
+        {
+            if (!String.IsNullOrWhiteSpace(slackSettings.WebhookURL))
+            {
+                var message = new SlackRichMessage
+                {
+                    Attachments = (new [] {BuildSlackMessage(url, kne.Message, referers)}).ToList()
+                };
+
+                var content = JsonConvert.SerializeObject(message);
+
+                var httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders
+                    .Accept
+                    .Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                try
+                {
+                    var result = await httpClient.PostAsync(slackSettings.WebhookURL, new StringContent(content));
+                    result.EnsureSuccessStatusCode();
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, $"An error occurred while sending `Missing URL Notification` to Slack: {ex.Message}");
+                }
+            }
+        }
+
+        private SlackMessage BuildSlackMessage(string url, string message, string[] referers)
+        {
+            var formattedMessage = $"Could not find shortened URL '{url}' in the list of configured redirects.";
+            var fields = new List<Field> {
+                new Field { Title = "Eeeek, I encountered a 404", Value = message, Short = false},
+            };
+
+            if(referers != null && referers.Any())
+                fields.Add(new Field { Title = $"Referer{(referers.Count() > 1 ? "s" : "")}", Value = string.Join(",", referers), Short = false});
+
+            fields.Add(new Field { Title = "Octopurls version", Value = GetInformationalVersion(), Short = true});
+            fields.Add(new Field { Title = "Octopurls environment", Value = slackSettings.AppEnvironment, Short = true});
+
+            return new SlackMessage
+            {
+                PreText = $"Oops...someone encountered the very rare Octopusaurus",
+                Color = "warning",
+                Fallback = message,
+                Fields = fields.ToList()
+            };
+        }
+
+        private string GetInformationalVersion()
+        {
+            return Assembly.GetEntryAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion;
         }
     }
 }

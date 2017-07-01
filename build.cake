@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 // TOOLS
 //////////////////////////////////////////////////////////////////////
-#tool "nuget:?package=GitVersion.CommandLine";
+#tool "nuget:?package=GitVersion.CommandLine&version=4.0.0-beta0011";
 #tool "nuget:?package=xunit.runner.console";
 
 #addin "nuget:?package=Newtonsoft.Json";
@@ -75,7 +75,10 @@ Task("Build")
         DotNetCoreBuild("./src", new DotNetCoreBuildSettings
         {
             Configuration = configuration,
-            ArgumentCustomization = args => args.Append($"/p:Version={nugetVersion}")
+            ArgumentCustomization = args => args
+                .Append($"/p:Version={nugetVersion}")
+                .Append($"/p:InformationalVersion={gitVersionInfo.InformationalVersion}")
+                .Append("--verbosity normal")
         });
     });
 
@@ -91,7 +94,9 @@ Task("Test")
                 {
                     Configuration = configuration,
                     NoBuild = true,
-                    ArgumentCustomization = args => args.Append("-l trx")
+                    ArgumentCustomization = args => args
+                        .Append("-l trx")
+                        .Append("--verbosity normal")
                 });
             });
     });
@@ -102,8 +107,10 @@ Task("DotNetCorePublish")
     {
         DotNetCorePublish(projectToPublish, new DotNetCorePublishSettings
         {
+            Framework = "netcoreapp2.0",
             Configuration = configuration,
-            OutputDirectory = publishDir
+            OutputDirectory = publishDir,
+            ArgumentCustomization = args => args.Append("--verbosity normal")
         });
     });
 

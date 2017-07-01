@@ -1,30 +1,26 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Microsoft.AspNetCore.Mvc;
+using Octopurls.Models;
 
 namespace Octopurls
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
+            Configuration = configuration;
 
-            Configuration = builder.Build();
-
-            var redirectsPath = Path.Combine(env.ContentRootPath, "redirects.json");
+            var redirectsPath = Path.Combine(Directory.GetCurrentDirectory(), "redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
@@ -41,8 +37,8 @@ namespace Octopurls
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<SlackSettings>(Configuration.GetSection("Slack"));
             services.AddSingleton(_ => Redirects);
-            services.AddSingleton(_ => Configuration);
 
             services.AddMvc();
         }
@@ -52,7 +48,6 @@ namespace Octopurls
             if(env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //app.UseBrowserLink();
             }
 
             app.UseStaticFiles();
@@ -65,15 +60,7 @@ namespace Octopurls
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            new WebHostBuilder()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .ConfigureLogging((context, factory) =>
-                {
-                    factory.AddConsole();
-                    factory.AddDebug();
-                })
-                .UseIISIntegration()
-                .UseKestrel()
+            WebHost.CreateDefaultBuilder()
                 .UseStartup<Startup>()
                 .Build();
 
