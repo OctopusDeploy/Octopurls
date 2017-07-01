@@ -12,17 +12,20 @@ using Microsoft.Extensions.Options;
 using Octopurls.Models;
 using Newtonsoft.Json.Serialization;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 
 namespace Octopurls
 {
     [Route("")]
     public class UrlsController : Controller
     {
+        readonly ILogger logger;
         readonly Redirects redirects;
         readonly SlackSettings slackSettings;
 
-        public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor)
+        public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory logger)
         {
+            this.logger = logger.CreateLogger("Octopurls.UrlsController");
             this.redirects = redirects;
             slackSettings = slackSettingsAccessor.Value;
         }
@@ -42,7 +45,7 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
-            Console.WriteLine($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
+            logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
             {
                 string tmpRedirectUrl;
@@ -60,14 +63,14 @@ namespace Octopurls
                         uriBuilder.Query = string.Join("&", Request.Query.Select(x => $"{x.Key}={x.Value}").ToArray());
                         redirectUrl = uriBuilder.ToString();
                     }
-                    Console.WriteLine($"Found shortened URL '{url}' which redirects to '{redirectUrl}'");
+                    logger.LogDebug($"Found shortened URL '{url}' which redirects to '{redirectUrl}'");
                     return new RedirectResult(redirectUrl);
                 }
                 throw new KeyNotFoundException($"Could not find shortened URL '{url}' in the list of configured redirects.");
             }
             catch (KeyNotFoundException kne)
             {
-                Console.WriteLine(kne);
+                logger.LogDebug(kne, "KeyNotFoundException caught");
                 try
                 {
                     await SendMissingUrlNotification(url, kne, Request.Headers["Referer"]);
@@ -79,7 +82,7 @@ namespace Octopurls
                 }
                 catch(Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    logger.LogError(ex, "An unexpected error occurred");
                     return BadRequest(ex);
                 }
             }
