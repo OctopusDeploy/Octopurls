@@ -106,8 +106,15 @@ namespace Octopurls
                     .Accept
                     .Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var result = await httpClient.PostAsync(slackSettings.WebhookURL, new StringContent(content));
-                result.EnsureSuccessStatusCode();
+                try
+                {
+                    var result = await httpClient.PostAsync(slackSettings.WebhookURL, new StringContent(content));
+                    result.EnsureSuccessStatusCode();
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, $"An error occurred while sending `Missing URL Notification` to Slack: {ex.Message}");
+                }
             }
         }
 
