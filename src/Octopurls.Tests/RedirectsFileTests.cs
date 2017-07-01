@@ -43,7 +43,7 @@ namespace Octopurls.Tests
         {
             Assert.False(
                 redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "favicon.ico").Any(),
-                "Redirect file should not contain an entry for 'ping'"
+                "Redirect file should not contain an entry for 'favicon.ico'"
             );
         }
     }
