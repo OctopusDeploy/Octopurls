@@ -122,13 +122,14 @@ namespace Octopurls
         {
             var formattedMessage = $"Could not find shortened URL '{url}' in the list of configured redirects.";
             var fields = new List<Field> {
-                new Field { Title = "Eeeek, I encountered a 404", Value = message, Short = true},
+                new Field { Title = "Eeeek, I encountered a 404", Value = message, Short = false},
             };
 
             if(referers != null && referers.Any())
                 fields.Add(new Field { Title = $"Referer{(referers.Count() > 1 ? "s" : "")}", Value = string.Join(",", referers), Short = false});
 
-            fields.Add(new Field { Title = "Octopurls version", Value = GetInformationalVersion(), Short = false});
+            fields.Add(new Field { Title = "Octopurls version", Value = GetInformationalVersion(), Short = true});
+            fields.Add(new Field { Title = "Octopurls environment", Value = slackSettings.AppEnvironment, Short = true});
 
             return new SlackMessage
             {
