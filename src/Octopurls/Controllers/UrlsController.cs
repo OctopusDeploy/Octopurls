@@ -45,6 +45,8 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
+            if (url == "favicon.ico") return NoContent();
+
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
             {
