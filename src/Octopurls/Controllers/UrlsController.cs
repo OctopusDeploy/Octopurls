@@ -79,10 +79,12 @@ namespace Octopurls
                 logger.LogDebug(kne, "KeyNotFoundException caught");
                 try
                 {
-                    await SendMissingUrlNotification(url, kne, Request.Headers["Referer"]);
-
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
+
+                    if(!suggestions.Any()) {
+                        await SendMissingUrlNotification(url, kne, Request.Headers["Referer"]);
+                    }
 
                     ViewBag.Url = url;
                     return View("404", suggestions);
