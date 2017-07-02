@@ -22,6 +22,10 @@ namespace Octopurls
         readonly ILogger logger;
         readonly Redirects redirects;
         readonly SlackSettings slackSettings;
+        readonly string[] urlsToIgnore = {
+            "favicon.ico",
+            "robots.txt"
+        };
 
         public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory logger)
         {
@@ -45,7 +49,7 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
-            if (url == "favicon.ico") return NoContent();
+            if (urlsToIgnore.Contains(url, StringComparer.OrdinalIgnoreCase)) return NoContent();
 
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
@@ -79,6 +83,7 @@ namespace Octopurls
 
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
+
                     ViewBag.Url = url;
                     return View("404", suggestions);
                 }
