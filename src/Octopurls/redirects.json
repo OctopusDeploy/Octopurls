@@ -196,5 +196,5 @@
   "LetsEncryptOrg": "https://letsencrypt.org/",
   "LetsEncryptTermsOfService": "https://letsencrypt.org/repository",
   "LetsEncryptIntegration": "https://octopus.com/docs/administration/lets-encrypt-integration",
-	"LifecyclesNoProgression": "https://octopus.com/docs/key-concepts/lifecycles#Lifecycles-NoProgression"
+	"LifecyclesNoProgression": "https://octopus.com/docs/key-concepts/lifecycles#no-progression"
 }
