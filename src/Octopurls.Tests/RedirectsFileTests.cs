@@ -35,6 +35,18 @@ namespace Octopurls.Tests
             );
         }
 
+        // Check that someone haven't added a redirect for `missing`
+        // `missing` is used for customers to send feedback on how/where
+        // they encountered a missing link
+        [Fact]
+        public void CheckThatRedirectsFileDoesNotContainEntryForMissing()
+        {
+            Assert.False(
+                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "feedback").Any(),
+                "Redirect file should not contain an entry for 'feedback'"
+            );
+        }
+
         // Check that someone haven't added  redirect for `favicon.ico`
         // `favicon.ico` is requested when hitting the `ping` endpoint and causing the
         // missing URL Slack notification to be sent
@@ -44,6 +56,17 @@ namespace Octopurls.Tests
             Assert.False(
                 redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "favicon.ico").Any(),
                 "Redirect file should not contain an entry for 'favicon.ico'"
+            );
+        }
+
+        // Check that someone haven't added  redirect for `robots.txt`
+        // `robots.txt` is requested by search engine web crawlers
+        [Fact]
+        public void CheckThatRedirectsFileDoesNotContainEntryForRobotsTxt()
+        {
+            Assert.False(
+                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "robots.txt").Any(),
+                "Redirect file should not contain an entry for 'robots.txt'"
             );
         }
     }
