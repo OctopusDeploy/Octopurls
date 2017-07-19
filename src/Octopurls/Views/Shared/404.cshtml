@@ -10,22 +10,40 @@
       href="images/favicon.png">
     </head>
   <body>
-    <header>
-      <h1>404</h1>
-      <h3>Oops...the shortened URL <strong>@ViewBag.Url</strong> has been eaten by the <strong>Octopusaurus</strong></h3>
-    </header>
-    <img src="/images/octopusaurus.jpg" alt="Octopusaurus" />
-    <div class="suggestions-section">
+    <div class="content">
+      <header>
+        <h1>404</h1>
+        <h3>Oops...the shortened URL <strong>@ViewBag.Url</strong> has been eaten by the <strong>Octopusaurus</strong></h3>
+      </header>
+      <img src="/images/octopusaurus.jpg" alt="Octopusaurus" />
       @if(@Model.Any())
       {
-        <p>Did you mean...</p>
-        <ul class="suggestions-list">
-          @foreach(var suggestion in @Model)
-          {
-            <li><a href="@suggestion.Value">@suggestion.Key</a></li>
-          }
-        </ul>
+        <div class="suggestions-section">
+          <p>Did you mean...</p>
+          <ul class="suggestions-list">
+            @foreach(var suggestion in @Model)
+            {
+              <li><a href="@suggestion.Value">@suggestion.Key</a></li>
+            }
+          </ul>
+        </div>
       }
+      else
+      {
+        <div class="missing-link-feeback-section">
+          <p class="help-block">We would be very grateful if you could let us know below where you found the link that brought you here so that we can investigate and correct the link in question</p>
+          <form action="/feedback" method="post">
+            <input type="hidden" name="url" id="url" value="@ViewBag.Url"/>
+            <textarea id="message" name="message" placeholder="I encountered this missing link..."></textarea>
+            <div class="form-actions">
+              <input type="submit" value="Send"/>
+            </div>
+          </form>
+        </div>
+      }
+      <footer>
+        <p class="help-block">This missing link has been reported to the <a href="https://octopus.com">Octopus</a> team.</p>
+      </footer>
     </div>
   </body>
 </html>
