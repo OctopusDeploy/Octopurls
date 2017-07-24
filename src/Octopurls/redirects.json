@@ -198,5 +198,6 @@
   "LetsEncryptIntegration": "https://octopus.com/docs/administration/lets-encrypt-integration",
 	"LifecyclesNoProgression": "https://octopus.com/docs/key-concepts/lifecycles#no-progression",
   "SQLServerMaintenanceGuide": "https://www.red-gate.com/library/brads-sute-guide-to-sql-server-maintenance-plans",
-	"PackageIds": "https://octopus.com/docs/packaging-applications/package-id"
+	"PackageIds": "https://octopus.com/docs/packaging-applications/package-id",
+  "Calamari": "https://octopus.com/docs/api-and-integration/calamari"
 }
