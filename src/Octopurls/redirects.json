@@ -196,5 +196,7 @@
   "LetsEncryptOrg": "https://letsencrypt.org/",
   "LetsEncryptTermsOfService": "https://letsencrypt.org/repository",
   "LetsEncryptIntegration": "https://octopus.com/docs/administration/lets-encrypt-integration",
-  "PackageIds": "https://octopus.com/docs/packaging-applications/package-id"
+	"LifecyclesNoProgression": "https://octopus.com/docs/key-concepts/lifecycles#no-progression",
+  "SQLServerMaintenanceGuide": "https://www.red-gate.com/library/brads-sute-guide-to-sql-server-maintenance-plans",
+	"PackageIds": "https://octopus.com/docs/packaging-applications/package-id"
 }
