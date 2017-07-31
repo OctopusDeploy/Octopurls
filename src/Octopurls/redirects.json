@@ -199,5 +199,7 @@
 	"LifecyclesNoProgression": "https://octopus.com/docs/key-concepts/lifecycles#no-progression",
   "SQLServerMaintenanceGuide": "https://www.red-gate.com/library/brads-sute-guide-to-sql-server-maintenance-plans",
 	"PackageIds": "https://octopus.com/docs/packaging-applications/package-id",
-  "Calamari": "https://octopus.com/docs/api-and-integration/calamari"
+  "Calamari": "https://octopus.com/docs/api-and-integration/calamari",
+  "SshSelfContainedCalamari": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari",
+  "SshSelfContainedCalamariLimitations": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari#limitations"
 }
