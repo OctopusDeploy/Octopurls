@@ -202,5 +202,5 @@
   "Calamari": "https://octopus.com/docs/api-and-integration/calamari",
   "SshSelfContainedCalamari": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari",
   "SshSelfContainedCalamariLimitations": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari#limitations",
-  "AuthProviders": "https://octopus.com/docs/administration/authentication-providers/"
+  "AuthProviders": "https://octopus.com/docs/administration/authentication-providers"
 }
