@@ -96,7 +96,7 @@ namespace Octopurls
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
 
                     if(!suggestions.Any()) {
-                        await SendMissingUrlNotification(url, kne, Request.Headers["Referer"]);
+                        await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", Request.Headers["User-Agent"]));
                     }
 
                     ViewBag.Url = url;
@@ -144,13 +144,13 @@ namespace Octopurls
             };
         }
 
-        private async Task SendMissingUrlNotification(string url, KeyNotFoundException kne, string[] referers)
+        private async Task SendMissingUrlNotification(string url, KeyNotFoundException kne, params (string title, string value)[] extraFields)
         {
             if (!String.IsNullOrWhiteSpace(slackSettings.WebhookURL))
             {
                 try
                 {
-                    var result = await SendToSlack(BuildSlackMessage(url, kne.Message, referers));
+                    var result = await SendToSlack(BuildSlackMessage(url, kne.Message, extraFields));
                     result.EnsureSuccessStatusCode();
                 }
                 catch (Exception ex)
@@ -160,21 +160,33 @@ namespace Octopurls
             }
         }
 
-        private SlackMessage BuildSlackMessage(string url, string message, string[] referers)
+        private SlackMessage BuildSlackMessage(string url, string message, params (string title, string value)[] extraFields)
         {
-            var formattedMessage = $"Could not find shortened URL '{url}' in the list of configured redirects.";
             var fields = new List<Field> {
                 new Field { Title = "Eeeek, I encountered a 404", Value = message, Short = false},
             };
 
-            if(referers != null && referers.Any())
-                fields.Add(new Field { Title = $"Referer{(referers.Count() > 1 ? "s" : "")}", Value = string.Join(",", referers), Short = false});
+            if (extraFields != null && extraFields.Any())
+            {
+                fields.AddRange(
+                    extraFields
+                        .Where(field => field.value != null)
+                        .Select(field =>
+                            new Field
+                            {
+                                Title = field.title,
+                                Value = field.value,
+                                Short = false
+                            }
+                        )
+                );
+            }
 
             fields.AddRange(GetOctopurlsEnvironmentDetails());
 
             return new SlackMessage
             {
-                PreText = $"Oops...someone encountered the very rare Octopusaurus",
+                PreText = "Oops...someone encountered the very rare Octopusaurus",
                 Color = "warning",
                 Fallback = message,
                 Fields = fields.ToList()
