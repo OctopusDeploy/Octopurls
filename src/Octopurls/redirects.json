@@ -203,5 +203,6 @@
   "SshSelfContainedCalamari": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari",
   "SshSelfContainedCalamariLimitations": "https://octopus.com/docs/deployment-targets/ssh-targets/self-contained-calamari#limitations",
   "AuthProviders": "https://octopus.com/docs/administration/authentication-providers",
-  "AutomatingTentacleInstall": "https://octopus.com/docs/installation/installing-tentacles/automating-tentacle-installation"
+  "AutomatingTentacleInstall": "https://octopus.com/docs/installation/installing-tentacles/automating-tentacle-installation",
+  "MaintenanceMode": "https://octopus.com/docs/administration/maintenance-mode"
 }
