@@ -208,5 +208,6 @@
   "MaintenanceMode": "https://octopus.com/docs/administration/maintenance-mode",
   "MultipleProcessesOnTentacle": "http://docs.octopusdeploy.com/display/OD/Run+multiple+processes+on+a+Tentacle+simultaneously",
   "ClusteredListeningTentacles": "https://octopus.com/docs/patterns/clustered-listening-tentacles",
-  "LargeLogs": "https://octopus.com/docs/deploying-applications/performance#task-logs"
+  "LargeLogs": "https://octopus.com/docs/deploying-applications/performance#task-logs",
+  "ConfigurationVariables": "https://octopus.com/docs/deploying-applications/configuration-files#Configurationfiles-ConfigurationVariablesConfigurationvariables"
 }
