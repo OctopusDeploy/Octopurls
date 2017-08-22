@@ -49,7 +49,7 @@ namespace Octopurls
         [HttpPost("feedback")]
         public async Task<IActionResult> SendFeedback(string url, string message)
         {
-            await SendFeedbackNotification(url, message);
+            await SendFeedbackNotification(url, message).ConfigureAwait(false);
             return Redirect("feedback");
         }
 
@@ -96,7 +96,7 @@ namespace Octopurls
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
 
                     if(!suggestions.Any()) {
-                        await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", Request.Headers["User-Agent"]));
+                        await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", Request.Headers["User-Agent"])).ConfigureAwait(false);
                     }
 
                     ViewBag.Url = url;
