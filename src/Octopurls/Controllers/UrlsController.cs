@@ -103,8 +103,8 @@ namespace Octopurls
 
                     if(!suggestions.Any())
                     {
-                        var userAgent = Request.Headers["User-Agent"];
-                        if(string.IsNullOrEmpty(userAgent) || (!string.IsNullOrEmpty(userAgent) && !webCrawlers.Any(wc => userAgent.Contains(wc, StringComparer.OrdinalIgnoreCase))))
+                        var userAgent = Request.Headers["User-Agent"][0];
+                        if(string.IsNullOrEmpty(userAgent) || !webCrawlers.Any(wc => userAgent.ToLowerInvariant().Contains(wc.ToLowerInvariant())))
                             await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", userAgent)).ConfigureAwait(false);
                     }
 
