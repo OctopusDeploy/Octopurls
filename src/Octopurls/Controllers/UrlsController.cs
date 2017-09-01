@@ -27,6 +27,12 @@ namespace Octopurls
             "robots.txt"
         };
 
+        readonly string[] webCrawlers =
+        {
+            "YandexBot",
+            "GarlikCrawler"
+        };
+
         public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
         {
             this.logger = loggerFactory.CreateLogger("Octopurls.UrlsController");
@@ -95,8 +101,11 @@ namespace Octopurls
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
                     var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
 
-                    if(!suggestions.Any()) {
-                        await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", Request.Headers["User-Agent"])).ConfigureAwait(false);
+                    if(!suggestions.Any())
+                    {
+                        var userAgent = Request.Headers["User-Agent"];
+                        if(string.IsNullOrEmpty(userAgent) || (!string.IsNullOrEmpty(userAgent) && !webCrawlers.Any(wc => userAgent.Contains(wc, StringComparer.OrdinalIgnoreCase))))
+                            await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", userAgent)).ConfigureAwait(false);
                     }
 
                     ViewBag.Url = url;
@@ -170,7 +179,7 @@ namespace Octopurls
             {
                 fields.AddRange(
                     extraFields
-                        .Where(field => field.value != null)
+                        .Where(field => !string.IsNullOrEmpty(field.value))
                         .Select(field =>
                             new Field
                             {
