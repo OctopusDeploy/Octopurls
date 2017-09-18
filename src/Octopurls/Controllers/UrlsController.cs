@@ -7,10 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Octopurls.Models;
-using Newtonsoft.Json.Serialization;
 using System.Reflection;
 using Microsoft.Extensions.Logging;
 
