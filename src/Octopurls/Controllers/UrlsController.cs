@@ -22,10 +22,6 @@ namespace Octopurls
         readonly ILogger logger;
         readonly Redirects redirects;
         readonly SlackSettings slackSettings;
-        readonly string[] urlsToIgnore = {
-            "favicon.ico",
-            "robots.txt"
-        };
         readonly WebCrawlers webCrawlers;
 
         public UrlsController(Redirects redirects, IOptions<WebCrawlers> webCrawlersAccessor, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
@@ -64,8 +60,6 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
-            if (urlsToIgnore.Contains(url, StringComparer.OrdinalIgnoreCase)) return NoContent();
-
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
             {
