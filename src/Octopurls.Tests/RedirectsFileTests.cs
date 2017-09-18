@@ -39,7 +39,7 @@ namespace Octopurls.Tests
         // `missing` is used for customers to send feedback on how/where
         // they encountered a missing link
         [Fact]
-        public void CheckThatRedirectsFileDoesNotContainEntryForMissing()
+        public void CheckThatRedirectsFileDoesNotContainEntryForFeedback()
         {
             Assert.False(
                 redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "feedback").Any(),
