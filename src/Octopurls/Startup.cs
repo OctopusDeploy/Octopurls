@@ -38,6 +38,7 @@ namespace Octopurls
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<SlackSettings>(Configuration.GetSection("Slack"));
+            services.Configure<WebCrawlers>(Configuration.GetSection("WebCrawlers"));
             services.AddSingleton(_ => Redirects);
 
             services.AddMvc();

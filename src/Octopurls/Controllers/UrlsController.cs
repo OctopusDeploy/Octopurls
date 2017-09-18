@@ -26,17 +26,13 @@ namespace Octopurls
             "favicon.ico",
             "robots.txt"
         };
+        readonly WebCrawlers webCrawlers;
 
-        readonly string[] webCrawlers =
+        public UrlsController(Redirects redirects, IOptions<WebCrawlers> webCrawlersAccessor, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
         {
-            "YandexBot",
-            "GarlikCrawler"
-        };
-
-        public UrlsController(Redirects redirects, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
-        {
-            this.logger = loggerFactory.CreateLogger("Octopurls.UrlsController");
+            logger = loggerFactory.CreateLogger("Octopurls.UrlsController");
             this.redirects = redirects;
+            webCrawlers = webCrawlersAccessor.Value;
             slackSettings = slackSettingsAccessor.Value;
         }
 
