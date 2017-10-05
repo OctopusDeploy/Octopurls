@@ -1,0 +1,27 @@
+﻿@model Octopurls.Redirects
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Octopurls</title>
+</head>
+<body>
+<div>
+      @foreach (var redirect in Model.Urls)
+      {
+          var octoLink = $"https://g.octopushq.com/{redirect.Key}";
+
+          <div class="key">@redirect.Key</div>
+          <div class="link"><a href="@octoLink">@octoLink</a>
+          </div>
+          <div class="link"><a href="@redirect.Value">@redirect.Value</a>
+          </div>
+      }
+</div>
+</body>
+</html>

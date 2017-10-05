@@ -33,7 +33,7 @@ namespace Octopurls
         [HttpGet("")]
         public IActionResult Get()
         {
-            return new RedirectResult("https://octopus.com");
+            return View("index", redirects);
         }
 
         [HttpGet("ping")]
