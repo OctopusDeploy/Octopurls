@@ -33,7 +33,7 @@ namespace Octopurls
         [HttpGet("")]
         public IActionResult Get()
         {
-            return View("index", redirects);
+            return new RedirectResult("https://octopus.com");
         }
 
         [HttpGet("ping")]
@@ -58,6 +58,9 @@ namespace Octopurls
         [HttpGet("{url}")]
         public async Task<IActionResult> Get(string url)
         {
+            if (url == "index")
+                return View("index", redirects);
+
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
             {

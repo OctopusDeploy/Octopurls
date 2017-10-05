@@ -15,35 +15,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Link</th>
-            <th></th>
-            <th>Redirect</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container">
+    <h1>Octopurls Index</h1>
     @foreach (var redirect in Model.Urls.OrderBy(x => x.Key))
     {
         var octoLink = $"https://g.octopushq.com/{redirect.Key}";
+        var urlText = redirect.Value;
 
-        <tr>
-            <td>@redirect.Key</td>
-            <td>
-                <a id="@redirect.Key" href="@octoLink">@octoLink</a>
-            </td>
-            <td>
+        <div class="row">
+            <div class="col-sm-2">
                 <button class="btn btn-default" onclick="copyToClipboard('#@redirect.Key')">Copy</button>
-            </td>
-            <td>
-                <a href="@redirect.Value">@redirect.Value</a>
-            </td>
-        </tr>
+            </div>
+            <div class="col-sm-4">
+                <a id="@redirect.Key" href="@octoLink">@redirect.Key</a>
+            </div>
+            <div class="col-sm-auto text-truncate">
+                @if (redirect.Value.Length > 50)
+                {
+                    urlText = redirect.Value.Substring(0, 50) + "...";
+                }
+                <a href="@redirect.Value" alt="@redirect.Value">@urlText</a>
+            </div>
+        </div>
     }
-    </tbody>
-</table>
+</div>
 </body>
 </html>
 
