@@ -9,19 +9,34 @@
 <html>
 <head>
     <title>Octopurls</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<div>
-      @foreach (var redirect in Model.Urls)
-      {
-          var octoLink = $"https://g.octopushq.com/{redirect.Key}";
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Link</th>
+            <th>Redirect</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var redirect in Model.Urls.OrderBy(x => x.Key))
+    {
+        var octoLink = $"https://g.octopushq.com/{redirect.Key}";
 
-          <div class="key">@redirect.Key</div>
-          <div class="link"><a href="@octoLink">@octoLink</a>
-          </div>
-          <div class="link"><a href="@redirect.Value">@redirect.Value</a>
-          </div>
-      }
-</div>
+        <tr>
+            <td>@redirect.Key</td>
+            <td>
+                <a href="@octoLink">@octoLink</a>
+            </td>
+            <td>
+                <a href="@redirect.Value">@redirect.Value</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
 </body>
 </html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
