@@ -210,5 +210,6 @@
   "ClusteredListeningTentacles": "https://octopus.com/docs/patterns/clustered-listening-tentacles",
   "LargeLogs": "https://octopus.com/docs/deploying-applications/performance#task-logs",
   "ConfigurationVariables": "https://octopus.com/docs/deploying-applications/configuration-files#Configurationfiles-ConfigurationVariablesConfigurationvariables",
+  "UserVariablesOverridingStepVariables", "https://github.com/OctopusDeploy/Issues/issues/2126"
   "JavaAppDeploy": "https://octopus.com/docs/deploying-applications/deploy-java-applications"
 }
