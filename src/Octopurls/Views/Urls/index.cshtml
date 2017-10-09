@@ -1,0 +1,58 @@
+﻿@model Octopurls.Redirects
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Octopurls</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <style>
+        .copy {
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Octopurls Index</h1>
+    @foreach (var redirect in Model.Urls.OrderBy(x => x.Key))
+    {
+        var octoLink = $"https://g.octopushq.com/{redirect.Key}";
+        var urlText = redirect.Value;
+
+        <div class="row" style="min-height: 30px">
+            <div class="col-sm-6">
+                <p id="@redirect.Key" hidden>@octoLink</p>
+                <a href="@octoLink">@redirect.Key</a>
+                <a onclick="copyToClipboard('#@redirect.Key')"><img class="copy" src="/images/copy.png"/></a>
+            </div>
+            <div class="col-sm-auto text-truncate">
+                @if (redirect.Value.Length > 50)
+                {
+                    urlText = redirect.Value.Substring(0, 50) + "...";
+                }
+                <a href="@redirect.Value" alt="@redirect.Value">@urlText</a>
+            </div>
+        </div>
+    }
+</div>
+</body>
+</html>
+
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
