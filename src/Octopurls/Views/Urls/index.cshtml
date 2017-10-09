@@ -13,6 +13,12 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <style>
+        .copy {
+            cursor: pointer
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -22,12 +28,11 @@
         var octoLink = $"https://g.octopushq.com/{redirect.Key}";
         var urlText = redirect.Value;
 
-        <div class="row">
-            <div class="col-sm-2">
-                <button class="btn btn-default" onclick="copyToClipboard('#@redirect.Key')">Copy</button>
-            </div>
-            <div class="col-sm-4">
-                <a id="@redirect.Key" href="@octoLink">@redirect.Key</a>
+        <div class="row" style="min-height: 30px">
+            <div class="col-sm-6">
+                <p id="@redirect.Key" hidden>@octoLink</p>
+                <a href="@octoLink">@redirect.Key</a>
+                <a onclick="copyToClipboard('#@redirect.Key')"><img class="copy" src="/images/copy.png"/></a>
             </div>
             <div class="col-sm-auto text-truncate">
                 @if (redirect.Value.Length > 50)
