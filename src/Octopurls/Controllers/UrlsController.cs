@@ -59,7 +59,10 @@ namespace Octopurls
         public async Task<IActionResult> Get(string url)
         {
             if (url == "index")
+            {
+                ViewData["OctopurlsVersion"] = GetInformationalVersion();
                 return View("index", redirects);
+            }
 
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
             try
