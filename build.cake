@@ -110,7 +110,10 @@ Task("DotNetCorePublish")
             Framework = "netcoreapp2.0",
             Configuration = configuration,
             OutputDirectory = publishDir,
-            ArgumentCustomization = args => args.Append("--verbosity normal")
+            ArgumentCustomization = args => args
+                .Append($"/p:Version={nugetVersion}")
+                .Append($"/p:InformationalVersion={gitVersionInfo.InformationalVersion}")
+                .Append("--verbosity normal")
         });
     });
 
