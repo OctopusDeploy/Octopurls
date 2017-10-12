@@ -112,6 +112,7 @@
   "DeployingToTransientTargets": "https://octopus.com/docs/guides/elastic-and-transient-environments/deploying-to-transient-targets",
   "DockerGuide": "https://octopus.com/docs/guides/docker",
   "DockerRegistries": "https://octopus.com/docs/deploying-applications/docker-containers/docker-registries-as-feeds",
+  "DockerPullingFromADifferentRegistry": "https://docs.docker.com/engine/reference/commandline/pull/#/pulling-from-a-different-registry",
   "AutomaticDeploymentTriggers": "https://octopus.com/docs/deploying-applications/automatic-deployment-triggers",
   "AuthenticationProviders": "http://docs.octopus.com/display/OD/Authentication+Providers",
   "VersioningInOctopusDeploy": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
