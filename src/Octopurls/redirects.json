@@ -105,7 +105,7 @@
   "ServerExtensionsCustomising": "https://octopus.com/docs/guides/server-extensibility/customising-an-octopus-deploy-server-extension",
   "ServerExtensionsInstalling": "https://octopus.com/docs/guides/server-extensibility/installing-a-custom-server-extension",
   "CommunityLibrary": "http://library.octopusdeploy.com",
-  "CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE",
+  "CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE.txt",
   "CommunityContributedStepTemplates": "https://octopus.com/docs/deploying-applications/step-templates",
   "CommunityContributedStepTemplatesTroubleshooting": "https://octopus.com/docs/administration/octopus-community-step-templates-integration",
   "WindowsManagementFramework3Download": "https://www.microsoft.com/en-us/download/details.aspx?id=34595",
