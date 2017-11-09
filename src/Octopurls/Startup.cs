@@ -19,7 +19,7 @@ namespace Octopurls
             Configuration = configuration;
 
             var redirectsPath = Path.Combine(Directory.GetCurrentDirectory(), "redirects.json");
-            using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
+            using (var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
                 Redirects = new Redirects
@@ -27,11 +27,16 @@ namespace Octopurls
                     Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase)
                 };
             }
+
+            JsonConvert.DefaultSettings = () => new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented
+            };
         }
 
         public IConfiguration Configuration { get; set; }
 
-        public Redirects Redirects {get; private set;}
+        public Redirects Redirects { get; private set; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -44,7 +49,7 @@ namespace Octopurls
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            if(env.IsDevelopment())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }

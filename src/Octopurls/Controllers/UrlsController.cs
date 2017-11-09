@@ -73,7 +73,7 @@ namespace Octopurls
                     string redirectUrl;
                     if (Request.Query.Count <= 0)
                     {
-                         redirectUrl = tmpRedirectUrl;
+                        redirectUrl = tmpRedirectUrl;
                     }
                     else
                     {
@@ -93,19 +93,19 @@ namespace Octopurls
                 try
                 {
                     var fuzzy = Fuzzy.Search(url, redirects.Urls.Keys.ToList());
-                    var suggestions = redirects.Urls.Where(u=>fuzzy.Contains(u.Key)).ToDictionary(s=>s.Key, s=>s.Value);
+                    var suggestions = redirects.Urls.Where(u => fuzzy.Contains(u.Key)).ToDictionary(s => s.Key, s => s.Value);
 
-                    if(!suggestions.Any())
+                    if (!suggestions.Any())
                     {
                         var userAgent = Request.Headers["User-Agent"][0];
-                        if(!string.IsNullOrEmpty(userAgent) && !webCrawlers.Any(wc => userAgent.ToLowerInvariant().Contains(wc.ToLowerInvariant())))
+                        if (!string.IsNullOrEmpty(userAgent) && !webCrawlers.Any(wc => userAgent.ToLowerInvariant().Contains(wc.ToLowerInvariant())))
                             await SendMissingUrlNotification(url, kne, ("Referer", Request.Headers["Referer"]), ("UserAgent", userAgent)).ConfigureAwait(false);
                     }
 
                     ViewBag.Url = url;
                     return View("404", suggestions);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     logger.LogError(ex, "An unexpected error occurred");
                     return BadRequest(ex);
@@ -113,9 +113,15 @@ namespace Octopurls
             }
         }
 
+        [HttpGet("All")]
+        public ContentResult GetAllUrLs()
+        {
+            return Content(JsonConvert.SerializeObject(redirects.Urls), "application/json");
+        }
+
         private async Task SendFeedbackNotification(string url, string message)
         {
-            if(!String.IsNullOrWhiteSpace(slackSettings.WebhookURL) && !String.IsNullOrWhiteSpace(message))
+            if (!String.IsNullOrWhiteSpace(slackSettings.WebhookURL) && !String.IsNullOrWhiteSpace(message))
             {
                 try
                 {
@@ -215,7 +221,7 @@ namespace Octopurls
 
         private IEnumerable<Field> GetOctopurlsEnvironmentDetails()
         {
-            return new [] {
+            return new[] {
                 new Field { Title = "Octopurls version", Value = GetInformationalVersion(), Short = true},
                 new Field { Title = "Octopurls environment", Value = slackSettings.AppEnvironment, Short = true}
             };
