@@ -58,6 +58,7 @@
   "SecurityAndEncryption": "https://octopus.com/docs/reference/security-and-encryption",
   "NuGetVersioning": "https://docs.nuget.org/create/versioning",
   "MavenVersioning": "https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html",
+  "MavenVersionParser": "http://www.mojohaus.org/build-helper-maven-plugin/parse-version-mojo.html",
   "ChannelVersionRules": "https://octopus.com/docs/key-concepts/projects/channels#Channels-versionrules",
   "ChannelVersionRuleTags": "https://octopus.com/docs/key-concepts/projects/channels#Channels-tags",
   "SupportedPackages": "https://octopus.com/docs/packaging-applications/supported-packages",
