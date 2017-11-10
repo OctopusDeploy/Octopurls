@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Reflection;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,14 +19,21 @@ namespace Octopurls
         {
             Configuration = configuration;
 
-            var redirectsPath = Path.Combine(Directory.GetCurrentDirectory(), "redirects.json");
-            using (var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "Octopurls.redirects.json";
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
             {
-                var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
-                Redirects = new Redirects
+                using (StreamReader reader = new StreamReader(stream))
                 {
-                    Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase)
-                };
+                    string result = reader.ReadToEnd();
+
+                    var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(result);
+                    Redirects = new Redirects
+                    {
+                        Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase)
+                    };
+                }
             }
 
             JsonConvert.DefaultSettings = () => new JsonSerializerSettings
