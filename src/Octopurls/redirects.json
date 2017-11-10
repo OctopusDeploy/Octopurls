@@ -220,5 +220,6 @@
   "v4Testing": "https://docs.google.com/forms/d/e/1FAIpQLSeyjG0tXhtBjoANTlwZjNidsWsUhjGje41KSf1Tg2X0HbUqIg/viewform",
   "v4TestingInOctopusHQ": "https://docs.google.com/forms/d/e/1FAIpQLSc9hopatJqp0q6Zv5Ae0EIAMhsepxNRPOb0-txlTK-PoSkcAA/viewform",
   "GuidedFailures": "https://octopus.com/docs/deploying-applications/guided-failures",
-  "OctoexeTroubleshooting": "https://octopus.com/docs/api-and-integration/troubleshooting-integrations-with-build-servers"
+  "OctoexeTroubleshooting": "https://octopus.com/docs/api-and-integration/troubleshooting-integrations-with-build-servers",
+  "ConfigureCommand": "https://octopus.com/docs/api-and-integration/octopus.server.exe-command-line/configure"
 }
