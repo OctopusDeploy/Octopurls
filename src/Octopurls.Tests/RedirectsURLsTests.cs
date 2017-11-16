@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Octopurls.Tests
@@ -11,14 +12,26 @@ namespace Octopurls.Tests
         [Fact]
         public void TestRedirectsURLs()
         {
-            foreach (var redirect in redirects.Urls)
+            var badURLs = new List<string>();
+
+            Parallel.ForEach(redirects.Urls, (url) =>
             {
-                var url = redirect.Value;
-                Assert.True(
-                    TestURL(url),
-                    $"Couldn't reach [{url}]"
-                    );
+                if (TestURL(url.Value) == false)
+                {
+                    badURLs.Add(url.Value);
+                }
+            });
+
+            if (badURLs.Any())
+            {
+                Console.WriteLine("The bad urls are:");
+                foreach (var badUrL in badURLs)
+                {
+                    Console.WriteLine($"{badUrL}");
+                }
             }
+
+            Assert.Equal(0, badURLs.Count);
         }
 
         [Fact]
