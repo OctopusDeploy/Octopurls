@@ -10,7 +10,7 @@ namespace Octopurls.Tests
     public class RedirectsURLsTests : OctopurlTest
     {
         [Fact]
-        public void TestRedirectsURLs()
+        public void ParallelForeachTestRedirectsURLs()
         {
             var badURLs = new List<string>();
 
@@ -32,6 +32,30 @@ namespace Octopurls.Tests
             }
 
             Assert.Equal(0, badURLs.Count);
+        }
+
+        [Fact]
+        public void PLinqTestRedirectsURLs()
+        {
+
+            var badURLs = new List<string>();
+
+            var query = from url in redirects.Urls.AsParallel().AsOrdered()
+                where TestURL(url.Value) == false
+                select url.Value;
+
+            badURLs.AddRange(query.ToList());
+
+            if (badURLs.Any())
+            {
+                Console.WriteLine("The bad urls are:");
+                foreach (var badUrL in badURLs)
+                {
+                    Console.WriteLine($"{badUrL}");
+                }
+            }
+
+            Assert.Equal(0, badURLs.Count());
         }
 
         [Fact]
