@@ -63,21 +63,17 @@ namespace Octopurls.Tests
             }
             catch (WebException e)
             {
-                var statusCode = (e.Response as HttpWebResponse)?.StatusCode.ToString();
+                var statusCode = (int)(e.Response as HttpWebResponse)?.StatusCode;
 
                 Console.WriteLine($"[{method}] call for [{url}] Status code was: [{statusCode}]");
 
-                if (acceptedStatusCodesOver400.Contains(statusCode))
-                {
-                    return true;
-                }
-                return false;
+                return acceptedStatusCodesOver400.Contains(statusCode);
             }
         }
 
-        private readonly List<string> acceptedStatusCodesOver400 = new List<string>()
+        private readonly List<int> acceptedStatusCodesOver400 = new List<int>()
         {
-            "403" //Some sites return 403 like carreers.stackOverflow if the job post has already been closed. The site still redirects user to a valid page.
+            403 //Some sites return 403 like carreers.stackOverflow if the job post has already been closed. The site still redirects user to a valid page.
         };
 
         private bool ValidateResponse(HttpWebResponse response)
