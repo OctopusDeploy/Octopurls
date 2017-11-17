@@ -58,20 +58,20 @@ namespace Octopurls.Tests
             {
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 {
-                    return ValidateResponse(response);
+                    return ValidateResponse(response,url);
                 }
             }
             catch (WebException e)
             {
-                var httpStatusCode = (e.Response as HttpWebResponse)?.StatusCode;
+                var response = (HttpWebResponse)e.Response;
 
-                if (httpStatusCode == null) return false;
+                if (response == null)
+                {
+                    Console.WriteLine($"Failure - [{method}] call to URL [{url}] returned message [{Environment.NewLine}{e.Message}]");
+                    return false;
+                }
 
-                var statusCode = (int)httpStatusCode;
-
-                Console.WriteLine($"[{method}] call for [{url}] Status code was: [{statusCode}]");
-
-                return acceptedStatusCodesOver400.Contains(statusCode);
+                return ValidateResponse(response,url);
             }
         }
 
@@ -80,15 +80,17 @@ namespace Octopurls.Tests
             403 //Some sites return 403 like carreers.stackOverflow if the job post has already been closed. The site still redirects user to a valid page.
         };
 
-        private bool ValidateResponse(HttpWebResponse response)
+        private bool ValidateResponse(HttpWebResponse response,string url)
         {
-            if ((int)response.StatusCode >= 400)
+            var statusCode = (int) response.StatusCode;
+
+            if (statusCode >= 400 && !acceptedStatusCodesOver400.Contains(statusCode))
             {
-                Console.WriteLine($"Failure - URL [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which means its a bad link");
+                Console.WriteLine($"Failure - [{response.Method}] call to URL [{url}] returned status code [{statusCode}]");
                 return false;
             }
 
-            Console.WriteLine($"Success - URL [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which is cool");
+            Console.WriteLine($"Success - [{response.Method}] call to URL [{url}] returned status code [{statusCode}] which is OK");
             return true;
         }
     }
