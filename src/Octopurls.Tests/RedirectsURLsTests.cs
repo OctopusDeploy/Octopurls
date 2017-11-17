@@ -10,32 +10,19 @@ namespace Octopurls.Tests
     public class RedirectsURLsTests : OctopurlTest
     {
         [Fact]
-        public void ParallelForeachTestRedirectsURLs()
+        public void AfterMNSLFeedbackPLinqTestRedirectsURLs()
         {
-            var badURLs = new List<string>();
+            var query = from url in redirects.Urls.AsParallel().AsOrdered().WithDegreeOfParallelism(7)
+                where TestURL(url.Value) == false
+                select url.Value;
 
-            Parallel.ForEach(redirects.Urls, (url) =>
-            {
-                if (TestURL(url.Value) == false)
-                {
-                    badURLs.Add(url.Value);
-                }
-            });
+            var badURLs = query.ToList();
 
-            if (badURLs.Any())
-            {
-                Console.WriteLine("The bad urls are:");
-                foreach (var badUrL in badURLs)
-                {
-                    Console.WriteLine($"{badUrL}");
-                }
-            }
-
-            Assert.Equal(0, badURLs.Count);
+            Assert.True(badURLs.Count == 0, $"The bad urls are:{Environment.NewLine}{string.Join(Environment.NewLine, badURLs)}");
         }
 
         [Fact]
-        public void PLinqTestRedirectsURLs()
+        public void BeforeMNSLFeedbackPLinqTestRedirectsURLs()
         {
 
             var badURLs = new List<string>();
