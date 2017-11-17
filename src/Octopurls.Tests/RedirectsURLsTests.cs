@@ -13,7 +13,7 @@ namespace Octopurls.Tests
         public void TestRedirectsURLs()
         {
             var query = from url in redirects.Urls.AsParallel().AsOrdered().WithDegreeOfParallelism(10)
-                where TestURL(url.Value) == false
+                where TestUrl(url.Value) == false
                 select url.Value;
 
             var badURLs = query.ToList();
@@ -25,21 +25,37 @@ namespace Octopurls.Tests
         public void TestURLMethodFailsWithBadURLs()
         {
             var url = "https://totallyABadURL.com/Bad/Bad/Really/Really/Bad";
-            Assert.False(TestURL(url), $"Web request for the fake URL {url} did not fail, but it should have");
+            Assert.False(TestUrl(url), $"Web request for the fake URL {url} did not fail, but it should have");
         }
 
-        private bool TestURL(string url)
+        private bool TestUrl(string url)
+        {
+            //first try a HEAD which is usually faster 
+            if (TestUrl(url, WebRequestMethods.Http.Head))
+            {
+                return true;
+            }
+
+            //Since not all pages support HEAD, then try doing a GET instead which is slower usually
+            if (TestUrl(url, WebRequestMethods.Http.Get))
+            {
+                return true;
+            }
+
+            //if all the above fails, then its a bad URL
+            return false;
+        }
+
+        private bool TestUrl(string url, string method)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Timeout = 15000;
             request.AllowAutoRedirect = true;
             request.UseDefaultCredentials = true;
 
-            request.Method = "HEAD";
-
+            request.Method = method;
             try
             {
-                //First trying with a HEAD request
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 {
                     return ValidateResponse(response);
@@ -47,43 +63,20 @@ namespace Octopurls.Tests
             }
             catch (WebException e)
             {
-                try
+                var statusCode = (e.Response as HttpWebResponse)?.StatusCode.ToString();
+
+                if (acceptedStatusCodesOver400.Contains(statusCode))
                 {
-                    HttpWebRequest secondrequest = (HttpWebRequest)WebRequest.Create(url);
-                    secondrequest.Timeout = 15000;
-                    secondrequest.AllowAutoRedirect = true;
-                    secondrequest.UseDefaultCredentials = true;
-
-                    secondrequest.Method = "GET";
-
-                    //If the request for HEAD fails, try GET which is a bit more expensive. Lots of Microsoft links for some reason blow up doing a HEAD, but succeed with GET
-                    using (HttpWebResponse response = (HttpWebResponse)secondrequest.GetResponse())
-                    {
-                        return ValidateResponse(response);
-                    }
-
+                    Console.WriteLine($"Success - URL [{url}] returned status code [{statusCode}] which is in the list of accepted codes over 400");
+                    return true;
                 }
 
-                //If both HEAD and GET fail, then its definitely a bad URL 
-                catch (WebException exception)
-                {
-                    //In this case the WebException doesn't return the status code, so we need to read it from the exception.Message
-                    foreach (var code in _acceptedStatusCodesOver400)
-                    {
-                        if (exception.Message.Contains(code))
-                        {
-                            Console.WriteLine($"Success - Url [{url}] returned status code [{code}] which is in the list of accepted codes over 400");
-                            return true;
-                        }
-                    }
-
-                    Console.WriteLine($"Failure - URL [{url}] returned error [{exception.Message}]");
-                    return false;
-                }
+                Console.WriteLine($"Failure - URL [{url}] returned error [{e.Message}]");
+                return false;
             }
         }
 
-        private readonly List<string> _acceptedStatusCodesOver400 = new List<string>()
+        private readonly List<string> acceptedStatusCodesOver400 = new List<string>()
         {
             "403" //Some sites return 403 like carreers.stackOverflow if the job post has already been closed. The site still redirects user to a valid page.
         };
@@ -92,11 +85,11 @@ namespace Octopurls.Tests
         {
             if ((int)response.StatusCode >= 400)
             {
-                Console.WriteLine($"Failure - Url [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which means its a bad link");
+                Console.WriteLine($"Failure - URL [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which means its a bad link");
                 return false;
             }
 
-            Console.WriteLine($"Success - Url [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which is cool");
+            Console.WriteLine($"Success - URL [{response.ResponseUri}] returned status code [{(int)response.StatusCode}] which is cool");
             return true;
         }
     }
