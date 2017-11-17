@@ -63,7 +63,11 @@ namespace Octopurls.Tests
             }
             catch (WebException e)
             {
-                var statusCode = (int)(e.Response as HttpWebResponse)?.StatusCode;
+                var httpStatusCode = (e.Response as HttpWebResponse)?.StatusCode;
+
+                if (httpStatusCode == null) return false;
+
+                var statusCode = (int)httpStatusCode;
 
                 Console.WriteLine($"[{method}] call for [{url}] Status code was: [{statusCode}]");
 
