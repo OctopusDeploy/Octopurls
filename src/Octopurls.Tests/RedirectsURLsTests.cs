@@ -12,7 +12,7 @@ namespace Octopurls.Tests
         [Fact]
         public void AfterMNSLFeedbackPLinqTestRedirectsURLs()
         {
-            var query = from url in redirects.Urls.AsParallel().AsOrdered().WithDegreeOfParallelism(7)
+            var query = from url in redirects.Urls.AsParallel().AsOrdered()
                 where TestURL(url.Value) == false
                 select url.Value;
 
