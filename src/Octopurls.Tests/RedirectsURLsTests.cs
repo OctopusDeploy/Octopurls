@@ -65,13 +65,12 @@ namespace Octopurls.Tests
             {
                 var statusCode = (e.Response as HttpWebResponse)?.StatusCode.ToString();
 
+                Console.WriteLine($"Status code is: {statusCode}");
+
                 if (acceptedStatusCodesOver400.Contains(statusCode))
                 {
-                    Console.WriteLine($"Success - URL [{url}] returned status code [{statusCode}] which is in the list of accepted codes over 400");
                     return true;
                 }
-
-                Console.WriteLine($"Failure - URL [{url}] returned error [{e.Message}]");
                 return false;
             }
         }
