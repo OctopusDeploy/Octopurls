@@ -24,7 +24,7 @@ namespace Octopurls.Tests
         [Fact]
         public void TestURLMethodFailsWithBadURLs()
         {
-            var url = "https://steam.com/purchase/HalfLife2Ep3";
+            var url = "https://totallyABadURL.com/Bad/Bad/Really/Really/Bad";
             Assert.False(TestURL(url), $"Web request for the fake URL {url} did not fail, but it should have");
         }
 
