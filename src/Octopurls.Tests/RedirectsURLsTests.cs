@@ -65,7 +65,7 @@ namespace Octopurls.Tests
             {
                 var statusCode = (e.Response as HttpWebResponse)?.StatusCode.ToString();
 
-                Console.WriteLine($"Status code is: {statusCode}");
+                Console.WriteLine($"[{method}] call for [{url}] Status code was: [{statusCode}]");
 
                 if (acceptedStatusCodesOver400.Contains(statusCode))
                 {
