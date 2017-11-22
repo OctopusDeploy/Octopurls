@@ -223,5 +223,6 @@
   "GuidedFailures": "https://octopus.com/docs/deploying-applications/guided-failures",
   "OctoexeTroubleshooting": "https://octopus.com/docs/api-and-integration/troubleshooting-integrations-with-build-servers",
   "ConfigureCommand": "https://octopus.com/docs/api-and-integration/octopus.server.exe-command-line/configure",
-  "Channels": "https://octopus.com/docs/key-concepts/projects/channels"
+  "Channels": "https://octopus.com/docs/key-concepts/projects/channels",
+  "TenantsAndChannels": "https://octopus.com/docs/guides/multi-tenant-deployments/multi-tenant-deployment-guide/designing-a-multi-tenant-upgrade-process#Designingamulti-tenantupgradeprocess-Usingchannelsandtenanttagstorestricttestreleasestothetestteam"
 }
