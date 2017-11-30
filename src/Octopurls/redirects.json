@@ -66,7 +66,7 @@
   "NewAzureResourceGroupPowerShell": "https://msdn.microsoft.com/en-us/library/mt603739.aspx",
   "DocumentationCreatingAzureAccount": "https://octopus.com/docs/guides/azure-deployments/creating-an-azure-account",
   "AzureServiceManagementCmdlets": "https://msdn.microsoft.com/en-us/library/dn708504.aspx",
-  "AzureResourceManagerCmdlets": "https://msdn.microsoft.com/en-us/library/mt125356.aspx",
+  "AzureResourceManagerCmdlets": "https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.0.0&viewFallbackFrom=azurermps-4.0.0",
   "FIPS": "https://octopus.com/docs/reference/fips-and-octopus-deploy",
   "StandaloneScripts": "https://octopus.com/docs/deploying-applications/custom-scripts/standalone-scripts",
   "WhatIsEAP": "https://octopus.com/downloads/compare",
