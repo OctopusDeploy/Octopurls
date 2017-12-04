@@ -178,6 +178,7 @@
   "OnboardingFeedsMyGetLearnMore": "http://www.myget.org/",
   "OnboardingFeedsVstsLearnMore": "https://www.visualstudio.com/en-us/docs/package/overview",
   "OnboardingVersioningLearnMore": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
+  "OnboardingFeedsMavenLearnMore": "https://octopus.com/docs/deploying-applications/maven-feeds",
   "OctopusTweetNow": "https://twitter.com/intent/tweet",
   "StepTemplateUpdate": "https://octopus.com/docs/deploying-applications/step-templates/updating-step-templates",
   "ServiceFabricGuide" : "https://octopus.com/docs/guides/service-fabric/",
