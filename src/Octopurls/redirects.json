@@ -226,5 +226,6 @@
   "ConfigureCommand": "https://octopus.com/docs/api-and-integration/octopus.server.exe-command-line/configure",
   "Channels": "https://octopus.com/docs/key-concepts/projects/channels",
   "TenantsAndChannels": "https://octopus.com/docs/guides/multi-tenant-deployments/multi-tenant-deployment-guide/designing-a-multi-tenant-upgrade-process#Designingamulti-tenantupgradeprocess-Usingchannelsandtenanttagstorestricttestreleasestothetestteam",
-  "ManagingConfig": "https://octopus.com/docs/administration/server-configuration/managing-configuration"
+  "ManagingConfig": "https://octopus.com/docs/administration/server-configuration/managing-configuration",
+  "CommunityStepTemplates": "https://octopus.com/docs/deploying-applications/deployment-process/steps/community-step-templates"
 }
