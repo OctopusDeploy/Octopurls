@@ -229,5 +229,6 @@
   "ManagingConfig": "https://octopus.com/docs/administration/server-configuration/managing-configuration",
   "AwsCloudFormationDeploy": "https://octopus.com/docs/deploying-applications/aws-deployments/cloudformation",
   "CommunityStepTemplates": "https://octopus.com/docs/deploying-applications/deployment-process/steps/community-step-templates",
-  "DiagnosingAzureExtensionTentacle": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues"
+  "DiagnosingAzureExtensionTentacle": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues",
+  "AWSRegions": "https://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region"
 }
