@@ -232,5 +232,6 @@
   "DiagnosingAzureExtensionTentacle": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues",
   "AWSRegions": "https://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region",
   "AwsAccounts": "https://octopus.com/docs/infrastructure/aws/creating-an-aws-account",
-  "AwsDocsManagingAccessKeys": "https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html"
+  "AwsDocsManagingAccessKeys": "https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html",
+  "AwsDocsControllingIAM": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#capabilities"
 }
