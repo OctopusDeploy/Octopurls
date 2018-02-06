@@ -233,5 +233,6 @@
   "AWSRegions": "https://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region",
   "AwsAccounts": "https://octopus.com/docs/infrastructure/aws/creating-an-aws-account",
   "AwsDocsManagingAccessKeys": "https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html",
-  "AwsDocsControllingIAM": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities"
+  "AwsDocsControllingIAM": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities",
+  "AwsDocsRolesTermsAndConcepts": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html"
 }
