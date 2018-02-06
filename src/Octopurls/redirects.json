@@ -234,5 +234,7 @@
   "AwsAccounts": "https://octopus.com/docs/infrastructure/aws/creating-an-aws-account",
   "AwsDocsManagingAccessKeys": "https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html",
   "AwsDocsControllingIAM": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities",
+  "DeployReleaseStep": "https://octopus.com/docs/deployment-process/coordinating-multiple-projects/deploy-release-step",
+  "DeployReleaseStepVariables": "https://octopus.com/docs/deployment-process/coordinating-multiple-projects/deploy-release-step#variables",
   "AwsDocsRolesTermsAndConcepts": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html"
 }
