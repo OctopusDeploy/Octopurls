@@ -1,5 +1,5 @@
 {
-  "SQLServer": "https://octopus.com/docs/installation/sql-server-database-requirements",
+  "SQLServer": "https://octopus.com/docs/installation/sql-server-database",
   "MigrateData": "https://octopus.com/docs/administration/data-migration",
   "DataMigration": "https://octopus.com/docs/administration/data-migration",
   "BackupRestore": "https://octopus.com/docs/administration/backup-and-restore",
@@ -156,7 +156,7 @@
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/infrastructure",
   "OnboardingAccountsLearnMore": "https://octopus.com/docs/infrastructure/environments/accounts",
   "OnboardingPackagesLearnMore": "https://octopus.com/docs/packaging-applications",
-  "OnboardingPackageRepositoriesLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories",  
+  "OnboardingPackageRepositoriesLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories",
   "OnboardingProjectsLearnMore": "https://octopus.com/docs/deployment-process/projects",
   "OnboardingDeploymentProcessLearnMore": "https://octopus.com/docs/deployment-process",
   "OnboardingAddStepsLearnMore": "https://octopus.com/docs/deployment-process/steps",
