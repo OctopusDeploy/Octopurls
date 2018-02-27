@@ -49,7 +49,7 @@
   "ProductHomePage": "http://octopusdeploy.com/",
   "HowDoIGetALicense": "http://octopusdeploy.com/purchase",
   "NuGetPackageHostingOptions": "https://octopus.com/docs/packaging-applications",
-  "WhatIsIncludedInAnonymousUsageStatistics": "https://octopus.com/docs/administration/security/outbound-requests",
+  "WhatIsIncludedInUsageStatistics": "https://octopus.com/docs/administration/security/outbound-requests",
   "Suggestions": "https://octopusdeploy.uservoice.com/",
   "TrainingVideos": "http://octopusdeploy.wistia.com/projects/gguvhmqn6b",
   "GettingStarted": "https://octopus.com/docs/getting-started",
