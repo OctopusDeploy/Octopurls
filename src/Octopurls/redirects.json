@@ -237,5 +237,7 @@
   "DeployReleaseStep": "https://octopus.com/docs/deployment-process/coordinating-multiple-projects/deploy-release-step",
   "DeployReleaseStepVariables": "https://octopus.com/docs/deployment-process/coordinating-multiple-projects/deploy-release-step#variables",
   "AwsDocsRolesTermsAndConcepts": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html",
-  "JsonConfigurationVariables": "https://octopus.com/docs/deploying-applications/deploying-asp.net-core-web-applications/json-configuration-variables-feature"
+  "JsonConfigurationVariables": "https://octopus.com/docs/deploying-applications/deploying-asp.net-core-web-applications/json-configuration-variables-feature",
+  "AwsS3CannedAcl": "https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl",
+  "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html"
 }
