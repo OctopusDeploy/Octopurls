@@ -180,6 +180,7 @@
   "OnboardingVersioningLearnMore": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
   "OnboardingFeedsMavenLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories/maven-feeds",
   "OctopusTweetNow": "https://twitter.com/intent/tweet",
+  "PrivacyPolicy": "https://octopus.com/privacy",
   "StepTemplateUpdate": "https://octopus.com/docs/deployment-process/steps/updating-step-templates",
   "ServiceFabricGuide" : "https://octopus.com/docs/deploying-applications/service-fabric/",
   "ServiceFabricPackaging" : "https://octopus.com/docs/deploying-applications/service-fabric/packaging/",
