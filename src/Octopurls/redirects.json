@@ -239,5 +239,6 @@
   "AwsDocsRolesTermsAndConcepts": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html",
   "JsonConfigurationVariables": "https://octopus.com/docs/deploying-applications/deploying-asp.net-core-web-applications/json-configuration-variables-feature",
   "AwsS3CannedAcl": "https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl",
-  "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html"
+  "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html",
+  "AwsS3UsingMetadata": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html"
 }
