@@ -49,9 +49,9 @@
   "ProductHomePage": "http://octopusdeploy.com/",
   "HowDoIGetALicense": "http://octopusdeploy.com/purchase",
   "NuGetPackageHostingOptions": "https://octopus.com/docs/packaging-applications",
-  "WhatIsIncludedInAnonymousUsageStatistics": "https://octopus.com/docs/administration/security/outbound-requests",
+  "WhatIsIncludedInUsageStatistics": "https://octopus.com/docs/administration/security/outbound-requests",
   "Suggestions": "https://octopusdeploy.uservoice.com/",
-  "TrainingVideos": "http://octopusdeploy.wistia.com/projects/gguvhmqn6b",
+  "TrainingVideos": "https://www.youtube.com/watch?v=FOxqnle2bCc&list=PLAGskdGvlaw3Aj25_77wK1BMtIryTye51",
   "GettingStarted": "https://octopus.com/docs/getting-started",
   "Upgrade2To3": "https://octopus.com/docs/administration/upgrading/upgrading-from-octopus-2.6",
   "HighAvailability": "https://octopus.com/docs/administration/high-availability",
@@ -180,6 +180,7 @@
   "OnboardingVersioningLearnMore": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
   "OnboardingFeedsMavenLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories/maven-feeds",
   "OctopusTweetNow": "https://twitter.com/intent/tweet",
+  "PrivacyPolicy": "https://octopus.com/privacy",
   "StepTemplateUpdate": "https://octopus.com/docs/deployment-process/steps/updating-step-templates",
   "ServiceFabricGuide" : "https://octopus.com/docs/deploying-applications/service-fabric/",
   "ServiceFabricPackaging" : "https://octopus.com/docs/deploying-applications/service-fabric/packaging/",
@@ -240,5 +241,6 @@
   "JsonConfigurationVariables": "https://octopus.com/docs/deploying-applications/deploying-asp.net-core-web-applications/json-configuration-variables-feature",
   "AwsS3CannedAcl": "https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl",
   "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html",
-  "AwsS3UsingMetadata": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html"
+  "AwsS3UsingMetadata": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html",
+  "PowerShellModulesVersion": "https://octopus.com/docs/deploying-applications/azure-deployments/running-azure-powershell/configuring-the-version-of-the-azure-powershell-modules"
 }
