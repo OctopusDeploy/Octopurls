@@ -242,5 +242,5 @@
   "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html",
   "PowerShellModulesVersion": "https://octopus.com/docs/deploying-applications/azure-deployments/running-azure-powershell/configuring-the-version-of-the-azure-powershell-modules",
   "PackerManifestPostProcessor": "https://www.packer.io/docs/post-processors/manifest.html",
-  "VariableSyntaxJsonParsing": "https://octopus.com/docs/deployment-process/variables/variable-substitution-syntax#VariableSubstitutionSyntax-JSONParsingjson"
+  "VariableSyntaxJsonParsing": "https://octopus.com/docs/deployment-process/variables/variable-substitution-syntax#VariableSubstitutionSyntax-JSONParsingjson" 
 }
