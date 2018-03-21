@@ -180,7 +180,6 @@
   "OnboardingVersioningLearnMore": "https://octopus.com/docs/packaging-applications/versioning-in-octopus-deploy",
   "OnboardingFeedsMavenLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories/maven-feeds",
   "OctopusTweetNow": "https://twitter.com/intent/tweet",
-  "PrivacyPolicy": "https://octopus.com/privacy",
   "StepTemplateUpdate": "https://octopus.com/docs/deployment-process/steps/updating-step-templates",
   "ServiceFabricGuide" : "https://octopus.com/docs/deploying-applications/service-fabric/",
   "ServiceFabricPackaging" : "https://octopus.com/docs/deploying-applications/service-fabric/packaging/",
@@ -241,6 +240,7 @@
   "JsonConfigurationVariables": "https://octopus.com/docs/deploying-applications/deploying-asp.net-core-web-applications/json-configuration-variables-feature",
   "AwsS3CannedAcl": "https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl",
   "AwsS3StorageClasses": "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html",
-  "AwsS3UsingMetadata": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html",
-  "PowerShellModulesVersion": "https://octopus.com/docs/deploying-applications/azure-deployments/running-azure-powershell/configuring-the-version-of-the-azure-powershell-modules"
+  "PowerShellModulesVersion": "https://octopus.com/docs/deploying-applications/azure-deployments/running-azure-powershell/configuring-the-version-of-the-azure-powershell-modules",
+  "PackerManifestPostProcessor": "https://www.packer.io/docs/post-processors/manifest.html",
+  "VariableSyntaxJsonParsing" : "https://octopus.com/docs/deployment-process/variables/variable-substitution-syntax#VariableSubstitutionSyntax-JSONParsingjson"  
 }
