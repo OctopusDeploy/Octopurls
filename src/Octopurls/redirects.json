@@ -130,7 +130,7 @@
   "PackageDeltaCompression": "https://octopus.com/docs/deployment-process/deploying-packages/delta-compression-for-package-transfers",
   "ExternalGroupsAndRoles": "https://octopus.com/docs/administration/managing-users-and-teams/external-groups-and-roles",
   "TroubleshootingAD": "https://octopus.com/docs/administration/authentication-providers/troubleshooting-active-directory-integration",
-  "ReIndexBuiltInRepository": "http://docs.octopusdeploy.com/display/OD/Built-in+Repository+Reindexing",
+  "ReIndexBuiltInRepository": "https://octopus.com/docs/packaging-applications/package-repositories/built-in-repository-reindexing",
   "VariableSubstitutionSyntax": "https://octopus.com/docs/deployment-process/variables/variable-substitution-syntax#VariableSubstitutionSyntax-ExtendedSyntax",
   "VariableSubstitutionSyntaxExtended": "https://octopus.com/docs/deployment-process/variables/variable-substitution-syntax#VariableSubstitutionSyntax-ExtendedSyntax",
   "LatestPackage": "https://octopus.com/docs/deployment-process/channels#Channels-ManuallyCreatingReleases",
