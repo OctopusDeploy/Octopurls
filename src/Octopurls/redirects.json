@@ -112,6 +112,7 @@
   "CommunityContributedStepTemplates": "https://octopus.com/docs/deployment-process/steps/community-step-templates",
   "CommunityContributedStepTemplatesTroubleshooting": "https://octopus.com/docs/administration/octopus-community-step-templates-integration",
   "WindowsManagementFramework3Download": "https://www.microsoft.com/en-us/download/details.aspx?id=34595",
+  "WindowsManagementFramework5Download": "https://www.microsoft.com/en-us/download/details.aspx?id=50395",
   "IISWebsitesAndApplications": "https://octopus.com/docs/deployment-examples/iis-websites-and-application-pools",
   "DeployingToTransientTargets": "https://octopus.com/docs/infrastructure/environments/elastic-and-transient-environments/deploying-to-transient-targets",
   "DockerGuide": "https://octopus.com/docs/deployment-examples/docker-containers",
