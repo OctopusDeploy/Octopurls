@@ -247,5 +247,7 @@
   "PowerShellModulesVersion": "https://octopus.com/docs/deployment-examples/azure-deployments/running-azure-powershell/configuring-the-version-of-the-azure-powershell-modules",
   "CronExpressions": "https://octopus.com/docs/deployment-process/project-triggers/scheduled-project-trigger#cron-expression",
   "VipSwap": "https://octopus.com/docs/deployment-examples/azure-deployments/cloud-services/vip-swap",
-  "AzureTargets": "https://octopus.com/docs/infrastructure/azure/"
+  "AzureTargets": "https://octopus.com/docs/infrastructure/azure/",
+  "OnboardingWorkersLearnMore": "https://octopus.com/docs/administration/workers",
+  "OnboardingWorkerPoolsLearnMore": "https://octopus.com/docs/administration/workers"
 }
