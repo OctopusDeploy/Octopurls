@@ -249,5 +249,6 @@
   "VipSwap": "https://octopus.com/docs/deployment-examples/azure-deployments/cloud-services/vip-swap",
   "AzureTargets": "https://octopus.com/docs/infrastructure/azure/",
   "OnboardingWorkersLearnMore": "https://octopus.com/docs/administration/workers",
-  "OnboardingWorkerPoolsLearnMore": "https://octopus.com/docs/administration/workers"
+  "OnboardingWorkerPoolsLearnMore": "https://octopus.com/docs/administration/workers",
+  "EnvironmentDynamicInfrastructure": "https://octopus.com/docs/infrastructure/environments#dynamic-targets-in-an-environment"
 }
