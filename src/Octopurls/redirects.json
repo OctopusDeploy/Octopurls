@@ -250,5 +250,6 @@
   "AzureTargets": "https://octopus.com/docs/infrastructure/azure/",
   "OnboardingWorkersLearnMore": "https://octopus.com/docs/administration/workers",
   "OnboardingWorkerPoolsLearnMore": "https://octopus.com/docs/administration/workers",
-  "EnvironmentDynamicInfrastructure": "https://octopus.com/docs/infrastructure/environments#dynamic-targets-in-an-environment"
+  "EnvironmentDynamicInfrastructure": "https://octopus.com/docs/infrastructure/environments#dynamic-targets-in-an-environment",
+  "WorkerPools": "https://octopus.com/docs/infrastructure/workers/worker-pools"
 }
