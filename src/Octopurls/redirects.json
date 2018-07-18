@@ -251,5 +251,6 @@
   "OnboardingWorkersLearnMore": "https://octopus.com/docs/administration/workers",
   "OnboardingWorkerPoolsLearnMore": "https://octopus.com/docs/administration/workers",
   "EnvironmentDynamicInfrastructure": "https://octopus.com/docs/infrastructure/environments#dynamic-targets-in-an-environment",
-  "IANA": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
+  "IANA": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml",
+  "WorkerPools": "https://octopus.com/docs/infrastructure/workers/worker-pools"
 }
