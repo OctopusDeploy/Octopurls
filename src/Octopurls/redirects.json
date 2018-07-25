@@ -269,6 +269,10 @@
   "KubernetesConfigMap": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/",
   "KubernetesConfigMapVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#configmap",
   "KubernetesSecretVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#secret",
-  "KubernetesEmptyDirVoume": "https://kubernetes.io/docs/concepts/storage/volumes/#emptydir",
+  "KubernetesEmptyDirVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#emptydir",
+  "KubernetesHostPathVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#hostpath",
+  "KubernetesPersistentVolumeClaimVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#persistentVolumeClaim",
+  "KubernetesPersistentVolumes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+  "KubernetesAwsEbsVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#awselasticblockstore",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
