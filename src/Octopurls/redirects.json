@@ -274,5 +274,9 @@
   "KubernetesPersistentVolumeClaimVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#persistentVolumeClaim",
   "KubernetesPersistentVolumes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
   "KubernetesAwsEbsVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#awselasticblockstore",
+  "KubernetesPrivateRegistry": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#create-a-secret-in-the-cluster-that-holds-your-authorization-token",
+  "KubernetesInitContainer": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+  "KubernetesCpuUnits": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/#cpu-units",
+  "KubernetesMemoryResource": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
