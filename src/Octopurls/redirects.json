@@ -259,5 +259,6 @@
   "KubernetesPodResource": "https://kubernetes.io/docs/concepts/workloads/pods/pod/",
   "KubernetesReplicaSetResource": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
   "KubernetesContainer": "https://kubernetes.io/docs/concepts/containers/images/",
+  "KubernetesNamespace": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
