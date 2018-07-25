@@ -263,5 +263,6 @@
   "KubernetesLabels": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
   "KubernetesRecreateStrategy": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#recreate-deployment",
   "KubernetesRollingStrategy": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment",
+  "KubernetesProbes": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#define-readiness-probes",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
