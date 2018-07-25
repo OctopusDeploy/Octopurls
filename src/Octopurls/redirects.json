@@ -265,5 +265,10 @@
   "KubernetesRollingStrategy": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment",
   "KubernetesProbes": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#define-readiness-probes",
   "KubernetesVolumes": "https://kubernetes.io/docs/concepts/storage/volumes/",
+  "KubernetesSecretResource": "https://kubernetes.io/docs/concepts/configuration/secret/",
+  "KubernetesConfigMap": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/",
+  "KubernetesConfigMapVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#configmap",
+  "KubernetesSecretVolume": "https://kubernetes.io/docs/concepts/storage/volumes/#secret",
+  "KubernetesEmptyDirVoume": "https://kubernetes.io/docs/concepts/storage/volumes/#emptydir",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
