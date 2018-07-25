@@ -255,5 +255,6 @@
   "WorkerPools": "https://octopus.com/docs/infrastructure/workers/worker-pools",
   "KubernetesDeploymentResource": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
   "KubernetesServiceResource": "https://kubernetes.io/docs/concepts/services-networking/service/",
-  "KubernetesIngressResource": "https://kubernetes.io/docs/concepts/services-networking/ingress/"
+  "KubernetesIngressResource": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
+  "OctopusCloudAccount": "https://octopus.com/account"
 }
