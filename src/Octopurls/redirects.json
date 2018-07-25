@@ -256,5 +256,7 @@
   "KubernetesDeploymentResource": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
   "KubernetesServiceResource": "https://kubernetes.io/docs/concepts/services-networking/service/",
   "KubernetesIngressResource": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
+  "KubernetesPodResource": "https://kubernetes.io/docs/concepts/workloads/pods/pod/",
+  "KubernetesReplicaSetResource": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
