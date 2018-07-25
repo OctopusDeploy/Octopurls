@@ -261,5 +261,7 @@
   "KubernetesContainer": "https://kubernetes.io/docs/concepts/containers/images/",
   "KubernetesNamespace": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
   "KubernetesLabels": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/",
+  "KubernetesRecreateStrategy": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#recreate-deployment",
+  "KubernetesRollingStrategy": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
