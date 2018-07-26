@@ -282,5 +282,9 @@
   "KubernetesCommand": "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/",
   "DockerEntrypoint": "https://docs.docker.com/engine/reference/builder/#entrypoint",
   "DockerCmd": "https://docs.docker.com/engine/reference/builder/#cmd",
+  "NginxIngressController": "https://github.com/kubernetes/ingress-nginx",
+  "GoogleCloudIngressController": "https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer",
+  "AzureIngressController": "https://docs.microsoft.com/en-us/azure/aks/ingress",
+  "AwsIngressController": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
