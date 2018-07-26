@@ -286,5 +286,11 @@
   "GoogleCloudIngressController": "https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer",
   "AzureIngressController": "https://docs.microsoft.com/en-us/azure/aks/ingress",
   "AwsIngressController": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller",
+  "NginxIngressControllerAnnotations": "https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/",
+  "GoogleCloudIngressControllerGithub": "https://github.com/kubernetes/ingress-gce",
+  "AwsAlbAnnotations": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/ingress-resources.md#annotations",
+  "KubernetesAnnotationStringsIssue": "https://github.com/kubernetes/kubernetes/issues/12226",
+  "GoogleCloudIngressFanOut": "https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#step_6_optional_serving_multiple_applications_on_a_load_balancer",
+  "NginxIngressControllerDocs": "https://kubernetes.github.io/ingress-nginx/",
   "OctopusCloudAccount": "https://octopus.com/account"
 }
