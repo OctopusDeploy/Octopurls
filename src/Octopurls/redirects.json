@@ -292,5 +292,11 @@
   "KubernetesAnnotationStringsIssue": "https://github.com/kubernetes/kubernetes/issues/12226",
   "GoogleCloudIngressFanOut": "https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#step_6_optional_serving_multiple_applications_on_a_load_balancer",
   "NginxIngressControllerDocs": "https://kubernetes.github.io/ingress-nginx/",
-  "OctopusCloudAccount": "https://octopus.com/account"
+  "OctopusCloudAccount": "https://octopus.com/account",
+  "OpenSSLWindows": "https://slproweb.com/products/Win32OpenSSL.html",
+  "AWSEKSKubectl": "https://docs.aws.amazon.com/eks/latest/userguide/configure-kubectl.html",
+  "AWSEKS": "https://aws.amazon.com/eks/",
+  "KubernetesAuthentication": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/",
+  "KubernetesQuotas": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+  "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
 }
