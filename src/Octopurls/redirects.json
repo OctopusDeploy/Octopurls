@@ -298,5 +298,6 @@
   "AWSEKS": "https://aws.amazon.com/eks/",
   "KubernetesAuthentication": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/",
   "KubernetesQuotas": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
-  "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
+  "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+  "LatestTools": "https://download.octopusdeploy.com/octopus-tools/latest.json"
 }
