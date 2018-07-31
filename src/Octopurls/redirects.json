@@ -300,5 +300,6 @@
   "KubernetesQuotas": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
   "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
   "LatestTools": "https://download.octopusdeploy.com/octopus-tools/latest.json",
-  "KubernetesServicesWithoutSelectors": "https://kubernetes.io/docs/concepts/services-networking/service/#services-without-selectors"
+  "KubernetesServicesWithoutSelectors": "https://kubernetes.io/docs/concepts/services-networking/service/#services-without-selectors",
+  "troubleshootingSchannelTls": "https://octopus.com/docs/administration/security/octopus-tentacle-communication/troubleshooting-schannel-and-tls"
 }
