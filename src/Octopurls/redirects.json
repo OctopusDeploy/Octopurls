@@ -301,5 +301,8 @@
   "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
   "LatestTools": "https://download.octopusdeploy.com/octopus-tools/latest.json",
   "KubernetesServicesWithoutSelectors": "https://kubernetes.io/docs/concepts/services-networking/service/#services-without-selectors",
-  "troubleshootingSchannelTls": "https://octopus.com/docs/administration/security/octopus-tentacle-communication/troubleshooting-schannel-and-tls"
+  "troubleshootingSchannelTls": "https://octopus.com/docs/administration/security/octopus-tentacle-communication/troubleshooting-schannel-and-tls",
+  "KubernetesKubectlInstall": "https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-native-package-management",
+  "KubernetesHelmInstall": "https://github.com/helm/helm#install"
+
 }
