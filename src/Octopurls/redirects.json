@@ -303,6 +303,8 @@
   "KubernetesServicesWithoutSelectors": "https://kubernetes.io/docs/concepts/services-networking/service/#services-without-selectors",
   "troubleshootingSchannelTls": "https://octopus.com/docs/administration/security/octopus-tentacle-communication/troubleshooting-schannel-and-tls",
   "KubernetesKubectlInstall": "https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-native-package-management",
-  "KubernetesHelmInstall": "https://github.com/helm/helm#install"
-
+  "KubernetesHelmInstall": "https://github.com/helm/helm#install",
+  "ScriptStepPackageReferences": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#referencing-packages",
+  "ScriptStepPackageReferenceName": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#package-reference-fields-name",
+  "ScriptStepPackageReferencesFromCustomScripts": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#accessing-package-references-from-a-custom-script"
 }
