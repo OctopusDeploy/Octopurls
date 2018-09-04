@@ -307,5 +307,6 @@
   "ScriptStepPackageReferences": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#referencing-packages",
   "ScriptStepPackageReferenceName": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#package-reference-fields-name",
   "ScriptStepPackageReferencesFromCustomScripts": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#accessing-package-references-from-a-custom-script",
-  "ConfigureWebRequestProxy": "https://octopus.com/docs/infrastructure/windows-targets/proxy-support#ProxySupport-WebRequestConfiguringaWebRequestProxy"
+  "ConfigureWebRequestProxy": "https://octopus.com/docs/infrastructure/windows-targets/proxy-support#ProxySupport-WebRequestConfiguringaWebRequestProxy",
+  "ProxySupport": "https://octopus.com/docs/infrastructure/windows-targets/proxy-support"
 }
