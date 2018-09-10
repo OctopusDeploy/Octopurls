@@ -21,12 +21,14 @@ namespace Octopurls
         readonly Redirects redirects;
         readonly SlackSettings slackSettings;
         readonly WebCrawlers webCrawlers;
+        readonly IgnoredUrls ignoredUrls;
 
-        public UrlsController(Redirects redirects, IOptions<WebCrawlers> webCrawlersAccessor, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
+        public UrlsController(Redirects redirects, IOptions<WebCrawlers> webCrawlersAccessor, IOptions<IgnoredUrls> ignoredUrlsAccessor, IOptions<SlackSettings> slackSettingsAccessor, ILoggerFactory loggerFactory)
         {
             logger = loggerFactory.CreateLogger("Octopurls.UrlsController");
             this.redirects = redirects;
             webCrawlers = webCrawlersAccessor.Value;
+            ignoredUrls = ignoredUrlsAccessor.Value;
             slackSettings = slackSettingsAccessor.Value;
         }
 
@@ -62,6 +64,14 @@ namespace Octopurls
             {
                 ViewData["OctopurlsVersion"] = GetInformationalVersion();
                 return View("index", redirects);
+            }
+
+            // Short-circuit for any ULRs we want to ignore on purpose,
+            // like the 'Go-http-client' error we keep getting notified of
+            if (ignoredUrls.Any(iu => string.Equals(iu, url, StringComparison.OrdinalIgnoreCase)))
+            {
+                ViewBag.Url = url;
+                return View("404", new Dictionary<string, string>());
             }
 
             logger.LogDebug($"Finding redirect for shortened URL '{url}' among {redirects.Urls.Count} redirects");
