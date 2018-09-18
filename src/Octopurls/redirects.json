@@ -311,5 +311,7 @@
   "ScriptStepPackageReferencesFromCustomScripts": "https://octopus.com/docs/deployment-examples/custom-scripts/standalone-scripts#accessing-package-references-from-a-custom-script",
   "ConfigureWebRequestProxy": "https://octopus.com/docs/infrastructure/windows-targets/proxy-support#ProxySupport-WebRequestConfiguringaWebRequestProxy",
   "ProxySupport": "https://octopus.com/docs/infrastructure/windows-targets/proxy-support",
-  "Rolling-Deployments": "https://octopus.com/docs/deployment-patterns/rolling-deployments"
+  "Rolling-Deployments": "https://octopus.com/docs/deployment-patterns/rolling-deployments",
+  "BuiltinWorker": "https://octopus.com/docs/administration/workers/built-in-worker",
+  "Worker": "https://octopus.com/docs/infrastructure/workers"
 }
