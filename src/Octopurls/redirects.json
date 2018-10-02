@@ -314,5 +314,6 @@
   "Rolling-Deployments": "https://octopus.com/docs/deployment-patterns/rolling-deployments",
   "BuiltinWorker": "https://octopus.com/docs/administration/workers/built-in-worker",
   "Worker": "https://octopus.com/docs/infrastructure/workers",
-  "KubernetesContainerSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container"
+  "KubernetesContainerSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container",
+  "TFS-VSTS": "https://octopus.com/docs/api-and-integration/tfs-vsts"
 }
