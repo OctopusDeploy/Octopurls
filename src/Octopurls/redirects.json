@@ -317,5 +317,10 @@
   "KubernetesContainerSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container",
   "TFS-VSTS": "https://octopus.com/docs/api-and-integration/tfs-vsts",
   "TFS-VSTS-compat": "https://octopus.com/docs/api-and-integration/tfs-vsts/using-octopus-extension/extension-compatibility",
-  "KubernetesTarget": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/kubernetes-target#kubectl"
+  "KubernetesTarget": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/kubernetes-target#kubectl",
+  "KubernetesSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context",
+  "KubernetesSecurityContextSupplementalGroups": "https://kubernetes.io/docs/concepts/policy/pod-security-policy/#users-and-groups",
+  "KubernetesSecurityContextRunAsNonRoot": "https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/",
+  "KubernetesSecurityContextSELinux": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#assign-selinux-labels-to-a-container",
+  "KubernetesSecuritySysctl": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/"
 }
