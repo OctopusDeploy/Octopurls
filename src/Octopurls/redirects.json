@@ -299,5 +299,13 @@
   "KubernetesAuthentication": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/",
   "KubernetesQuotas": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
   "KubernetesRBAC": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
-  "LatestTools": "https://download.octopusdeploy.com/octopus-tools/latest.json"
+  "LatestTools": "https://download.octopusdeploy.com/octopus-tools/latest.json",
+  "AzureVmExtensionPortal": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-the-azure-portal",
+  "AzureVmExtensionClassicPortal": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-the-classic-azure-portal",
+  "AzureVmExtensionPowershell": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-powershell",
+  "AzureVmExtensionAzureCli": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-the-azure-cli",
+  "AzureVmExtensionArm": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template",
+  "AzureVmExtensionArmDsc": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template-with-dsc",
+  "AzureVmExtensionConfigStructure": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/configuration-structure",
+  "AzureVmExtensionDiagnosingIssues": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues"
 }
