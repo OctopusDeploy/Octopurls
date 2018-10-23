@@ -16,3 +16,5 @@ Commit your changes to a feature branch and the site will be automatically be de
 
 ## Push changes to production site
 Commit your changes to the `master` branch and the site will be automatically deployed to `http://g.octopushq.com/`.
+
+**You can check on the progress of the deployment in the `#octopurls-alerts` slack channel.**
