@@ -332,5 +332,5 @@
   "AzureVmExtensionArm": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template",
   "AzureVmExtensionArmDsc": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template-with-dsc",
   "AzureVmExtensionConfigStructure": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/configuration-structure",
-  "AzureVmExtensionDiagnosingIssues": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues",
+  "AzureVmExtensionDiagnosingIssues": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues"
 }
