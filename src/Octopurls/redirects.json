@@ -45,7 +45,7 @@
   "DocumentationPackaging": "https://octopus.com/docs/packaging-applications",
   "DocumentationHome": "https://octopus.com/docs",
   "ProductBacklog": "https://trello.com/board/octopus/4e907de70880ba000079b75c",
-  "ProductDownloadPage": "http://octopusdeploy.com/downloads",
+  "ProductDownloadPage": "http://octopus.com/downloads",
   "ProductHomePage": "http://octopusdeploy.com/",
   "HowDoIGetALicense": "http://octopusdeploy.com/purchase",
   "NuGetPackageHostingOptions": "https://octopus.com/docs/packaging-applications",
@@ -333,5 +333,7 @@
   "AzureVmExtensionArmDsc": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template-with-dsc",
   "AzureVmExtensionConfigStructure": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/configuration-structure",
   "AzureVmExtensionDiagnosingIssues": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues",
-  "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/windows-targets/tentacle-communication"
+  "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/windows-targets/tentacle-communication",
+  "LatestTentacleWinX86": "https://octopus.com/downloads/latest/WindowsX86/OctopusTentacle",
+  "LatestTentacleWinX64": "https://octopus.com/downloads/latest/WindowsX64/OctopusTentacle"
 }
