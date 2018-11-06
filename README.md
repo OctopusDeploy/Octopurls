@@ -12,7 +12,8 @@ Add a new key value pair to the list of redirects, like so:
 ```
 
 ## Testing your changes
-Commit your changes to a feature branch and the site will be automatically be deployed to `http://octopurls-dev-webapp.azurewebsites.net/`.
+Commit your changes to a feature branch and the site will be automatically be deployed to `http://octopurls-dev-webapp.azurewebsites.net/`. 
+If you've added a new redirect for e.g. `ShortUrlName`, visit `http://octopurls-dev-webapp.azurewebsites.net/ShortUrlName` to test that your redirect sends you to the intended destination.
 
 ## Push changes to production site
 Commit your changes to the `master` branch and the site will be automatically deployed to `http://g.octopushq.com/`.
