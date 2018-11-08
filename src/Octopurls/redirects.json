@@ -338,5 +338,6 @@
   "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/windows-targets/tentacle-communication",
   "LatestTentacleWinX86": "https://octopus.com/downloads/latest/WindowsX86/OctopusTentacle",
   "LatestTentacleWinX64": "https://octopus.com/downloads/latest/WindowsX64/OctopusTentacle",
-  "Slack": "https://join.slack.com/t/octopususergroup/shared_invite/enQtNDcyNjM3OTczNzAxLTU0MjI3YmIyMDc1MzdmYjk3OTYzZGY4ZTI2NTcwMzY3OGJkZTExYTVkNThjYjM1MWE2YjlmNWQyMmQwNzRmMjk"
+  "Slack": "https://join.slack.com/t/octopususergroup/shared_invite/enQtNDcyNjM3OTczNzAxLTU0MjI3YmIyMDc1MzdmYjk3OTYzZGY4ZTI2NTcwMzY3OGJkZTExYTVkNThjYjM1MWE2YjlmNWQyMmQwNzRmMjk",
+  "ServiceFabricConnectPS": "https://docs.microsoft.com/en-us/powershell/module/servicefabric/connect-servicefabriccluster?view=azureservicefabricps"
 }
