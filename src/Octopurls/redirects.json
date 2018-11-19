@@ -291,7 +291,7 @@
   "AwsIngressController": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller",
   "NginxIngressControllerAnnotations": "https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/",
   "GoogleCloudIngressControllerGithub": "https://github.com/kubernetes/ingress-gce",
-  "AwsAlbAnnotations": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/api/ingress.md#annotations",
+  "AwsAlbAnnotations": "https://github.com/kubernetes-sigs/aws-alb-ingress-controller/blob/master/docs/guide/ingress/annotation.md",
   "KubernetesAnnotationStringsIssue": "https://github.com/kubernetes/kubernetes/issues/12226",
   "GoogleCloudIngressFanOut": "https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#step_6_optional_serving_multiple_applications_on_a_load_balancer",
   "NginxIngressControllerDocs": "https://kubernetes.github.io/ingress-nginx/",
