@@ -343,5 +343,6 @@
   "ServiceFabricConnectPS": "https://docs.microsoft.com/en-us/powershell/module/servicefabric/connect-servicefabriccluster?view=azureservicefabricps",
   "NginxConfigureLocations": "https://docs.nginx.com/nginx/admin-guide/web-server/web-server/#configuring-locations",
   "NginxUserPermissions": "https://octopus.com/docs/deployment-examples/nginx-on-nix-deployments/configure-target-machine#ConfigureTargetMachine-EnableSudoAccessWithoutPassword",
-  "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx"
+  "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx",
+  "OnboardingSubcribe": "https://hello.octopus.com/octopus-subscribe"
 }
