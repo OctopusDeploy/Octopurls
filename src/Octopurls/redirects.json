@@ -154,6 +154,7 @@
   "TentacleUpdateAccount": "https://octopus.com/docs/infrastructure/environments/machine-policies#MachinePolicies-TentacleUpdateAccount",
   "CustomHealthCheckScripts": "https://octopus.com/docs/infrastructure/environments/machine-policies#MachinePolicies-Customhealthcheckscripts",
   "ServiceFabricSdkDownload": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#sdk-installation-only",
+  "OnboardingMachinePoliciesLearnMore": "https://octopus.com/docs/infrastructure/machine-policies",
   "OnboardingEnvironmentsLearnMore": "https://octopus.com/docs/infrastructure/environments",
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/infrastructure/deployment-targets",
   "OnboardingInfrastructureLearnMore": "https://octopus.com/docs/infrastructure",
