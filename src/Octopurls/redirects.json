@@ -348,5 +348,7 @@
   "OnboardingSubscribe": "https://hello.octopus.com/octopus-subscribe",
   "OnboardingFeedbackForm": "https://octopus.com/first",
   "PackagingCreatingZipPackages": "https://octopus.com/docs/packaging-applications/creating-packages/creating-zip-packages",
-  "PackagingCreatingNuGetPackagesManually": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/manually"
+  "PackagingCreatingNuGetPackagesManually": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/manually",
+  "PackagingCreatingNuGetPackagesOctopack": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octopack",
+  "PackagingCreatingNuGetPackagesOctoExe": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octo.exe"
 }
