@@ -347,5 +347,6 @@
   "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx",
   "OnboardingSubscribe": "https://hello.octopus.com/octopus-subscribe",
   "OnboardingFeedbackForm": "https://octopus.com/first",
-  "PackagingCreatingZipPackages": "https://octopus.com/docs/packaging-applications/creating-packages/creating-zip-packages"
+  "PackagingCreatingZipPackages": "https://octopus.com/docs/packaging-applications/creating-packages/creating-zip-packages",
+  "PackagingCreatingNuGetPackagesManually": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/manually"
 }
