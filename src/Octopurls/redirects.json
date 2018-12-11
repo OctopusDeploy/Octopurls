@@ -355,6 +355,7 @@
   "PackagingCreatingNuGetPackagesManually": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/manually",
   "PackagingCreatingNuGetPackagesOctopack": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octopack",
   "PackagingCreatingNuGetPackagesOctoExe": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octo.exe",
+  "PackagingDeploymentExamplesJava": "https://octopus.com/docs/deployment-examples/java-applications",
   "PackagingDeploymentExamplesNodeJs": "https://octopus.com/docs/deployment-examples/node-on-nix-deployments/create-&-push-node.js-project",
   "ExternalToolOctopackJs": "https://github.com/OctopusDeploy/octopackjs"
 }
