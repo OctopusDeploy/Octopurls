@@ -347,6 +347,7 @@
   "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx",
   "OnboardingSubscribe": "https://hello.octopus.com/octopus-subscribe",
   "OnboardingFeedbackForm": "https://octopus.com/first",
+  "PackagingApiAndIntegration": "https://octopus.com/docs/api-and-integration",
   "PackagingCreatingPackages": "https://octopus.com/docs/packaging-applications/creating-packages",
   "PackagingCreatingSupportedPackages": "https://octopus.com/docs/packaging-applications/supported-packages",
   "PackagingCreatingPackageIds": "https://octopus.com/docs/packaging-applications/package-id",
