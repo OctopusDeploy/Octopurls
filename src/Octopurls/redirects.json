@@ -347,8 +347,14 @@
   "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx",
   "OnboardingSubscribe": "https://hello.octopus.com/octopus-subscribe",
   "OnboardingFeedbackForm": "https://octopus.com/first",
+  "PackagingCreatingPackages": "https://octopus.com/docs/packaging-applications/creating-packages",
+  "PackagingCreatingSupportedPackages": "https://octopus.com/docs/packaging-applications/supported-packages",
+  "PackagingCreatingPackageIds": "https://octopus.com/docs/packaging-applications/package-ids",
+  "PackagingCreatingVersioning": "https://octopus.com/docs/packaging-applications/versioning",
   "PackagingCreatingZipPackages": "https://octopus.com/docs/packaging-applications/creating-packages/creating-zip-packages",
   "PackagingCreatingNuGetPackagesManually": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/manually",
   "PackagingCreatingNuGetPackagesOctopack": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octopack",
-  "PackagingCreatingNuGetPackagesOctoExe": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octo.exe"
+  "PackagingCreatingNuGetPackagesOctoExe": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octo.exe",
+  "PackagingDeploymentExamplesNodeJs": "https://octopus.com/docs/deployment-examples/node-on-nix-deployments/create-&-push-node.js-project",
+  "ExternalToolOctopackJs": "https://github.com/OctopusDeploy/octopackjs"
 }
