@@ -328,6 +328,7 @@
   "KubernetesSecurityContextRunAsNonRoot": "https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/",
   "KubernetesSecurityContextSELinux": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#assign-selinux-labels-to-a-container",
   "KubernetesSecuritySysctl": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/",
+  "KubernetesIngressTls": "https://kubernetes.io/docs/concepts/services-networking/ingress/#tls",
   "ServiceFabricEnableScriptExection": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#enable-powershell-script-execution",
   "AzureVmExtensionPortal": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/azure-virtual-machines/via-the-azure-portal",
   "AzureVmExtensionClassicPortal": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/azure-virtual-machines/via-the-classic-azure-portal",
