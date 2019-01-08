@@ -359,5 +359,7 @@
   "PackagingCreatingNuGetPackagesOctoExe": "https://octopus.com/docs/packaging-applications/creating-packages/nuget-packages/using-octo.exe",
   "PackagingDeploymentExamplesJava": "https://octopus.com/docs/deployment-examples/java-applications",
   "PackagingDeploymentExamplesNodeJs": "https://octopus.com/docs/deployment-examples/node-on-nix-deployments/create-&-push-node.js-project",
-  "ExternalToolOctopackJs": "https://github.com/OctopusDeploy/octopackjs"
+  "ExternalToolOctopackJs": "https://github.com/OctopusDeploy/octopackjs",
+  "spaces-and-permissions": "https://octopus.com/docs/administration/managing-users-and-teams/system-and-space-permissions",
+  "UserRoleContext": "https://octopus.com/docs/administration/managing-users-and-teams/user-roles"
 }
