@@ -150,7 +150,7 @@
   "ArchiveCertificate": "http://octopus.com/docs/deployment-examples/certificates/archiving-and-deleting-certificates",
   "ExportCertificate": "http://octopus.com/docs/deployment-examples/certificates/export-certificate",
   "PFXFiles": "https://en.wikipedia.org/wiki/PKCS_12",
-  "PEMFiles": "http://how2ssl.com/articles/working_with_pem_files/",
+  "PEMFiles": "https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail",
   "DERFiles": "https://en.wikipedia.org/wiki/X.690#DER_encoding",
   "TentacleUpdateAccount": "https://octopus.com/docs/infrastructure/environments/machine-policies#MachinePolicies-TentacleUpdateAccount",
   "CustomHealthCheckScripts": "https://octopus.com/docs/infrastructure/environments/machine-policies#MachinePolicies-Customhealthcheckscripts",
