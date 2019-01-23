@@ -361,6 +361,6 @@
   "PackagingDeploymentExamplesJava": "https://octopus.com/docs/deployment-examples/java-applications",
   "PackagingDeploymentExamplesNodeJs": "https://octopus.com/docs/deployment-examples/node-on-nix-deployments/create-&-push-node.js-project",
   "ExternalToolOctopackJs": "https://github.com/OctopusDeploy/octopackjs",
-  "spaces-and-permissions": "https://octopus.com/docs/administration/managing-users-and-teams/system-and-space-permissions",
+  "spaces-and-permissions": "https://octopus.com/docs/v/2019.1/administration/managing-users-and-teams/system-and-space-permissions",
   "UserRoleContext": "https://octopus.com/docs/administration/managing-users-and-teams/user-roles"
 }
