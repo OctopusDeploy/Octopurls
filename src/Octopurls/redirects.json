@@ -364,6 +364,6 @@
   "spaces-and-permissions": "https://octopus.com/docs/v/2019.1/administration/managing-users-and-teams/system-and-space-permissions",
   "UserRoleContext": "https://octopus.com/docs/administration/managing-users-and-teams/user-roles",
   "spaces": "https://octopus.com/docs/v/2019.1/administration/spaces",
-  "teams": "https://octopus.com/docs/administration/managing-users-and-teams",
+  "teams": "https://octopus.com/docs/v/2019.1/administration/managing-users-and-teams",
   "default-space": "https://octopus.com/docs/v/2019.1/administration/spaces#default-space"
 }
