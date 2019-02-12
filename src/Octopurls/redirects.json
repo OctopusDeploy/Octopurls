@@ -331,6 +331,7 @@
   "KubernetesSecuritySysctl": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/",
   "KubernetesIngressTls": "https://kubernetes.io/docs/concepts/services-networking/ingress/#tls",
   "KubernetesEnvironmentVariableExposePodInformation": "https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information",
+  "KubernetesDownwardApiCapabilities": "https://kubernetes.io/docs/tasks/inject-data-application/downward-api-volume-expose-pod-information/#capabilities-of-the-downward-api",
   "ServiceFabricEnableScriptExection": "https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started#enable-powershell-script-execution",
   "AzureVmExtensionPortal": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/azure-virtual-machines/via-the-azure-portal",
   "AzureVmExtensionClassicPortal": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/azure-virtual-machines/via-the-classic-azure-portal",
