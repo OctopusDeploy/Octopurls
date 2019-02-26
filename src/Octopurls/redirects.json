@@ -55,7 +55,7 @@
   "GettingStarted": "https://octopus.com/docs/getting-started",
   "Upgrade2To3": "https://octopus.com/docs/administration/upgrading/upgrading-from-octopus-2.6",
   "UpgradeSpaces": "https://octopus.com/upgrade-spaces?utm_source=product&utm_medium=popup&utm_campaign=opj&utm_term=upgrade-spaces",
-  "UpgradeWorkers": "https://octopus.com/upgrade-workers",
+  "UpgradeWorkers": "https://octopus.com/upgrade-workers?utm_source=product&utm_medium=popup&utm_campaign=opj&utm_term=upgrade-workers",
   "HighAvailability": "https://octopus.com/docs/administration/high-availability",
   "SecurityAndEncryption": "https://octopus.com/docs/administration/security/data-encryption",
   "VersioningHelp": "https://octopus.com/docs/deployment-process/channels#Channels-VersionRange",
