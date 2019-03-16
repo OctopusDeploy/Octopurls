@@ -370,5 +370,6 @@
   "default-space": "https://octopus.com/docs/administration/spaces#default-space",
   "KubernetesPodTermination": "https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods",
   "KubernetesAWSTarget": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/kubernetes-target#aws-accounts",
-  "SpacesTaskQueue": "https://octopus.com/docs/administration/spaces#modify-a-space"
+  "SpacesTaskQueue": "https://octopus.com/docs/administration/spaces#modify-a-space",
+  "SMTPConfig": "https://octopus.com/docs/administration/spaces#modify-a-space"
 }
