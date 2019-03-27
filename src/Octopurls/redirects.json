@@ -320,6 +320,7 @@
   "ProxySupport": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/proxy-support",
   "Rolling-Deployments": "https://octopus.com/docs/deployment-patterns/rolling-deployments",
   "BuiltinWorker": "https://octopus.com/docs/administration/managing-infrastructure/workers/built-in-worker",
+  "AddingWorkerToDefaultPool": "https://octopus.com/docs/infrastructure/workers#built-in-worker",
   "Worker": "https://octopus.com/docs/infrastructure/workers",
   "KubernetesContainerSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container",
   "TFS-VSTS": "https://octopus.com/docs/api-and-integration/tfs-azure-devops",
