@@ -325,7 +325,7 @@
   "KubernetesContainerSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container",
   "TFS-VSTS": "https://octopus.com/docs/api-and-integration/tfs-azure-devops",
   "TFS-VSTS-compat": "https://octopus.com/docs/api-and-integration/tfs-azure-devops/using-octopus-extension/extension-compatibility",
-  "KubernetesTarget": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/kubernetes-target#kubectl",
+  "KubernetesTarget": "https://octopus.com/docs/infrastructure/deployment-targets/kubernetes-target#kubectl",
   "KubernetesSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context",
   "KubernetesSecurityContextSupplementalGroups": "https://kubernetes.io/docs/concepts/policy/pod-security-policy/#users-and-groups",
   "KubernetesSecurityContextRunAsNonRoot": "https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/",
@@ -371,7 +371,7 @@
   "teams": "https://octopus.com/docs/administration/managing-users-and-teams",
   "default-space": "https://octopus.com/docs/administration/spaces#default-space",
   "KubernetesPodTermination": "https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods",
-  "KubernetesAWSTarget": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/kubernetes-target#aws-accounts",
+  "KubernetesAWSTarget": "https://octopus.com/docs/infrastructure/deployment-targets/kubernetes-target#aws-accounts",
   "SpacesTaskQueue": "https://octopus.com/docs/administration/spaces#modify-a-space",
   "SMTPConfig": "https://octopus.com/docs/deployment-process/steps/email-notifications#smtp-configuration"
 }
