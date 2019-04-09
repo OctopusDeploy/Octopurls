@@ -379,5 +379,6 @@
   "SpacesTaskQueue": "https://octopus.com/docs/administration/spaces#modify-a-space",
   "SMTPConfig": "https://octopus.com/docs/deployment-process/steps/email-notifications#smtp-configuration",
   "JiraIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/jira",
-  "GitHubIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/github"
+  "GitHubIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/github",
+  "ConfigurationTransforms": "https://octopus.com/docs/deployment-process/configuration-features/configuration-transforms"
 }
