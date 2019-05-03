@@ -381,5 +381,6 @@
   "JiraIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/jira",
   "GitHubIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/github",
   "ConfigurationTransforms": "https://octopus.com/docs/deployment-process/configuration-features/configuration-transforms",
-  "ImportingScriptModules": "https://octopus.com/docs/deployment-examples/custom-scripts/script-modules#ScriptModules-PowerShell"
+  "ImportingScriptModules": "https://octopus.com/docs/deployment-examples/custom-scripts/script-modules#ScriptModules-PowerShell",
+  "LongTermSupport": "https://octopus.com/docs/administration/upgrading/long-term-support"
 }
