@@ -333,5 +333,10 @@
   "AzureVmExtensionArmDsc": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/via-an-arm-template-with-dsc",
   "AzureVmExtensionConfigStructure": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/configuration-structure",
   "AzureVmExtensionDiagnosingIssues": "https://octopus.com/docs/infrastructure/windows-targets/azure-virtual-machines/diagnosing-issues",
-  "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/windows-targets/tentacle-communication"
+  "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/windows-targets/tentacle-communication",
+  "TerraformInit": "https://www.terraform.io/docs/commands/init.html",
+  "TerraformPlan":  "https://www.terraform.io/docs/commands/plan.html",
+  "TerraformDestroy": "https://www.terraform.io/docs/commands/destroy.html",
+  "TerraformApply": "https://www.terraform.io/docs/commands/apply.html",
+  "TerraformPlanDestroy": "https://www.terraform.io/docs/commands/plan.html"
 }
