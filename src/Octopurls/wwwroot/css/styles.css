@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 html, body {
 	height: 100%;
@@ -7,11 +7,32 @@ html, body {
 }
 
 body {
-	background-color: #121B24;
-	color: #669999;
-	font-family: 'Titillium Web', sans-serif;
+	background-color: #fafafa;
+	color: #333333;
+	font-family: 'Roboto', sans-serif;
 }
+.stripe-blue {
+	background-color: #2f93e0;
+	height: 64px;
+	width: 100%;
+}
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 
+}
+.logo img {
+	margin-right: 5px;
+	margin-left: 0;
+}
+.logo-font {
+	font-size: 16pt;
+	color: #fff;
+	font-weight: 300;
+}
 header {
 	text-align: center;
 }
@@ -43,22 +64,27 @@ img {
 }
 
 a {
-	color: #336666;
+	color: #2f93e0;
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 a:hover {
-	color: #669999;
+	color: #0A67B1;
 }
 
 .content {
 	min-height: 100%;
-	padding: 0 0 40px;
+	padding: 0 40px 40px 40px;
 	position: relative;
 	box-sizing: border-box;
+	width: 50%;
+	margin: 0 auto;
 }
-
+.content header img {
+	widtgh: 300px;
+	margin: 2rem auto;
+}
 .suggestions-section {
 	text-align: center;
 }
@@ -83,14 +109,14 @@ a:hover {
 
 textarea {
 	display: block;
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #669999;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+	width: 100%;
+	padding: 6px;
+	border: 1px solid #9e9e9e;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 	height: 150px;
 }
 
@@ -103,23 +129,26 @@ textarea:focus {
 }
 
 input[type=submit] {
-	background-color: #336666;
-    color: #ACC8C6;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+	background-color: #48b350;
+	color: #fff;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
 	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
 }
 
 input[type=submit]:hover {
-    background-color: #669999;
-    color: #121B24;
+	background-color: #56B85D;
+	color: #fff;
 }
 
 .help-block {
 	font-style: italic;
-    font-weight: 400;
-    font-size: 0.7rem;
+	font-weight: 400;
+	font-size: 0.7rem;
 }
 
 footer {
@@ -129,4 +158,10 @@ footer {
 	width: 100%;
 	height: 40px;
 	text-align: center;
+}
+
+@media (max-width: 1024px ) {
+	.content {
+		width: 100%;
+	}
 }
