@@ -382,5 +382,10 @@
   "GitHubIssueTracker": "https://octopus.com/docs/api-and-integration/metadata/github",
   "ConfigurationTransforms": "https://octopus.com/docs/deployment-process/configuration-features/configuration-transforms",
   "ImportingScriptModules": "https://octopus.com/docs/deployment-examples/custom-scripts/script-modules#ScriptModules-PowerShell",
-  "LongTermSupport": "https://octopus.com/docs/administration/upgrading/long-term-support"
+  "LongTermSupport": "https://octopus.com/docs/administration/upgrading/long-term-support",
+  "TerraformInit": "https://www.terraform.io/docs/commands/init.html",
+  "TerraformPlan":  "https://www.terraform.io/docs/commands/plan.html",
+  "TerraformDestroy": "https://www.terraform.io/docs/commands/destroy.html",
+  "TerraformApply": "https://www.terraform.io/docs/commands/apply.html",
+  "TerraformPlanDestroy": "https://www.terraform.io/docs/commands/plan.html"
 }
