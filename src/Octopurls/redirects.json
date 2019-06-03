@@ -388,5 +388,6 @@
   "TerraformPlan":  "https://www.terraform.io/docs/commands/plan.html",
   "TerraformDestroy": "https://www.terraform.io/docs/commands/destroy.html",
   "TerraformApply": "https://www.terraform.io/docs/commands/apply.html",
-  "TerraformPlanDestroy": "https://www.terraform.io/docs/commands/plan.html"
+  "TerraformPlanDestroy": "https://www.terraform.io/docs/commands/plan.html",
+  "CloudMigration": "https://octopus.com/docs/octopus-cloud/migrations"
 }
