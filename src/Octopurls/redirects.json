@@ -8,6 +8,8 @@
   "AzureTentacle": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/azure-virtual-machines",
   "PollingTentacle": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets#configure-a-polling-tentacle",
   "ListeningTentacle": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets#configure-a-listening-tentacle-recommended",
+  "LinuxListeningTentacle": "https://octopus.com/docs/infrastructure/deployment-targets/linux/tentacle",
+  "LinuxPollingTentacle": "https://octopus.com/docs/infrastructure/deployment-targets/linux/tentacle",
   "LogFiles": "https://octopus.com/docs/support/log-files",
   "EncodingNames": "http://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx",
   "AdministratorAccountName": "https://github.com/OctopusDeploy/Issues/issues/661",
