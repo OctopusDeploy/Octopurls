@@ -391,5 +391,14 @@
   "TerraformDestroy": "https://www.terraform.io/docs/commands/destroy.html",
   "TerraformApply": "https://www.terraform.io/docs/commands/apply.html",
   "TerraformPlanDestroy": "https://www.terraform.io/docs/commands/plan.html",
-  "CloudMigration": "https://octopus.com/docs/octopus-cloud/migrations"
+  "CloudMigration": "https://octopus.com/docs/octopus-cloud/migrations",  
+  "AskOctopusEpSix": "https://octopus.com/blog/ask-octopus-episode-six",
+  "TargetRoles": "https://octopus.com/docs/infrastructure/deployment-targets/target-roles",
+  "WindowsTargets": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets",
+  "KubeTargets": "https://octopus.com/docs/infrastructure/deployment-targets/kubernetes-target",
+  "OptimumSetupEnvironments": "https://github.com/OctopusDeploy/OptimumSetupBook/blob/master/manuscript/Environments.md#environments",
+  "ScriptModules": "https://octopus.com/docs/deployment-examples/custom-scripts/script-modules",
+  "CustomStepTemplates": "https://octopus.com/docs/deployment-process/steps/custom-step-templates",
+  "ProjectTriggers": "https://octopus.com/docs/deployment-process/project-triggers",
+  "WebinarWorkersSpaces": "https://octopus.com/spaces#webinar"
 }
