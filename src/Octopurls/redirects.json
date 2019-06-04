@@ -400,5 +400,6 @@
   "ScriptModules": "https://octopus.com/docs/deployment-examples/custom-scripts/script-modules",
   "CustomStepTemplates": "https://octopus.com/docs/deployment-process/steps/custom-step-templates",
   "ProjectTriggers": "https://octopus.com/docs/deployment-process/project-triggers",
-  "WebinarWorkersSpaces": "https://octopus.com/spaces#webinar"
+  "WebinarWorkersSpaces": "https://octopus.com/spaces#webinar",
+  "HelloWorldPackageFile": "https://octopus.com/images/docs/hello-world.1.0.0.zip"
 }
