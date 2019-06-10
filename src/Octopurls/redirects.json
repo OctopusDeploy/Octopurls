@@ -31,7 +31,7 @@
   "RebuildingPerfCounters": "https://github.com/OctopusDeploy/Issues/issues/270",
   "ChooseCommunicationStyle": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets",
   "HowDoIInstallPowerShell": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets",
-  "WhyAmINotAllowedToUseDependencies": "https://octopus.com/docs/packaging-applications",
+  "WhyAmINotAllowedToUseDependencies": "https://octopus.com/docs/packaging-applications?utm_source=product&utm_campaign=jun2019",
   "CheckForUpgrades": "http://octopus.com/downloads/upgrade",
   "WhatIsMarkdown": "http://en.wikipedia.org/wiki/Markdown",
   "HelpMakeSuggestion": "https://octopusdeploy.uservoice.com/",
