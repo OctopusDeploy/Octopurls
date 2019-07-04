@@ -41,7 +41,7 @@
   "HelpAskQuestion": "https://octopus.com/support",
   "HelpReportAProblem": "https://octopus.com/support",
   "HelpGeneral": "https://octopus.com/support",
-  "ExternalToolOctoTools": "https://github.com/OctopusDeploy/Octopus-Tools",
+  "ExternalToolOctoTools": "https://github.com/OctopusDeploy/OctopusCLI",
   "ExternalToolOctoPack": "https://octopus.com/docs/packaging-applications/octopack",
   "DocumentationPowerShell": "https://octopus.com/docs/deployment-examples/custom-scripts",
   "DocumentationVariables": "https://octopus.com/docs/deployment-process/variables",
