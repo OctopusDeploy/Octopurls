@@ -232,7 +232,7 @@
   "LargeLogs": "https://octopus.com/docs/deployment-process/performance#task-logs",
   "ConfigurationVariables": "https://octopus.com/docs/deployment-process/configuration-files#Configurationfiles-ConfigurationVariablesConfigurationvariables",
   "UserVariablesOverridingStepVariables": "https://github.com/OctopusDeploy/Issues/issues/2126",
-  "JavaAppDeploy": "https://octopus.com/docs/deployment-examples/java-applications",
+  "JavaAppDeploy": "https://octopus.com/docs/deployment-examples/java-applications/error-messages",
   "v4Testing": "https://docs.google.com/forms/d/e/1FAIpQLSeyjG0tXhtBjoANTlwZjNidsWsUhjGje41KSf1Tg2X0HbUqIg/viewform",
   "v4TestingInOctopusHQ": "https://docs.google.com/forms/d/e/1FAIpQLSc9hopatJqp0q6Zv5Ae0EIAMhsepxNRPOb0-txlTK-PoSkcAA/viewform",
   "GuidedFailures": "https://octopus.com/docs/deployment-process/releases/guided-failures",
