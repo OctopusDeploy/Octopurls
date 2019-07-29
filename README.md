@@ -18,4 +18,4 @@ If you've added a new redirect for e.g. `ShortUrlName`, visit `http://octopurls-
 ## Push changes to production site
 Commit your changes to the `master` branch and the site will be automatically deployed to `http://g.octopushq.com/`.
 
-**You can check on the progress of the deployment in the `#octopurls-alerts` slack channel.**
+**You can check on the progress of the deployment in the `#feed-octopurls` slack channel.**
