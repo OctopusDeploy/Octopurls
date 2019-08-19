@@ -404,5 +404,6 @@
   "WebinarWorkersSpaces": "https://octopus.com/spaces#webinar",
   "HelloWorldPackageFile": "https://octopus.com/images/docs/hello-world.1.0.0.zip",
   "AzureVMSizes": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes",
-  "NewRelicApiKeys": "https://docs.newrelic.com/docs/apis/get-started/intro-apis/understand-new-relic-api-keys"
+  "NewRelicApiKeys": "https://docs.newrelic.com/docs/apis/get-started/intro-apis/understand-new-relic-api-keys",
+  "SqlServerDownload": "https://www.microsoft.com/en-gb/sql-server/sql-server-downloads"
 }
