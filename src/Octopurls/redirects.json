@@ -25,6 +25,8 @@
   "ApiDocs": "https://github.com/OctopusDeploy/OctopusDeploy-Api/wiki",
   "CryptoRequiresUserProfile": "https://github.com/OctopusDeploy/Issues/issues/353",
   "SemVer": "http://semver.org/",
+  "SemVerPreRelease": "https://semver.org/#spec-item-9",
+  "SemVerMetadata": "https://semver.org/#spec-item-10",
   "ManageAzure": "https://manage.windowsazure.com/",
   "WindowsAzure": "https://octopus.com/docs/deployment-examples/azure-deployments",
   "Gravatar": "https://gravatar.com/",
