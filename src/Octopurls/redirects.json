@@ -411,5 +411,6 @@
   "NewRelicApiKeys": "https://docs.newrelic.com/docs/apis/get-started/intro-apis/understand-new-relic-api-keys",
   "SqlServerDownload": "https://www.microsoft.com/en-gb/sql-server/sql-server-downloads",
   "HowDoIGetAFreeLicense": "https://octopus.com/starter",
-  "RestrictedPermissions": "https://octopus.com/starter"
+  "RestrictedPermissions": "https://octopus.com/starter",
+  "CheckForUpgradesV3": "https://octopus.com/download/upgrade/v3"
 }
