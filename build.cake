@@ -1,9 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 // TOOLS
 //////////////////////////////////////////////////////////////////////
-#tool "nuget:?package=GitVersion.CommandLine&version=4.0.0-beta0011";
 #tool "nuget:?package=xunit.runner.console";
-
 #addin "nuget:?package=Newtonsoft.Json";
 using Newtonsoft.Json;
 
@@ -21,33 +19,21 @@ var artifactsDir = "./artifacts";
 var projectToPublish = "./src/Octopurls/Octopurls.csproj";
 var projectName = "Octopurls";
 
-GitVersion gitVersionInfo;
-string nugetVersion;
+string buildNumber;
 
 //////////////////////////////////////////////////////////////////////
 // SETUP /TEARDOWN
 //////////////////////////////////////////////////////////////////////
 Setup(context =>
 {
-    gitVersionInfo = GitVersion(new GitVersionSettings {
-        OutputType = GitVersionOutput.Json
-    });
-    nugetVersion = gitVersionInfo.NuGetVersion;
+    buildNumber = EnvironmentVariable("BUILD_NUMBER");
 
-    Information("Output from GitVersion:");
-    Information(JsonConvert.SerializeObject(gitVersionInfo, Formatting.Indented));
-
-    if (BuildSystem.IsRunningOnTeamCity) {
-        BuildSystem.TeamCity.SetBuildNumber(nugetVersion);
-    }
-
-    Information($"Building {projectName} v{nugetVersion}");
-    Information($"Informational Version {gitVersionInfo.InformationalVersion}");
+    Information($"Building {projectName} v{buildNumber}");
 });
 
 Teardown(context =>
 {
-    Information($"Finished running task for build v{nugetVersion}");
+    Information($"Finished running task for build v{buildNumber}");
 });
 
 //////////////////////////////////////////////////////////////////////
@@ -76,8 +62,8 @@ Task("Build")
         {
             Configuration = configuration,
             ArgumentCustomization = args => args
-                .Append($"/p:Version={nugetVersion}")
-                .Append($"/p:InformationalVersion={gitVersionInfo.InformationalVersion}")
+                .Append($"/p:Version={buildNumber}")
+                .Append($"/p:InformationalVersion={buildNumber}")
                 .Append("--verbosity normal")
         });
     });
@@ -111,34 +97,17 @@ Task("DotNetCorePublish")
             Configuration = configuration,
             OutputDirectory = publishDir,
             ArgumentCustomization = args => args
-                .Append($"/p:Version={nugetVersion}")
-                .Append($"/p:InformationalVersion={gitVersionInfo.InformationalVersion}")
+                .Append($"/p:Version={buildNumber}")
+                .Append($"/p:InformationalVersion={buildNumber}")
                 .Append("--verbosity normal")
         });
-    });
-
-Task("Zip")
-    .IsDependentOn("DotNetCorePublish")
-    .Does(() =>
-    {
-        Zip(publishDir, $"{artifactsDir}/{projectName}.{nugetVersion}.zip");
-    });
-
-Task("Publish")
-    .IsDependentOn("Zip")
-    .WithCriteria(BuildSystem.IsRunningOnTeamCity)
-    .Does(() => {
-        UploadFile(
-            $"{EnvironmentVariable("Octopus3ServerUrl")}/api/packages/raw?apiKey={EnvironmentVariable("Octopus3ApiKey")}",
-            $"{artifactsDir}/{projectName}.{nugetVersion}.zip"
-        );
     });
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
 Task("Default")
-    .IsDependentOn("Publish");
+    .IsDependentOn("DotNetCorePublish");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
