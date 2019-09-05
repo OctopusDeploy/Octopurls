@@ -412,5 +412,7 @@
   "SqlServerDownload": "https://www.microsoft.com/en-gb/sql-server/sql-server-downloads",
   "HowDoIGetAFreeLicense": "https://octopus.com/starter",
   "RestrictedPermissions": "https://octopus.com/starter",
-  "CheckForUpgradesV3": "https://octopus.com/download/upgrade/v3"
+  "CheckForUpgradesV3": "https://octopus.com/download/upgrade/v3",
+  "StarterRenewal": "https://octopus.com/pricing/faq#server-starter",
+  "ServerSubscription": "https://octopus.com/pricing/faq#server-expired",
 }
