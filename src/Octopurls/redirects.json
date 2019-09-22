@@ -115,7 +115,7 @@
   "ServerExtensionsAuthoring": "https://octopus.com/docs/administration/server-extensibility/authoring-an-octopus-deploy-server-extension",
   "ServerExtensionsCustomising": "https://octopus.com/docs/administration/server-extensibility/customizing-an-octopus-deploy-server-extension",
   "ServerExtensionsInstalling": "https://octopus.com/docs/administration/server-extensibility/installing-a-custom-server-extension",
-  "CommunityLibrary": "http://library.octopus.com",
+  "CommunityLibrary": "https://library.octopus.com",
   "CommunityLibraryLicense": "https://github.com/OctopusDeploy/Library/blob/master/LICENSE.txt",
   "CommunityContributedStepTemplates": "https://octopus.com/docs/deployment-process/steps/community-step-templates",
   "CommunityContributedStepTemplatesTroubleshooting": "https://octopus.com/docs/deployment-process/steps/community-step-templates",
