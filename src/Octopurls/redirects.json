@@ -417,5 +417,16 @@
   "CheckForUpgradesV3": "https://octopus.com/download/upgrade/v3",
   "StarterRenewal": "https://octopus.com/pricing/faq#server-starter",
   "ServerSubscription": "https://octopus.com/pricing/faq#server-expired",
-  "OperationsFeedbackForm": "https://octopusdeploy.typeform.com/to/rXS97K"
+  "OperationsFeedbackForm": "https://octopusdeploy.typeform.com/to/rXS97K",
+  "GitGettingStarted": "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git",
+  "JenkinsDownload": "https://jenkins.io/download/",
+  "JenkinsDockerHub": "https://hub.docker.com/r/jenkins/jenkins",
+  "ChocolateyOctopusCLI": "https://chocolatey.org/packages/OctopusTools",
+  "DotNetDownload": "https://dotnet.microsoft.com/download",
+  "NugetInstall": "https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools",
+  "ChocolateyNuget": "https://chocolatey.org/packages/NuGet.CommandLine",
+  "VisualStudioDownloads": "https://visualstudio.microsoft.com/downloads/",
+  "IISHomepage": "https://www.iis.net/",
+  "JenkinsEnvironmentVariable": "https://wiki.jenkins.io/display/JENKINS/Building+a+software+project#Buildingasoftwareproject-belowJenkinsSetEnvironmentVariables",
+  "GoogleLessSecureApps": "https://support.google.com/accounts/answer/6010255?hl=en"
 }
