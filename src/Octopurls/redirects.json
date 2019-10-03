@@ -427,5 +427,6 @@
   "VisualStudioDownloads": "https://visualstudio.microsoft.com/downloads/",
   "IISHomepage": "https://www.iis.net/",
   "JenkinsEnvironmentVariable": "https://wiki.jenkins.io/display/JENKINS/Building+a+software+project#Buildingasoftwareproject-belowJenkinsSetEnvironmentVariables",
-  "GoogleLessSecureApps": "https://support.google.com/accounts/answer/6010255?hl=en"
+  "GoogleLessSecureApps": "https://support.google.com/accounts/answer/6010255?hl=en",
+  "AzureDevopsPredefinedVariables": "https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml"
 }
