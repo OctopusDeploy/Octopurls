@@ -430,5 +430,6 @@
   "GoogleLessSecureApps": "https://support.google.com/accounts/answer/6010255?hl=en",
   "AzureDevopsPredefinedVariables": "https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml",
   "AzureDevopsHomepage": "https://azure.microsoft.com/en-us/services/devops/server/",
-  "OnboardingRunbooksLearnMore": "https://octopus.com/docs/deployment-process/operations-runbooks"
+  "OnboardingRunbooksLearnMore": "https://octopus.com/docs/deployment-process/operations-runbooks",
+  "OctopusCloudInvites": "https://octopus.com/docs/octopus-cloud/#OctopusCloud-Invitingusers"
 }
