@@ -432,5 +432,5 @@
   "AzureDevopsHomepage": "https://azure.microsoft.com/en-us/services/devops/server/",
   "OnboardingRunbooksLearnMore": "https://octopus.com/docs/deployment-process/operations-runbooks",
   "OctopusCloudInvites": "https://octopus.com/docs/octopus-cloud/#OctopusCloud-Invitingusers",
-  "OctopusInvites": "https://octopus.com/docs/administration/managing-users-and-teams/index.md#inviting-users-managingusersandteams-invitingusers"
+  "OctopusInvites": "https://octopus.com/docs/administration/managing-users-and-teams#Managingusersandteams-Invitingusers"
 }
