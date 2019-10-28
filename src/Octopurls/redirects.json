@@ -436,5 +436,6 @@
   "OctopusInvites": "https://octopus.com/docs/administration/managing-users-and-teams#Managingusersandteams-Invitingusers",
   "BambooAddOnPage": "https://marketplace.atlassian.com/apps/1217235/octopus-deploy-bamboo-add-on?hosting=server&tab=overview",
   "DynamicWorkerPools": "https://octopus.com/docs/infrastructure/workers/dynamic-worker-pools",
-  "AppServiceDocumentation": "https://docs.microsoft.com/en-us/azure/app-service/"
+  "AppServiceDocumentation": "https://docs.microsoft.com/en-us/azure/app-service/",
+  "DotNetCoreHostingBundle": "https://www.microsoft.com/net/permalink/dotnetcore-current-windows-runtime-bundle-installer"
 }
