@@ -297,6 +297,7 @@
   "KubernetesMemoryResourceUnits": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#memory-units",
   "KubernetesProbes2": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/",
   "KubernetesCommand": "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/",
+  "KubernetesPodServiceAccountName": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/",
   "DockerEntrypoint": "https://docs.docker.com/engine/reference/builder/#entrypoint",
   "DockerCmd": "https://docs.docker.com/engine/reference/builder/#cmd",
   "NginxIngressController": "https://github.com/kubernetes/ingress-nginx",
