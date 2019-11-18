@@ -324,7 +324,7 @@
   "KubernetesHelmInstall": "https://github.com/helm/helm#install",
   "HelmClient": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/helm-update#helm-client-tool",
   "HelmLimitations": "https://octopus.com/docs/deployment-examples/kubernetes-deployments/helm-update#known-limitations",
-  "HelmUpgradeOptions": "https://helm.sh/docs/helm/#options-43",
+  "HelmUpgradeOptions": "https://v2.helm.sh/docs/helm/#options-43",
   "ScriptStepPackageReferences": "https://octopus.com/docs/deployment-examples/custom-scripts/run-a-script-step#referencing-packages",
   "ScriptStepPackageReferenceName": "https://octopus.com/docs/deployment-examples/custom-scripts/run-a-script-step#package-reference-fields-name",
   "ScriptStepPackageReferencesFromCustomScripts": "https://octopus.com/docs/deployment-examples/custom-scripts/run-a-script-step#accessing-package-references-from-a-custom-script",
