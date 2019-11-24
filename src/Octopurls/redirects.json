@@ -442,5 +442,6 @@
   "TroubleshootingInvalidCertificates": "https://octopus.com/docs/deployment-examples/certificates/troubleshooting",
   "TeamExplorerDownload": "https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer&rel=15",
   "MinikubeInstall": "https://kubernetes.io/docs/tasks/tools/install-minikube/",
-  "DockerDocs": "https://docs.docker.com/"
+  "DockerDocs": "https://docs.docker.com/",
+  "JenkinsPluginDocumentation": "https://octopus.com/docs/packaging-applications/build-servers/jenkins"
 }
