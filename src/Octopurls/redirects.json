@@ -101,7 +101,7 @@
   "DeploymentTargets": "https://octopus.com/docs/infrastructure",
   "ProjectTenantedDeploymentMode": "https://octopus.com/docs/deployment-patterns/multi-tenant-deployments/multi-tenant-deployment-guide/deploying-a-simple-multi-tenant-project",
   "LibraryVariableSets": "https://octopus.com/docs/projects/variables/library-variable-sets",
-  "AutoReleaseCreation": "https://octopus.com/docs/managing-releases/automatic-release-creation",
+  "AutoReleaseCreation": "https://octopus.com/docs/projects/project-triggers/automatic-release-creation",
   "Subscriptions": "https://octopus.com/docs/administration/managing-infrastructure/subscriptions",
   "AuthGuest": "http://docs.octopus.com/display/OD/Guest+login",
   "AuthAD": "http://docs.octopus.com/display/OD/Active+Directory+authentication",
