@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceRoot}/src/Octopurls/bin/Debug/netcoreapp2.0/Octopurls.dll",
+            "program": "${workspaceRoot}/src/Octopurls/bin/Debug/netcoreapp3.1/Octopurls.dll",
             "args": [],
             "cwd": "${workspaceRoot}/src/Octopurls",
             "stopAtEntry": false,
