@@ -127,7 +127,7 @@
   "DockerRegistries": "https://octopus.com/docs/packaging-applications/package-repositories/registries",
   "DockerPullingFromADifferentRegistry": "https://docs.docker.com/engine/reference/commandline/pull/#/pulling-from-a-different-registry",
   "DockerRun": "https://docs.docker.com/engine/reference/commandline/run/",
-  "AutomaticDeploymentTriggers": "https://octopus.com/docs/projects/project-triggers/automatic-deployment-triggers",
+  "AutomaticDeploymentTriggers": "https://octopus.com/docs/projects/project-triggers/deployment-target-triggers",
   "AuthenticationProviders": "https://octopus.com/docs/administration/authentication/authentication-providers",
   "VersioningInOctopusDeploy": "https://octopus.com/docs/packaging-applications#version-numbers",
   "ManagingHighAvailabilityNodes": "https://octopus.com/docs/administration/high-availability/managing-high-availability-nodes",
