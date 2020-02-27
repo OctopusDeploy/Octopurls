@@ -458,5 +458,7 @@
   "SpingPropertiesAndConfiguration": "https://docs.spring.io/autorepo/docs/spring-boot/1.2.0.M2/reference/html/howto-properties-and-configuration.html",
   "RunbookPublishing": "https://octopus.com/docs/operations-runbooks#Publishing",
   "ExperimentalSshTargetsFeedbackForm": "https://octopusdeploy.typeform.com/to/Aid7yB",
-  "DarkThemeFeedbackForm": "https://octopusdeploy.typeform.com/to/jVl7gN"
+  "DarkThemeFeedbackForm": "https://octopusdeploy.typeform.com/to/jVl7gN",
+  "DockerLinux": "https://octopus.com/docs/installation/octopus-in-container/octopus-server-container-linux",
+  "DockerWindows": "https://octopus.com/docs/installation/octopus-in-container/octopus-server-container-windows"
 }
