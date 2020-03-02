@@ -464,5 +464,6 @@
   "GuidesJava": "https://octopus.com/docs/guides?application=Java",
   "GuidesASPNet": "https://octopus.com/docs/guides?application=ASP.NET",
   "GuidesASPNetCore": "https://octopus.com/docs/guides?application=ASP.NET%20Core",
-  "GuidesNodejs": "https://octopus.com/docs/guides?application=Node.js"
+  "GuidesNodejs": "https://octopus.com/docs/guides?application=Node.js",
+  "GuidesBamboo": "https://octopus.com/docs/guides?buildServer=Bamboo"
 }
