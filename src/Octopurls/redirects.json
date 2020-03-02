@@ -460,5 +460,9 @@
   "ExperimentalSshTargetsFeedbackForm": "https://octopusdeploy.typeform.com/to/Aid7yB",
   "DarkThemeFeedbackForm": "https://octopusdeploy.typeform.com/to/jVl7gN",
   "DockerLinux": "https://octopus.com/docs/installation/octopus-in-container/octopus-server-container-linux",
-  "DockerWindows": "https://octopus.com/docs/installation/octopus-in-container/octopus-server-container-windows"
+  "DockerWindows": "https://octopus.com/docs/installation/octopus-in-container/octopus-server-container-windows",
+  "GuidesJava": "https://octopus.com/docs/guides?application=Java",
+  "GuidesASPNet": "https://octopus.com/docs/guides?application=ASP.NET",
+  "GuidesASPNetCore": "https://octopus.com/docs/guides?application=ASP.NET%20Core",
+  "GuidesNodejs": "https://octopus.com/docs/guides?application=Node.js"
 }
