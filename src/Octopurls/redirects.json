@@ -49,6 +49,7 @@
   "DocumentationVariables": "https://octopus.com/docs/projects/variables",
   "DocumentationPackaging": "https://octopus.com/docs/packaging-applications",
   "DocumentationHome": "https://octopus.com/docs",
+  "CustomScriptsInPackage": "https://octopus.com/docs/deployment-examples/custom-scripts/scripts-in-packages",
   "ProductBacklog": "https://trello.com/board/octopus/4e907de70880ba000079b75c",
   "ProductDownloadPage": "http://octopus.com/downloads",
   "ProductHomePage": "http://octopus.com/",
