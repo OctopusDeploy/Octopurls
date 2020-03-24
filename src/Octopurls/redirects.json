@@ -491,5 +491,7 @@
   "ReleaseNotes": "https://octopus.com/docs/managing-releases/release-notes",
   "Accounts": "https://octopus.com/docs/infrastructure/deployment-targets#accounts",
   "Auditing": "https://octopus.com/docs/administration/managing-users-and-teams/auditing",
-  "LibraryVariableSetAccessMigration": "https://octopus.com/blog/libraryvariableset-permission-changes"
+  "LibraryVariableSetAccessMigration": "https://octopus.com/blog/libraryvariableset-permission-changes",
+  "AutoRootCertUpdatesDiscord":"https://help.octopus.com/t/crl-ocsp-lookups-and-akamai-url-hits-from-octopus-and-tentacles/4854/3",
+  "OctopusAdminSamplesSpace":"https://samples.octopus.app/app#/Spaces-142"
 }
