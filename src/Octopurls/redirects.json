@@ -493,5 +493,9 @@
   "Auditing": "https://octopus.com/docs/administration/managing-users-and-teams/auditing",
   "LibraryVariableSetAccessMigration": "https://octopus.com/blog/libraryvariableset-permission-changes",
   "AutoRootCertUpdatesDiscord":"https://help.octopus.com/t/crl-ocsp-lookups-and-akamai-url-hits-from-octopus-and-tentacles/4854/3",
-  "OctopusAdminSamplesSpace":"https://samples.octopus.app/app#/Spaces-142"
+  "OctopusAdminSamplesSpace":"https://samples.octopus.app/app#/Spaces-142",
+  "NexusMavenRepo": "https://help.sonatype.com/repomanager3/formats/maven-repositories",
+  "ArtifactoryMavenRepo": "https://www.jfrog.com/confluence/display/JFROG/Maven+Repository",
+  "MyGetMavenRepo": "https://docs.myget.org/docs/walkthrough/getting-started-with-maven",
+  "TomcatParallelDeployments": "https://tomcat.apache.org/tomcat-8.0-doc/config/context.html#Parallel_deployment"
 }
