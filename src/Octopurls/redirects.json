@@ -494,5 +494,6 @@
   "LibraryVariableSetAccessMigration": "https://octopus.com/blog/libraryvariableset-permission-changes",
   "NexusMavenRepo": "https://help.sonatype.com/repomanager3/formats/maven-repositories",
   "ArtifactoryMavenRepo": "https://www.jfrog.com/confluence/display/JFROG/Maven+Repository",
-  "MyGetMavenRepo": "https://docs.myget.org/docs/walkthrough/getting-started-with-maven"
+  "MyGetMavenRepo": "https://docs.myget.org/docs/walkthrough/getting-started-with-maven",
+  "TomcatParallelDeployments": "https://tomcat.apache.org/tomcat-8.0-doc/config/context.html#Parallel_deployment"
 }
