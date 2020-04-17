@@ -498,5 +498,6 @@
   "NexusMavenRepo": "https://help.sonatype.com/repomanager3/formats/maven-repositories",
   "ArtifactoryMavenRepo": "https://www.jfrog.com/confluence/display/JFROG/Maven+Repository",
   "MyGetMavenRepo": "https://docs.myget.org/docs/walkthrough/getting-started-with-maven",
-  "TomcatParallelDeployments": "https://tomcat.apache.org/tomcat-8.0-doc/config/context.html#Parallel_deployment"
+  "TomcatParallelDeployments": "https://tomcat.apache.org/tomcat-8.0-doc/config/context.html#Parallel_deployment",
+  "SamplesSubscriptionsRepo": "https://github.com/OctopusSamples/Subscriptions"
 }
