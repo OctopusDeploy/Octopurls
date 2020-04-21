@@ -93,7 +93,7 @@ Task("DotNetCorePublish")
     {
         DotNetCorePublish(projectToPublish, new DotNetCorePublishSettings
         {
-            Framework = "netcoreapp2.0",
+            Framework = "netcoreapp3.1",
             Configuration = configuration,
             OutputDirectory = publishDir,
             ArgumentCustomization = args => args
