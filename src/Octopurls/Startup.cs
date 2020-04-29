@@ -1,12 +1,11 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Octopurls.Models;
 
@@ -40,15 +39,15 @@ namespace Octopurls
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting();
+            services.AddControllersWithViews();
             services.Configure<SlackSettings>(Configuration.GetSection("Slack"));
             services.Configure<WebCrawlers>(Configuration.GetSection("WebCrawlers"));
             services.Configure<IgnoredUrls>(Configuration.GetSection("IgnoredUrls"));
             services.AddSingleton(_ => Redirects);
-
-            services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -56,18 +55,19 @@ namespace Octopurls
             }
 
             app.UseStaticFiles();
-            app.UseMvc();
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
 
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder()
-                .UseStartup<Startup>()
-                .Build();
-
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }
 }
