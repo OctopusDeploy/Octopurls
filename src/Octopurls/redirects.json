@@ -502,5 +502,6 @@
   "TomcatParallelDeployments": "https://tomcat.apache.org/tomcat-8.0-doc/config/context.html#Parallel_deployment",
   "SamplesSubscriptionsRepo": "https://github.com/OctopusSamples/Subscriptions",
   "SQLServerRequirements": "https://octopus.com/docs/installation/requirements#sql-server-database",
-  "SecurityWebinarSlides1":"https://docs.google.com/presentation/d/1lgoWN0e7VOytFFSB6mKXy0cfVJeOPCoi931kj_gSbeQ"
+  "SecurityWebinarSlides1":"https://docs.google.com/presentation/d/1lgoWN0e7VOytFFSB6mKXy0cfVJeOPCoi931kj_gSbeQ",
+  "WorkerToolsDockerHub":"https://hub.docker.com/r/octopusdeploy/worker-tools"
 }
