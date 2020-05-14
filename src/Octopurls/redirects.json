@@ -503,5 +503,9 @@
   "SamplesSubscriptionsRepo": "https://github.com/OctopusSamples/Subscriptions",
   "SQLServerRequirements": "https://octopus.com/docs/installation/requirements#sql-server-database",
   "SecurityWebinarSlides1":"https://docs.google.com/presentation/d/1lgoWN0e7VOytFFSB6mKXy0cfVJeOPCoi931kj_gSbeQ",
-  "WorkerToolsDockerHub":"https://hub.docker.com/r/octopusdeploy/worker-tools"
+  "WorkerToolsDockerHub":"https://hub.docker.com/r/octopusdeploy/worker-tools",
+  "PatternRollingSampleAzureWebApp": "https://samples.octopus.app/app#/Spaces-45/projects/azure-webapp-rolling-deploy",
+  "PatternRollingSampleAws": "https://samples.octopus.app/app#/Spaces-45/projects/aws-rolling-deploy",
+  "TargetNginxSampleRandomQuotesJs": "https://samples.octopus.app/app#/Spaces-104/projects/randomquotes-js/",
+  "TargetWildflySamplePetClinic": "https://samples.octopus.app/app#/Spaces-85/projects/petclinic/"
 }
