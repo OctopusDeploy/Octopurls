@@ -507,5 +507,7 @@
   "PatternRollingSampleAzureWebApp": "https://samples.octopus.app/app#/Spaces-45/projects/azure-webapp-rolling-deploy",
   "PatternRollingSampleAws": "https://samples.octopus.app/app#/Spaces-45/projects/aws-rolling-deploy",
   "TargetNginxSampleRandomQuotesJs": "https://samples.octopus.app/app#/Spaces-104/projects/randomquotes-js/",
-  "TargetWildflySamplePetClinic": "https://samples.octopus.app/app#/Spaces-85/projects/petclinic/"
+  "TargetWildflySamplePetClinic": "https://samples.octopus.app/app#/Spaces-85/projects/petclinic/",
+  "PatternRollingSampleWindowSize": "https://samples.octopus.app/app#/Spaces-45/projects/window-size-as-percentage",
+  "PatternRollingSampleIncrementCounter": "https://samples.octopus.app/app#/Spaces-45/projects/increment-rolling-counter"
 }
