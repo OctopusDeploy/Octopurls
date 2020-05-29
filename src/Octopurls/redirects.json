@@ -373,7 +373,7 @@
   "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/tentacle-communication",
   "LatestTentacleWinX86": "https://octopus.com/downloads/latest/WindowsX86/OctopusTentacle",
   "LatestTentacleWinX64": "https://octopus.com/downloads/latest/WindowsX64/OctopusTentacle",
-  "Slack": "https://octopususergroup.slack.com/join/shared_invite/enQtNDcyNjM3OTczNzAxLTI2ZmVlYmNhMmVjMGE5MzEyNzI3MTQ0YzA5ZGNkMDliOTQ1MDM4MGFiY2M0NmU0NGI1MmViMzVhM2ZlNzQ1ZGM",
+  "Slack": "https://join.slack.com/t/octopususergroup/shared_invite/zt-eowov3at-4OTwkT75Uqq7WuzvBskuFg",
   "ServiceFabricConnectPS": "https://docs.microsoft.com/en-us/powershell/module/servicefabric/connect-servicefabriccluster?view=azureservicefabricps",
   "NginxConfigureLocations": "https://docs.nginx.com/nginx/admin-guide/web-server/web-server/#configuring-locations",
   "NginxUserPermissions": "https://octopus.com/docs/deployment-examples/nginx-on-nix-deployments/configure-target-machine#ConfigureTargetMachine-EnableSudoAccessWithoutPassword",
@@ -510,5 +510,17 @@
   "TargetWildflySamplePetClinic": "https://samples.octopus.app/app#/Spaces-85/projects/petclinic/",
   "PatternRollingSampleWindowSize": "https://samples.octopus.app/app#/Spaces-45/projects/window-size-as-percentage",
   "PatternRollingSampleIncrementCounter": "https://samples.octopus.app/app#/Spaces-45/projects/increment-rolling-counter",
-  "PatternRollingSampleManualRolling": "https://samples.octopus.app/app#/Spaces-45/projects/manual-rolling-deployments"
+  "PatternRollingSampleManualRolling": "https://samples.octopus.app/app#/Spaces-45/projects/manual-rolling-deployments",
+  "OctopusCloudPricing":"https://octopus.com/pricing/cloud",
+  "OctopusServerFolders":"https://octopus.com/docs/administration/managing-infrastructure/server-configuration-and-file-storage",
+  "OctopusUpgradeDoc":"https://octopus.com/docs/administration/upgrading",
+  "UpgradeOctopusWithOctopus":"https://help.octopus.com/t/can-i-automate-upgrading-the-octopus-deploy-server/23824/2",
+  "ManagingInfrastructure":"https://octopus.com/docs/administration/managing-infrastructure",
+  "OctopusApiSamples":"https://github.com/OctopusDeploy/OctopusDeploy-Api/",
+  "WorkerSecurityScopedWorkerPools":"https://www.youtube.com/watch?v=w95WTEQmJuo",
+  "ExecutionContainersForWorkers":"https://octopus.com/docs/deployment-process/execution-containers-for-workers",
+  "MovingOctopusComponents":"https://octopus.com/docs/administration/managing-infrastructure/moving-your-octopus",
+  "Reporting": "https://octopus.com/docs/administration/reporting",
+  "CloudStaticIP":"https://octopus.com/docs/octopus-cloud/static-ip",
+  "AcceptableUsage":"https://octopus.com/legal/acceptable-usage"
 }
