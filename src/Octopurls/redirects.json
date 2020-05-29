@@ -373,7 +373,7 @@
   "TentacleCommunicationModes": "https://octopus.com/docs/infrastructure/deployment-targets/windows-targets/tentacle-communication",
   "LatestTentacleWinX86": "https://octopus.com/downloads/latest/WindowsX86/OctopusTentacle",
   "LatestTentacleWinX64": "https://octopus.com/downloads/latest/WindowsX64/OctopusTentacle",
-  "Slack": "https://octopususergroup.slack.com/join/shared_invite/enQtNDcyNjM3OTczNzAxLTI2ZmVlYmNhMmVjMGE5MzEyNzI3MTQ0YzA5ZGNkMDliOTQ1MDM4MGFiY2M0NmU0NGI1MmViMzVhM2ZlNzQ1ZGM",
+  "Slack": "https://octopususergroup.slack.com/join/shared_invite/zt-eowov3at-4OTwkT75Uqq7WuzvBskuFg#/",
   "ServiceFabricConnectPS": "https://docs.microsoft.com/en-us/powershell/module/servicefabric/connect-servicefabriccluster?view=azureservicefabricps",
   "NginxConfigureLocations": "https://docs.nginx.com/nginx/admin-guide/web-server/web-server/#configuring-locations",
   "NginxUserPermissions": "https://octopus.com/docs/deployment-examples/nginx-on-nix-deployments/configure-target-machine#ConfigureTargetMachine-EnableSudoAccessWithoutPassword",
