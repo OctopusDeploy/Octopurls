@@ -510,5 +510,7 @@
   "TargetWildflySamplePetClinic": "https://samples.octopus.app/app#/Spaces-85/projects/petclinic/",
   "PatternRollingSampleWindowSize": "https://samples.octopus.app/app#/Spaces-45/projects/window-size-as-percentage",
   "PatternRollingSampleIncrementCounter": "https://samples.octopus.app/app#/Spaces-45/projects/increment-rolling-counter",
-  "PatternRollingSampleManualRolling": "https://samples.octopus.app/app#/Spaces-45/projects/manual-rolling-deployments"
+  "PatternRollingSampleManualRolling": "https://samples.octopus.app/app#/Spaces-45/projects/manual-rolling-deployments",
+  "PatternRollingSamplesSpace": "https://samples.octopus.app/app#/Spaces-45/",
+  "RollingDeployTaggedKBArticles": "https://help.octopus.com/tags/rolling-deployment/"
 }
