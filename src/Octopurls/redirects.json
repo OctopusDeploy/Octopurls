@@ -516,5 +516,17 @@
   "PatternRollingSamplePetClinicNoRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-no-rolling-deploy/deployments/process",
   "PatternRollingSamplePetClinicRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-rolling-deploy/deployments/process",
   "PatternRollingSamplePetClinicIacRunbooks": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-infrastructure/operations/runbooks",
-  "JiraIntegration": "https://octopus.com/docs/managing-releases/issue-tracking/jira"
+  "JiraIntegration": "https://octopus.com/docs/managing-releases/issue-tracking/jira",
+  "OctopusCloudPricing":"https://octopus.com/pricing/cloud",
+  "OctopusServerFolders":"https://octopus.com/docs/administration/managing-infrastructure/server-configuration-and-file-storage",
+  "OctopusUpgradeDoc":"https://octopus.com/docs/administration/upgrading",
+  "UpgradeOctopusWithOctopus":"https://help.octopus.com/t/can-i-automate-upgrading-the-octopus-deploy-server/23824/2",
+  "ManagingInfrastructure":"https://octopus.com/docs/administration/managing-infrastructure",
+  "OctopusApiSamples":"https://github.com/OctopusDeploy/OctopusDeploy-Api/",
+  "WorkerSecurityScopedWorkerPools":"https://www.youtube.com/watch?v=w95WTEQmJuo",
+  "ExecutionContainersForWorkers":"https://octopus.com/docs/deployment-process/execution-containers-for-workers",
+  "MovingOctopusComponents":"https://octopus.com/docs/administration/managing-infrastructure/moving-your-octopus",
+  "Reporting": "https://octopus.com/docs/administration/reporting",
+  "CloudStaticIP":"https://octopus.com/docs/octopus-cloud/static-ip",
+  "AcceptableUsage":"https://octopus.com/legal/acceptable-usage"
 }
