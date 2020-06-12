@@ -513,7 +513,7 @@
   "PatternRollingSampleManualRolling": "https://samples.octopus.app/app#/Spaces-45/projects/manual-rolling-deployments",
   "PatternRollingSamplesSpace": "https://samples.octopus.app/app#/Spaces-45/",
   "RollingDeployTaggedKBArticles": "https://help.octopus.com/tags/rolling-deployment/",
-  "PatternRollingSamplePetClinicNoRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-no-rolling-deploy",
-  "PatternRollingSamplePetClinicRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-rolling-deploy",
+  "PatternRollingSamplePetClinicNoRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-no-rolling-deploy/deployments/process",
+  "PatternRollingSamplePetClinicRollingDeploy": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-rolling-deploy/deployments/process",
   "PatternRollingSamplePetClinicIacRunbooks": "https://samples.octopus.app/app#/Spaces-45/projects/petclinic-infrastructure/operations/runbooks"
 }
