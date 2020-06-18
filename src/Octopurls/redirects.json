@@ -528,5 +528,6 @@
   "MovingOctopusComponents":"https://octopus.com/docs/administration/managing-infrastructure/moving-your-octopus",
   "Reporting": "https://octopus.com/docs/administration/reporting",
   "CloudStaticIP":"https://octopus.com/docs/octopus-cloud/static-ip",
-  "AcceptableUsage":"https://octopus.com/legal/acceptable-usage"
+  "AcceptableUsage":"https://octopus.com/legal/acceptable-usage",
+  "BlueGreenTaggedKBArticles":"https://help.octopus.com/tags/blue-green/"
 }
