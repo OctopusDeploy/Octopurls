@@ -80,6 +80,9 @@ function MD5HashFile([string] $filePath)
     }
 }
 
+# Enable TLS 1.2 in this script. NuGet is now requiring it.
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12
+
 Write-Host "Preparing to run build script..."
 
 if(!$PSScriptRoot){
@@ -127,7 +130,8 @@ if ((Test-Path $PSScriptRoot) -and !(Test-Path $TOOLS_DIR)) {
 if (!(Test-Path $PACKAGES_CONFIG)) {
     Write-Verbose -Message "Downloading packages.config..."
     try { (New-Object System.Net.WebClient).DownloadFile("http://cakebuild.net/download/bootstrapper/packages", $PACKAGES_CONFIG) } catch {
-        Throw "Could not download packages.config."
+        Write-Host "Could not download packages.config."
+        Throw $_
     }
 }
 
