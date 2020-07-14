@@ -534,5 +534,6 @@
   "K8SIngressClassDocs": "https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-class",
   "K8SIngressClassAnnouncement": "https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/#setting-a-default-ingressclass",
   "PatternBlueGreenSamplesSpace": "https://samples.octopus.app/app#/Spaces-302/",
-  "HttpClientHandlerUseDefaultCredentials": "https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler.usedefaultcredentials"
+  "HttpClientHandlerUseDefaultCredentials": "https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclienthandler.usedefaultcredentials",
+  "TargetWindowsSamplesSpace": "https://samples.octopus.app/app#/Spaces-202/"
 }
