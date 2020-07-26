@@ -539,6 +539,5 @@
   "StructuredConfigurationVariables": "https://octopus.com/docs/deployment-process/configuration-features/structured-configuration-variables-feature.md",
   "K8SPodDNSPolicy": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy",
   "K8SPodDNSConfiguration": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-dns-config",
-  "K8STaintsAndTolerations": "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/",
   "K8SPodAffinity": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/"
 }
