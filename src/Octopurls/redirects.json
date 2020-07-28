@@ -540,5 +540,6 @@
   "K8SPodDNSPolicy": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy",
   "K8SPodDNSConfiguration": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-dns-config",
   "K8SPodAffinity": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
-  "TargetHybridSampleSpace": "https://samples.octopus.app/app#/Spaces-342"
+  "TargetHybridSampleSpace": "https://samples.octopus.app/app#/Spaces-342",
+  "TargetPostgreSQLSampleSpace": "https://samples.octopus.app/app#/Spaces-243"
 }
