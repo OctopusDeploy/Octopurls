@@ -541,5 +541,7 @@
   "K8SPodDNSConfiguration": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-dns-config",
   "K8SPodAffinity": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/",
   "TargetHybridSampleSpace": "https://samples.octopus.app/app#/Spaces-342",
-  "TargetPostgreSQLSampleSpace": "https://samples.octopus.app/app#/Spaces-243"
+  "TargetPostgreSQLSampleSpace": "https://samples.octopus.app/app#/Spaces-243",
+  "OctopusChocolateyslides": "https://docs.google.com/presentation/d/1F3nhsfcSlU6x2NTw4DXBKdyuXCTT8gjjpn6rKYITQQ8/edit?usp=sharing"
+
 }
