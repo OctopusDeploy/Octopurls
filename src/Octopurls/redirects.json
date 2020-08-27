@@ -550,5 +550,6 @@
   "SupportedBrowsers": "https://octopus.com/docs/installation/requirements#supported-browsers",
   "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing",
   "KubernetesPVCClasses": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1",
-  "KubernetesPVCAccessModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1"
+  "KubernetesPVCAccessModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1",
+  "KubernetesPVCVolumeModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-mode"
 }
