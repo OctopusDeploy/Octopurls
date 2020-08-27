@@ -551,5 +551,8 @@
   "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing",
   "KubernetesPVCClasses": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1",
   "KubernetesPVCAccessModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1",
-  "KubernetesPVCVolumeModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-mode"
+  "KubernetesPVCVolumeModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-mode",
+  "KubernetesDaemonSet": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "KubernetesStatefulSet": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+  "KubernetesDeployment": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
 }
