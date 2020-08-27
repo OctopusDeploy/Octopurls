@@ -548,5 +548,6 @@
   "OctopusChocolateyslides": "https://docs.google.com/presentation/d/1F3nhsfcSlU6x2NTw4DXBKdyuXCTT8gjjpn6rKYITQQ8/edit?usp=sharing",
   "OctopusChoclateyslides": "https://docs.google.com/presentation/d/1F3nhsfcSlU6x2NTw4DXBKdyuXCTT8gjjpn6rKYITQQ8/edit?usp=sharing",
   "SupportedBrowsers": "https://octopus.com/docs/installation/requirements#supported-browsers",
-  "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing"
+  "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing",
+  "KubernetesPVCClasses": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1"
 }
