@@ -526,6 +526,7 @@
   "OctopusApiSamples":"https://github.com/OctopusDeploy/OctopusDeploy-Api/",
   "WorkerSecurityScopedWorkerPools":"https://www.youtube.com/watch?v=w95WTEQmJuo",
   "ExecutionContainersForWorkers":"https://octopus.com/docs/deployment-process/execution-containers-for-workers",
+  "ExecutionContainersWhichImage":"https://octopus.com/docs/deployment-process/execution-containers-for-workers#which-image",
   "MovingOctopusComponents":"https://octopus.com/docs/administration/managing-infrastructure/moving-your-octopus",
   "Reporting": "https://octopus.com/docs/administration/reporting",
   "CloudStaticIP":"https://octopus.com/docs/octopus-cloud/static-ip",
