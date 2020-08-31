@@ -555,5 +555,6 @@
   "KubernetesPVCVolumeModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-mode",
   "KubernetesDaemonSet": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
   "KubernetesStatefulSet": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
-  "KubernetesDeployment": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+  "KubernetesDeployment": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+  "Jobs":"https://jobs.lever.co/octopus"
 }
