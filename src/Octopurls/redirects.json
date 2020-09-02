@@ -556,5 +556,6 @@
   "KubernetesDaemonSet": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
   "KubernetesStatefulSet": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
   "KubernetesDeployment": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
-  "Jobs":"https://jobs.lever.co/octopus"
+  "Jobs":"https://jobs.lever.co/octopus",
+  "KubernetesDaemonSetMinReadySeconds": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/"
 }
