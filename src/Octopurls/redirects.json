@@ -560,5 +560,6 @@
   "KubernetesDaemonSetMinReadySeconds": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/",
   "Disclosure": "https://octopus.com/security/disclosure",
   "PublicKey": "https://octopus.com/pgp-key.pub",
-  "SpringBootJarRestrictions": "https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html#executable-jar-restrictions"
+  "SpringBootJarRestrictions": "https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html#executable-jar-restrictions",
+  "KubernetesReadinessGates" : "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-readiness-gate"
 }
