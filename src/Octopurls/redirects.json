@@ -527,6 +527,7 @@
   "OctopusApiSamples":"https://github.com/OctopusDeploy/OctopusDeploy-Api/",
   "WorkerSecurityScopedWorkerPools":"https://www.youtube.com/watch?v=w95WTEQmJuo",
   "ExecutionContainersForWorkers":"https://octopus.com/docs/deployment-process/execution-containers-for-workers",
+  "ExecutionContainersWhichImage":"https://octopus.com/docs/deployment-process/execution-containers-for-workers#which-image",
   "MovingOctopusComponents":"https://octopus.com/docs/administration/managing-infrastructure/moving-your-octopus",
   "Reporting": "https://octopus.com/docs/administration/reporting",
   "CloudStaticIP":"https://octopus.com/docs/octopus-cloud/static-ip",
@@ -549,5 +550,18 @@
   "OctopusChocolateyslides": "https://docs.google.com/presentation/d/1F3nhsfcSlU6x2NTw4DXBKdyuXCTT8gjjpn6rKYITQQ8/edit?usp=sharing",
   "OctopusChoclateyslides": "https://docs.google.com/presentation/d/1F3nhsfcSlU6x2NTw4DXBKdyuXCTT8gjjpn6rKYITQQ8/edit?usp=sharing",
   "SupportedBrowsers": "https://octopus.com/docs/installation/requirements#supported-browsers",
-  "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing"
+  "k8swebinarslides": "https://docs.google.com/presentation/d/1CHmlkdqa7ggl4Ka3UuUR0OiYqBMLNc9ElcAbVvHMjIo/edit?usp=sharing",
+  "KubernetesPVCClasses": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1",
+  "KubernetesPVCAccessModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1",
+  "KubernetesPVCVolumeModes": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-mode",
+  "KubernetesDaemonSet": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/",
+  "KubernetesStatefulSet": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+  "KubernetesDeployment": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+  "Jobs":"https://jobs.lever.co/octopus",
+  "KubernetesDaemonSetMinReadySeconds": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/",
+  "Disclosure": "https://octopus.com/security/disclosure",
+  "PublicKey": "https://octopus.com/pgp-key.pub",
+  "SpringBootJarRestrictions": "https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html#executable-jar-restrictions",
+  "KubernetesReadinessGates" : "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-readiness-gate",
+  "GettingStartedVideos" : "https://www.youtube.com/c/Octopusdeploy/playlists?view=50&sort=dd&shelf_id=8"
 }
