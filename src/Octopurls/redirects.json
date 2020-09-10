@@ -563,5 +563,6 @@
   "PublicKey": "https://octopus.com/pgp-key.pub",
   "SpringBootJarRestrictions": "https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-executable-jar-format.html#executable-jar-restrictions",
   "KubernetesReadinessGates" : "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-readiness-gate",
-  "GettingStartedVideos" : "https://www.youtube.com/c/Octopusdeploy/playlists?view=50&sort=dd&shelf_id=8"
+  "GettingStartedVideos" : "https://www.youtube.com/c/Octopusdeploy/playlists?view=50&sort=dd&shelf_id=8",
+  "OnboardingProjectsVideo" : "https://youtu.be/gfaRUIlQybA"
 }
