@@ -459,6 +459,7 @@
   "MinikubeInstall": "https://kubernetes.io/docs/tasks/tools/install-minikube/",
   "DockerDocs": "https://docs.docker.com/",
   "JenkinsPluginDocumentation": "https://octopus.com/docs/packaging-applications/build-servers/jenkins",
+  "JenkinsPluginPipelineDocumentation": "https://octopus.com/docs/packaging-applications/build-servers/jenkins/pipeline",
   "SpingPropertiesAndConfiguration": "https://docs.spring.io/autorepo/docs/spring-boot/1.2.0.M2/reference/html/howto-properties-and-configuration.html",
   "RunbookPublishing": "https://octopus.com/docs/runbooks#Publishing",
   "ExperimentalSshTargetsFeedbackForm": "https://octopusdeploy.typeform.com/to/Aid7yB",
