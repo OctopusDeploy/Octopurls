@@ -475,7 +475,7 @@
   "GuidesAzureDevops": "https://octopus.com/docs/guides?buildServer=Azure%20DevOps%2FTFS",
   "GuidesTeamCity": "https://octopus.com/docs/guides?buildServer=TeamCity",
   "GuidesJenkins": "https://octopus.com/docs/guides?buildServer=Jenkins",
-  "OctopusConcepts": "https://octopus.com/docs/getting-started-guides/octopus-concepts",
+  "OctopusConcepts": "https://octopus.com/docs/getting-started",
   "InstallOctopus": "https://octopus.com/docs/installation",
   "OctopusCloud": "https://octopus.com/docs/octopus-cloud",
   "PackagingApps": "https://octopus.com/docs/packaging-applications",
