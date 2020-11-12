@@ -581,5 +581,6 @@
   "KubernetesPrivateRegistries": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/",
   "ECRonEKS": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html",
   "GCRonGKE": "https://cloud.google.com/container-registry/docs/access-control#scopes",
-  "ACRonAKS": "https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration"
+  "ACRonAKS": "https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration",
+  "OctopusVersionRegex": "https://regex101.com/r/07KDez/1/"
 }
