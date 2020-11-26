@@ -584,5 +584,8 @@
   "ACRonAKS": "https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration",
   "OctopusVersionRegex": "https://regex101.com/r/07KDez/1/",
   "DockerTags": "https://docs.docker.com/engine/reference/commandline/tag/#extended-description",
-  "Workers": "https://octopus.com/docs/infrastructure/workers"
+  "Workers": "https://octopus.com/docs/infrastructure/workers",
+  "ReleaseVersioning": "https://octopus.com/docs/releases/release-versioning",
+  "ReleaseNotes": "https://octopus.com/docs/releases/release-notes",
+  "DynamicInfrastructure": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure"
 }
