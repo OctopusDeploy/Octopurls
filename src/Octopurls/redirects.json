@@ -586,7 +586,7 @@
   "DockerTags": "https://docs.docker.com/engine/reference/commandline/tag/#extended-description",
   "Workers": "https://octopus.com/docs/infrastructure/workers",
   "ReleaseVersioning": "https://octopus.com/docs/releases/release-versioning",
-  "ReleaseNotes": "https://octopus.com/docs/releases/release-notes",
   "DynamicInfrastructure": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure",
-  "DiscreteChannelReleases": "https://octopus.com/docs/releases/channels"
+  "DiscreteChannelReleases": "https://octopus.com/docs/releases/channels",
+  "AccessDeniedStartingHttpListener": "https://octopus.com/docs/support/troubleshooting-access-denied-starting-http-listener"
 }
