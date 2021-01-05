@@ -2,8 +2,37 @@
 // TOOLS
 //////////////////////////////////////////////////////////////////////
 #tool "nuget:?package=xunit.runner.console";
-#addin "nuget:?package=Newtonsoft.Json";
-using Newtonsoft.Json;
+#module nuget:?package=Cake.DotNetTool.Module&version=0.4.0
+#tool "nuget:?package=TeamCity.Dotnet.Integration&version=1.0.10"
+#addin "nuget:?package=Cake.OctoVersion&version=0.0.138"
+
+// The list below is to manually resolve NuGet dependencies to work around a bug in Cake's dependency loader.
+// Our intention is to remove this list again once the Cake bug is fixed.
+//
+// What we want:
+// #addin "nuget:?package=Cake.OctoVersion&version=0.0.138&loaddependencies=true"
+// (Note the loaddependencies=true parameter.)
+//
+// Our workaround:
+#addin "nuget:?package=LibGit2Sharp&version=0.26.2"
+#addin "nuget:?package=Serilog&version=2.8.0.0"
+#addin "nuget:?package=Serilog.Settings.Configuration&version=3.1.0.0"
+#addin "nuget:?package=Serilog.Sinks.Console&version=3.0.1.0"
+#addin "nuget:?package=Serilog.Sinks.Literate&version=3.0.0.0"
+#addin "nuget:?package=SerilogMetrics&version=2.1.0.0"
+#addin "nuget:?package=OctoVersion.Core&version=0.0.138"
+#addin "nuget:?package=Cake.OctoVersion&version=0.0.138"
+#addin "nuget:?package=Microsoft.Extensions.Primitives&version=3.1.7"
+#addin "nuget:?package=Microsoft.Extensions.Configuration&version=3.1.7.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.Abstractions&version=3.1.7.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.Binder&version=3.1.7.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.CommandLine&version=3.1.7.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.EnvironmentVariables&version=3.1.7.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.FileExtensions&version=3.1.0.0"
+#addin "nuget:?package=Microsoft.Extensions.Configuration.Json&version=3.1.7"
+#addin "nuget:?package=Microsoft.Extensions.DependencyModel&version=2.0.4.0"
+#addin "nuget:?package=Microsoft.Extensions.FileProviders.Abstractions&version=3.1.0.0"
+#addin "nuget:?package=Microsoft.Extensions.FileProviders.Physical&version=3.1.0.0"
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -19,21 +48,23 @@ var artifactsDir = "./artifacts";
 var projectToPublish = "./src/Octopurls/Octopurls.csproj";
 var projectName = "Octopurls";
 
-string buildNumber;
+if (!BuildSystem.IsRunningOnTeamCity) OctoVersionDiscoverLocalGitBranch(out _);
+OctoVersion(out var versionInfo);
 
 //////////////////////////////////////////////////////////////////////
 // SETUP /TEARDOWN
 //////////////////////////////////////////////////////////////////////
 Setup(context =>
 {
-    buildNumber = EnvironmentVariable("BUILD_NUMBER");
-
-    Information($"Building {projectName} v{buildNumber}");
+    if(BuildSystem.IsRunningOnTeamCity)
+        BuildSystem.TeamCity.SetBuildNumber(versionInfo.FullSemVer);
+    
+    Information($"Building {projectName} v{versionInfo.FullSemVer}");
 });
 
 Teardown(context =>
 {
-    Information($"Finished running task for build v{buildNumber}");
+    Information($"Finished running task for build v{versionInfo.FullSemVer}");
 });
 
 //////////////////////////////////////////////////////////////////////
@@ -62,8 +93,8 @@ Task("Build")
         {
             Configuration = configuration,
             ArgumentCustomization = args => args
-                .Append($"/p:Version={buildNumber}")
-                .Append($"/p:InformationalVersion={buildNumber}")
+                .Append($"/p:Version={versionInfo.FullSemVer}")
+                .Append($"/p:InformationalVersion={versionInfo.FullSemVer}")
                 .Append("--verbosity normal")
         });
     });
@@ -97,8 +128,8 @@ Task("DotNetCorePublish")
             Configuration = configuration,
             OutputDirectory = publishDir,
             ArgumentCustomization = args => args
-                .Append($"/p:Version={buildNumber}")
-                .Append($"/p:InformationalVersion={buildNumber}")
+                .Append($"/p:Version={versionInfo.FullSemVer}")
+                .Append($"/p:InformationalVersion={versionInfo.FullSemVer}")
                 .Append("--verbosity normal")
         });
     });
