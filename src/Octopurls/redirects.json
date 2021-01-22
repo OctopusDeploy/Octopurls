@@ -379,6 +379,7 @@
   "NginxUserPermissions": "https://octopus.com/docs/deployment-examples/nginx-on-nix-deployments/configure-target-machine#ConfigureTargetMachine-EnableSudoAccessWithoutPassword",
   "NginxInstall": "https://docs.nginx.com/nginx/admin-guide/installing-nginx",
   "OnboardingFeedbackForm": "https://octopus.com/first",
+  "PackagingApiAndIntegration": "https://octopus.com/docs/octopus-rest-api",
   "RestAPI": "https://octopus.com/docs/octopus-rest-api",
   "PackagingCreatingPackages": "https://octopus.com/docs/packaging-applications",
   "PackagingCreatingSupportedPackages": "https://octopus.com/docs/packaging-applications#supported-formats",
