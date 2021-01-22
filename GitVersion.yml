@@ -1,1 +1,5 @@
-mode: Mainline
+mode: ContinuousDeployment
+
+branches:
+  master:
+    regex: ^(main|master)$
