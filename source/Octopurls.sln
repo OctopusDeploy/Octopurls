@@ -7,6 +7,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Octopurls", "Octopurls\Octo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Octopurls.Tests", "Octopurls.Tests\Octopurls.Tests.csproj", "{F5CA833C-14F4-42CA-90A8-7D14DDA20C2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{21918BEC-95FF-4D63-99D3-1FEDAF97B560}"
+ProjectSection(SolutionItems) = preProject
+	..\.gitattributes = ..\.gitattributes
+	..\.gitignore = ..\.gitignore
+	..\.nuke = ..\.nuke
+	..\build.cmd = ..\build.cmd
+	..\build.ps1 = ..\build.ps1
+	..\build.sh = ..\build.sh
+	..\GitVersion.yml = ..\GitVersion.yml
+	..\LICENSE.txt = ..\LICENSE.txt
+	..\NuGet.config = ..\NuGet.config
+	..\octoversion.json = ..\octoversion.json
+	..\README.md = ..\README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8A3EA544-396F-46C8-AE93-0106EC06CEDD}"
+ProjectSection(SolutionItems) = preProject
+	..\build\.editorconfig = ..\build\.editorconfig
+	..\build\_build.csproj = ..\build\_build.csproj
+	..\build\_build.csproj.DotSettings = ..\build\_build.csproj.DotSettings
+	..\build\Build.cs = ..\build\Build.cs
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

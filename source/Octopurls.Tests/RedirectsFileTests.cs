@@ -2,22 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
-using Xunit;
-using Octopurls;
 using System.Linq;
+using FluentAssertions;
+using NUnit.Framework;
 
 namespace Octopurls.Tests
 {
     public class RedirectsFileTests
     {
-        readonly Redirects redirects;
+        readonly Redirects _redirects;
+
         public RedirectsFileTests()
         {
             var redirectsPath = Path.Combine("redirects.json");
             using(var redirectsFile = new StreamReader(new FileStream(redirectsPath, FileMode.Open)))
             {
                 var urls = JsonConvert.DeserializeObject<Dictionary<string, string>>(redirectsFile.ReadToEnd());
-                redirects = new Redirects
+                _redirects = new Redirects
                 {
                     Urls = new Dictionary<string, string>(urls, StringComparer.OrdinalIgnoreCase)
                 };
@@ -26,48 +27,44 @@ namespace Octopurls.Tests
 
         // Check that someone haven't added a redirect for `ping`
         // `ping` is used for pingdom monitoring of this app
-        [Fact]
+        [Test]
         public void CheckThatRedirectsFileDoesNotContainEntryForPing()
         {
-            Assert.False(
-                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "ping").Any(),
-                "Redirect file should not contain an entry for 'ping'"
-            );
+            _redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "ping")
+                .Should()
+                .BeEmpty("Redirect file should not contain an entry for 'ping'");
         }
 
         // Check that someone haven't added a redirect for `missing`
         // `missing` is used for customers to send feedback on how/where
         // they encountered a missing link
-        [Fact]
+        [Test]
         public void CheckThatRedirectsFileDoesNotContainEntryForFeedback()
         {
-            Assert.False(
-                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "feedback").Any(),
-                "Redirect file should not contain an entry for 'feedback'"
-            );
+            _redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "feedback")
+                .Should()
+                .BeEmpty("Redirect file should not contain an entry for 'feedback'");
         }
 
         // Check that someone haven't added  redirect for `favicon.ico`
         // `favicon.ico` is requested when hitting the `ping` endpoint and causing the
         // missing URL Slack notification to be sent
-        [Fact]
+        [Test]
         public void CheckThatRedirectsFileDoesNotContainEntryForFavicon()
         {
-            Assert.False(
-                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "favicon.ico").Any(),
-                "Redirect file should not contain an entry for 'favicon.ico'"
-            );
+            _redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "favicon.ico")
+                .Should()
+                .BeEmpty("Redirect file should not contain an entry for 'favicon.ico'");
         }
 
         // Check that someone haven't added  redirect for `robots.txt`
         // `robots.txt` is requested by search engine web crawlers
-        [Fact]
+        [Test]
         public void CheckThatRedirectsFileDoesNotContainEntryForRobotsTxt()
         {
-            Assert.False(
-                redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "robots.txt").Any(),
-                "Redirect file should not contain an entry for 'robots.txt'"
-            );
+            _redirects.Urls.Keys.Where(k => k.ToLowerInvariant() == "robots.txt")
+                .Should()
+                .BeEmpty("Redirect file should not contain an entry for 'robots.txt'");
         }
     }
 }
