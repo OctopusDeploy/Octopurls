@@ -590,5 +590,6 @@
   "DynamicInfrastructure": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure",
   "DiscreteChannelReleases": "https://octopus.com/docs/releases/channels",
   "AccessDeniedStartingHttpListener": "https://octopus.com/docs/support/troubleshooting-access-denied-starting-http-listener",
-  "UsingOctopusClientFromInstallationFolder": "https://octopus.com/docs/octopus-rest-api/octopus.client/getting-started#using-octopus.client-from-installation-folder"
+  "UsingOctopusClientFromInstallationFolder": "https://octopus.com/docs/octopus-rest-api/octopus.client/getting-started#using-octopus.client-from-installation-folder",
+  "ProjectExportImport": "https://github.com/OctopusDeploy/docs/blob/michrich/project-export-import/docs/projects/export-import/index.md"
 }
