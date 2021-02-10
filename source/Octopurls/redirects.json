@@ -592,5 +592,6 @@
   "AccessDeniedStartingHttpListener": "https://octopus.com/docs/support/troubleshooting-access-denied-starting-http-listener",
   "UsingOctopusClientFromInstallationFolder": "https://octopus.com/docs/octopus-rest-api/octopus.client/getting-started#using-octopus.client-from-installation-folder",
   "ProjectExportImport": "https://github.com/OctopusDeploy/docs/blob/michrich/project-export-import/docs/projects/export-import/index.md",
-  "AzureAppServiceAppSettingsBulkEdit": "https://docs.microsoft.com/en-us/azure/app-service/configure-common#edit-in-bulk"
+  "AzureAppServiceAppSettingsBulkEdit": "https://docs.microsoft.com/en-us/azure/app-service/configure-common#edit-in-bulk",
+  "AzureAppServiceDeploymentSlot": "https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots"
 }
