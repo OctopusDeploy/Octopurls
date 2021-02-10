@@ -583,7 +583,7 @@
   "ECRonEKS": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.html",
   "GCRonGKE": "https://cloud.google.com/container-registry/docs/access-control#scopes",
   "ACRonAKS": "https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration",
-  "OctopusVersionRegex": "https://regex101.com/r/07KDez/1/",
+  "OctopusVersionRegex": "https://regex101.com/r/ldLt59/1/",
   "DockerTags": "https://docs.docker.com/engine/reference/commandline/tag/#extended-description",
   "Workers": "https://octopus.com/docs/infrastructure/workers",
   "ReleaseVersioning": "https://octopus.com/docs/releases/release-versioning",
