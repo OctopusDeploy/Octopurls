@@ -596,5 +596,6 @@
   "AzureAppServiceAppSettingsBulkEdit": "https://docs.microsoft.com/en-us/azure/app-service/configure-common#edit-in-bulk",
   "AzureAppServiceDeploymentSlot": "https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
   "AzureWebAppDeploymentTargets": "https://octopus.com/docs/infrastructure/deployment-targets/azure/web-app-targets",
-  "ImportExportFeedbackForm": "https://octopusdeploy.typeform.com/to/WWTgsZnf"
+  "ImportExportFeedbackForm": "https://octopusdeploy.typeform.com/to/WWTgsZnf",
+  "TenPillarsK8s": "https://github.com/Octopusdeploy/TenPillarsK8s/releases/latest"
 }
