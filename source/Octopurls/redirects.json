@@ -598,5 +598,7 @@
   "AzureWebAppDeploymentTargets": "https://octopus.com/docs/infrastructure/deployment-targets/azure/web-app-targets",
   "ImportExportFeedbackForm": "https://octopusdeploy.typeform.com/to/WWTgsZnf",
   "TenPillarsK8s": "https://github.com/Octopusdeploy/TenPillarsK8s/releases/latest",
-  "PulumiWebinar": "https://docs.google.com/presentation/d/1K9YT-q7gwyYLIfnLWjbIppK0Mg2hY_M27ZbQXBthqVA/edit?usp=sharing"
+  "PulumiWebinar": "https://docs.google.com/presentation/d/1K9YT-q7gwyYLIfnLWjbIppK0Mg2hY_M27ZbQXBthqVA/edit?usp=sharing",
+  "PulumiLinux": "https://library.octopus.com/step-templates/76296cd1-7d8c-47e8-b33f-027ecd3ff6b5/actiontemplate-run-pulumi-(linux)",
+  "PulumiWindows": "https://library.octopus.com/step-templates/b63d2573-9ff4-4ffe-83c7-153fad24ea57/actiontemplate-run-pulumi-(windows)"
 }
