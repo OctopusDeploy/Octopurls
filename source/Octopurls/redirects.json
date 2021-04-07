@@ -597,5 +597,6 @@
   "AzureAppServiceDeploymentSlot": "https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
   "AzureWebAppDeploymentTargets": "https://octopus.com/docs/infrastructure/deployment-targets/azure/web-app-targets",
   "ImportExportFeedbackForm": "https://octopusdeploy.typeform.com/to/WWTgsZnf",
-  "TenPillarsK8s": "https://github.com/Octopusdeploy/TenPillarsK8s/releases/latest"
+  "TenPillarsK8s": "https://github.com/Octopusdeploy/TenPillarsK8s/releases/latest",
+  "PulumiWebinar": "https://docs.google.com/presentation/d/1K9YT-q7gwyYLIfnLWjbIppK0Mg2hY_M27ZbQXBthqVA/edit?usp=sharing"
 }
