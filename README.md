@@ -1,7 +1,7 @@
 The Octopus Deploy docs URL redirector.
 
 ## Adding a new short URL redirect
-Open `src/Octopurls/redirects.json` in your favourite text editor (or just click the `Edit this file` button in Github.
+Open `source/Octopurls/redirects.json` in your favourite text editor (or just click the `Edit this file` button in Github.
 
 Add a new key value pair to the list of redirects, like so:
 ```
