@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Nuke.Common" Version="5.1.0" />
-    <PackageDownload Include="GitVersion.Tool" Version="[5.6.7]" />
+    <PackageReference Include="Nuke.OctoVersion" Version="0.2.453" />
   </ItemGroup>
 
   <ItemGroup>
