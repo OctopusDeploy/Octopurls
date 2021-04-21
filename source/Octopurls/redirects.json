@@ -309,6 +309,7 @@
   "KubernetesCommand": "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/",
   "KubernetesPodServiceAccountName": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/",
   "KubernetesTolerations": "https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/",
+  "KubernetesJobResource": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
   "DockerEntrypoint": "https://docs.docker.com/engine/reference/builder/#entrypoint",
   "DockerCmd": "https://docs.docker.com/engine/reference/builder/#cmd",
   "NginxIngressController": "https://github.com/kubernetes/ingress-nginx",
