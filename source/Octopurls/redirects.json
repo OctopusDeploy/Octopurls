@@ -620,5 +620,6 @@
   "PulumiWindows": "https://library.octopus.com/step-templates/b63d2573-9ff4-4ffe-83c7-153fad24ea57/actiontemplate-run-pulumi-(windows)",
   "AwsDocsCloudFormationTags": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
   "TerraformInitGetPlugins": "https://www.terraform.io/docs/cli/commands/init.html#get-plugins-false", 
-  "LiquibaseWebinar": "https://docs.google.com/presentation/d/1C0nmP0MAN9onDcnFIhT69rIaFimGUO63VAqjsq9Mt8w/edit?usp=sharing"
+  "LiquibaseWebinar": "https://docs.google.com/presentation/d/1C0nmP0MAN9onDcnFIhT69rIaFimGUO63VAqjsq9Mt8w/edit?usp=sharing",
+  "LinuxMachineId": "https://www.commandlinux.com/man-page/man5/machine-id.5.html"
 }
