@@ -623,5 +623,6 @@
   "LiquibaseWebinar": "https://docs.google.com/presentation/d/1C0nmP0MAN9onDcnFIhT69rIaFimGUO63VAqjsq9Mt8w/edit?usp=sharing",
   "LinuxMachineId": "https://www.commandlinux.com/man-page/man5/machine-id.5.html",
   "GoogleCloudServiceAccountKey": "https://cloud.google.com/iam/docs/creating-managing-service-account-keys",
-  "AzureTools": "https://octopus.com/docs/deployments/azure/running-azure-powershell"
+  "AzureTools": "https://octopus.com/docs/deployments/azure/running-azure-powershell",
+  "AWSTools": "https://octopus.com/docs/deployments/custom-scripts/aws-cli-scripts"
 }
