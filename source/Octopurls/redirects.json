@@ -625,5 +625,6 @@
   "GoogleCloudServiceAccountKey": "https://cloud.google.com/iam/docs/creating-managing-service-account-keys",
   "AzureTools": "https://octopus.com/docs/deployments/azure/running-azure-powershell",
   "AWSTools": "https://octopus.com/docs/deployments/custom-scripts/aws-cli-scripts",
-  "AzureWebinarPaaS": "https://docs.google.com/presentation/d/1v6-kIHD8fGg8QiZFeOiwDCM_DTiaJZp4iy6ofUBknoo/edit?usp=sharing"
+  "AzureWebinarPaaS": "https://docs.google.com/presentation/d/1v6-kIHD8fGg8QiZFeOiwDCM_DTiaJZp4iy6ofUBknoo/edit?usp=sharing",
+  "GCRRegistryLinks": "https://cloud.google.com/container-registry/docs/pushing-and-pulling#add-registry",
 }
