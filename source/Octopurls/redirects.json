@@ -627,4 +627,5 @@
   "AWSTools": "https://octopus.com/docs/deployments/custom-scripts/aws-cli-scripts",
   "AzureWebinarPaaS": "https://docs.google.com/presentation/d/1v6-kIHD8fGg8QiZFeOiwDCM_DTiaJZp4iy6ofUBknoo/edit?usp=sharing",
   "GCRRegistryLinks": "https://cloud.google.com/container-registry/docs/pushing-and-pulling#add-registry",
+  "GCPRegionsZones": "https://cloud.google.com/compute/docs/regions-zones#available",
 }
