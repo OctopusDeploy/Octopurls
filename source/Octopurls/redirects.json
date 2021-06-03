@@ -631,6 +631,7 @@
   "GCPImpersonateServiceAccount": "https://cloud.google.com/sdk/gcloud/reference#--impersonate-service-account",
   "GCPDefaultRegionAndZone": "https://cloud.google.com/compute/docs/gcloud-compute#set-default-region-zone-environment-variables",
   "GCPDefaultProject": "https://cloud.google.com/compute/docs/gcloud-compute#default_project",
+  "TerraformGCPReferences": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#full-reference",
   "CaCEAPFeedbackForm": "https://octopusdeploy.typeform.com/to/qeW9JGyo",
-  "Release2021Webinar": "https://docs.google.com/presentation/d/1-0NlLZk4bx3lkOc2pfV0gdfZhjrNjBvFbGTQdGVu86E/edit?usp=sharing"
+  "Release2021Webinar": "https://docs.google.com/presentation/d/1-0NlLZk4bx3lkOc2pfV0gdfZhjrNjBvFbGTQdGVu86E/edit?usp=sharing",
 }
