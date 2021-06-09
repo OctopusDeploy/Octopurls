@@ -634,4 +634,5 @@
   "TerraformGCPReferences": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#full-reference",
   "CaCEAPFeedbackForm": "https://octopusdeploy.typeform.com/to/qeW9JGyo",
   "Release2021Webinar": "https://docs.google.com/presentation/d/1-0NlLZk4bx3lkOc2pfV0gdfZhjrNjBvFbGTQdGVu86E/edit?usp=sharing",
+  "Terraform": "https://octopus.com/docs/deployments/terraform",
 }
