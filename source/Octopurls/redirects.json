@@ -636,4 +636,5 @@
   "Release2021Webinar": "https://docs.google.com/presentation/d/1-0NlLZk4bx3lkOc2pfV0gdfZhjrNjBvFbGTQdGVu86E/edit?usp=sharing",
   "Terraform": "https://octopus.com/docs/deployments/terraform",
   "GKETypesOfClusters": "https://cloud.google.com/kubernetes-engine/docs/concepts/types-of-clusters",
+  "PatternTenantsSampleVetClinic": "https://samples.octopus.app/app#/Spaces-682/projects/vetclinic"
 }
