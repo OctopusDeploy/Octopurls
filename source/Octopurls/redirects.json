@@ -619,7 +619,7 @@
   "PulumiLinux": "https://library.octopus.com/step-templates/76296cd1-7d8c-47e8-b33f-027ecd3ff6b5/actiontemplate-run-pulumi-(linux)",
   "PulumiWindows": "https://library.octopus.com/step-templates/b63d2573-9ff4-4ffe-83c7-153fad24ea57/actiontemplate-run-pulumi-(windows)",
   "AwsDocsCloudFormationTags": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-  "TerraformInitGetPlugins": "https://www.terraform.io/docs/cli/commands/init.html#get-plugins-false", 
+  "TerraformInitGetPlugins": "https://www.terraform.io/docs/cli/commands/init.html#get-plugins-false",
   "LiquibaseWebinar": "https://docs.google.com/presentation/d/1C0nmP0MAN9onDcnFIhT69rIaFimGUO63VAqjsq9Mt8w/edit?usp=sharing",
   "LinuxMachineId": "https://www.commandlinux.com/man-page/man5/machine-id.5.html",
   "GoogleCloudServiceAccountKey": "https://cloud.google.com/iam/docs/creating-managing-service-account-keys",
@@ -637,5 +637,6 @@
   "Terraform": "https://octopus.com/docs/deployments/terraform",
   "GKETypesOfClusters": "https://cloud.google.com/kubernetes-engine/docs/concepts/types-of-clusters",
   "PatternTenantsSampleVetClinic": "https://samples.octopus.app/app#/Spaces-682/projects/vetclinic",
-  "ConfigAsCodeEap": "https://github.com/OctopusDeploy/docs/blob/config-as-code-eap/docs/projects/version-control/index.md"
+  "ConfigAsCodeEap": "https://github.com/OctopusDeploy/docs/blob/config-as-code-eap/docs/projects/version-control/index.md",
+  "GoogleTools": "https://octopus.com/docs/deployments/google-cloud/run-gcloud-script"
 }
