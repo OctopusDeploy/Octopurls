@@ -1,0 +1,9 @@
+connectivity_policy {
+}
+
+versioning_strategy {
+    template = ""
+
+    donor_package "Deploy Octopurls App Service" "" {
+    }
+}
