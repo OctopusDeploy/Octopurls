@@ -43,40 +43,6 @@ step "Clear Staging Slot" {
     }
 }
 
-step "Deploy Octopurls web application" {
-    properties = {
-        Octopus.Action.TargetRoles = "octopurls"
-    }
-
-
-    action {
-        action_type = "Octopus.AzureWebApp"
-        is_disabled = true
-        notes = "Disabled while testing the new step (below).  Once stable, we can delete this step.  See Michael Richardson for issues/questions."
-        properties = {
-            Octopus.Action.Azure.AppOffline = "True"
-            Octopus.Action.Azure.DeploymentSlot = "#{Slot}"
-            Octopus.Action.Azure.PreserveAppData = "True"
-            Octopus.Action.Azure.RemoveAdditionalFiles = "True"
-            Octopus.Action.Azure.UseChecksum = "False"
-            Octopus.Action.Package.DownloadOnTentacle = "False"
-            Octopus.Action.Package.FeedId = "Octopus Server (built-in)"
-            Octopus.Action.Package.PackageId = "Octopurls"
-        }
-
-
-        packages {
-            acquisition_location = "Server"
-            feed = "Octopus Server (built-in)"
-            package_id = "Octopurls"
-            properties = {
-                SelectionMode = "immediate"
-            }
-
-        }
-    }
-}
-
 step "Deploy Octopurls App Service" {
     properties = {
         Octopus.Action.TargetRoles = "octopurls"
