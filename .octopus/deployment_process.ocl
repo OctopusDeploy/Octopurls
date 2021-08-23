@@ -54,13 +54,15 @@ step "Deploy Octopurls App Service" {
         notes = "Uses the new [zip-deploy-based app service step](https://octopusdeploy.slack.com/archives/C3Q17599U/p1613430758032900)."
         properties = {
             Octopus.Action.Azure.DeploymentSlot = "#{Slot}"
+            Octopus.Action.Azure.DeploymentType = "Package"
             Octopus.Action.EnabledFeatures = "Octopus.Features.JsonConfigurationVariables,Octopus.Features.ConfigurationTransforms,Octopus.Features.SubstituteInFiles"
             Octopus.Action.Package.DownloadOnTentacle = "False"
             Octopus.Action.Package.FeedId = "Octopus Server (built-in)"
             Octopus.Action.Package.PackageId = "Octopurls"
+            Octopus.Action.RunOnServer = "true"
         }
 
-        worker_pool_variable = ""
+        worker_pool = "Hosted Windows 2019"
 
         packages {
             acquisition_location = "Server"
