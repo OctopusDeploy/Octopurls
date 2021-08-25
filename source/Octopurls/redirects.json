@@ -638,5 +638,6 @@
   "GKETypesOfClusters": "https://cloud.google.com/kubernetes-engine/docs/concepts/types-of-clusters",
   "PatternTenantsSampleVetClinic": "https://samples.octopus.app/app#/Spaces-682/projects/vetclinic",
   "ConfigAsCodeEap": "https://github.com/OctopusDeploy/docs/blob/config-as-code-eap/docs/projects/version-control/index.md",
-  "GoogleTools": "https://octopus.com/docs/deployments/google-cloud/run-gcloud-script"
+  "GoogleTools": "https://octopus.com/docs/deployments/google-cloud/run-gcloud-script",
+  "OctostacheJsonParsing": "https://octopus.com/docs/projects/variables/variable-filters#VariableSubstitutionSyntax-JSONParsingjson"
 }
