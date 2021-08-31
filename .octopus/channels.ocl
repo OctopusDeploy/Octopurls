@@ -4,7 +4,8 @@ channel "Release" {
     rules {
         tag = "^$"
 
-        deployment_action_packages "Deploy Octopurls App Service" "" {
+        deployment_action_packages {
+            step = "Deploy Octopurls App Service"
         }
     }
 }
@@ -16,7 +17,7 @@ channel "Pre-release" {
     rules {
         tag = ".+"
 
-        deployment_action_package {
+        deployment_action_packages {
             step = "Deploy Octopurls App Service"
         }
     }
