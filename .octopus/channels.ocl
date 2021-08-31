@@ -1,22 +1,24 @@
 channel "Release" {
-    lifecycle_id = "Octopurls Release"
+    lifecycle = "Octopurls Release"
 
     rules {
         tag = "^$"
 
-        deployment_action_packages "Deploy Octopurls App Service" "" {
+        deployment_action_packages {
+            step = "Deploy Octopurls App Service"
         }
     }
 }
 
 channel "Pre-release" {
     is_default = true
-    lifecycle_id = "Octopurls Pre-release"
+    lifecycle = "Octopurls Pre-release"
 
     rules {
         tag = ".+"
 
-        deployment_action_packages "Deploy Octopurls App Service" "" {
+        deployment_action_packages {
+            step = "Deploy Octopurls App Service"
         }
     }
 }
