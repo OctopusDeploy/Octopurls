@@ -2,8 +2,8 @@ connectivity_policy {
 }
 
 versioning_strategy {
-    template = ""
-
-    donor_package "Deploy Octopurls App Service" "" {
+    
+    donor_package {
+        step = "Deploy Octopurls App Service"
     }
 }
