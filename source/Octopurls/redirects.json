@@ -52,6 +52,7 @@
   "CustomScriptsInPackage": "https://octopus.com/docs/deployments/custom-scripts/scripts-in-packages",
   "ProductBacklog": "https://trello.com/board/octopus/4e907de70880ba000079b75c",
   "ProductDownloadPage": "http://octopus.com/downloads",
+  "TentacleDownloadPage": "http://octopus.com/downloads/tentacle",
   "ProductHomePage": "http://octopus.com/",
   "HowDoIGetALicense": "http://octopus.com/purchase",
   "NuGetPackageHostingOptions": "https://octopus.com/docs/packaging-applications",
