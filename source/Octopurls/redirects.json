@@ -670,4 +670,7 @@
   "ECSVolumeFileSystem": "https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html",
   "ECSVolumeAccessPoints": "https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html",
   "ECSVolumeTransitEncryption": "https://docs.aws.amazon.com/efs/latest/ug/encryption-in-transit.html",
+  "ECSUsingAwsLogs": "https://docs.aws.amazon.com/AmazonECS/latest/userguide/using_awslogs.html",
+  "ECSContainerLogOptions": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LogConfiguration.html",
+  "ECSContainerLogDrivers": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LogConfiguration.html#ECS-Type-LogConfiguration-logDriver",
 }
