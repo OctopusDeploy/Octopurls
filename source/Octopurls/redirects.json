@@ -677,4 +677,5 @@
   "ECSContainerLogOptions": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LogConfiguration.html",
   "ECSContainerLogDrivers": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LogConfiguration.html#ECS-Type-LogConfiguration-logDriver",
   "ECSUpdateService": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-service.html",
+  "SecretsManagementSamplesSpace": "https://samples.octopus.app/app#/Spaces-822"
 }
