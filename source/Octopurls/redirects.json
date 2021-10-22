@@ -682,5 +682,6 @@
   "ECSContainerDefinitionStartTimeout": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#ContainerDefinition-startTimeout",
   "ECSContainerDefinitionStopTimeout": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#ContainerDefinition-stopTimeout",
   "ECSContainerDefinitionResourceLimits": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definition_limits",
-  "SecretsManagementSamplesSpace": "https://samples.octopus.app/app#/Spaces-822"
+  "SecretsManagementSamplesSpace": "https://samples.octopus.app/app#/Spaces-822",
+  "StartAServerTrial": "https://octopus.com/start/server"
 }
