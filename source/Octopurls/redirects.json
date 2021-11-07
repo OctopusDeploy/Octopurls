@@ -168,7 +168,7 @@
   "OnboardingEnvironmentsLearnMore": "https://octopus.com/docs/infrastructure/environments",
   "OnboardingDeploymentTargetsLearnMore": "https://octopus.com/docs/infrastructure/deployment-targets",
   "OnboardingInfrastructureLearnMore": "https://octopus.com/docs/infrastructure",
-  "OnboardingAccountsLearnMore": "https://octopus.com/docs/infrastructure/deployment-targets/",
+  "OnboardingAccountsLearnMore": "https://octopus.com/docs/infrastructure/accounts",
   "OnboardingPackagesLearnMore": "https://octopus.com/docs/packaging-applications",
   "OnboardingPackageRepositoriesLearnMore": "https://octopus.com/docs/packaging-applications/package-repositories",
   "OnboardingProjectsLearnMore": "https://octopus.com/docs/projects",
