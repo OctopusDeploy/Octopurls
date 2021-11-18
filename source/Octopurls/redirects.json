@@ -685,5 +685,6 @@
   "ECSContainerDefinitionResourceLimits": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definition_limits",
   "SecretsManagementSamplesSpace": "https://samples.octopus.app/app#/Spaces-822",
   "StartAServerTrial": "https://octopus.com/start/server",
-  "StepPackageDynamicTargets": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure/new-octopustarget"
+  "StepPackageDynamicTargets": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure/new-octopustarget",
+  "https://g.octopushq.com/ECS-Deployment-DeployFailed": "https://octopus.com/docs/deployments/aws/ecs#error-messages",
 }
