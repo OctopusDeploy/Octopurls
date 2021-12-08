@@ -58,6 +58,7 @@
   "NuGetPackageHostingOptions": "https://octopus.com/docs/packaging-applications",
   "WhatIsIncludedInUsageStatistics": "https://octopus.com/docs/security/outbound-requests/telemetry",
   "Telemetry": "https://octopus.com/docs/security/outbound-requests/telemetry",
+  "TelemetryEndpoint": "https://octopus.com/download/upgrade/v3",
   "Suggestions": "https://octopusdeploy.uservoice.com/",
   "TrainingVideos": "https://www.youtube.com/watch?v=FOxqnle2bCc&list=PLAGskdGvlaw3Aj25_77wK1BMtIryTye51",
   "GettingStarted": "https://octopus.com/docs/getting-started",
