@@ -690,4 +690,5 @@
   "StepPackageDynamicTargets": "https://octopus.com/docs/infrastructure/deployment-targets/dynamic-infrastructure/new-octopustarget",
   "ECS-Deployment-DeployFailed": "https://octopus.com/docs/deployments/aws/ecs#ecs-deployment-deploy-failed",
   "ECS-Deployment-ValidationError": "https://octopus.com/docs/deployments/aws/ecs#ecs-update-validation-error",
+  "GAwebinar": "https://github.com/weeyin83/Presentations/blob/main/2022/githubactionsoctopusdeploy/resources.md"
 }
