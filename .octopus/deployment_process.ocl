@@ -1,0 +1,169 @@
+step "Notify #octopurls-alerts of deployment start" {
+    condition = "Always"
+
+    action {
+        environments = ["Production"]
+        properties = {
+            Octopus.Action.RunOnServer = "true"
+            Octopus.Action.Template.Id = "ActionTemplates-404"
+            Octopus.Action.Template.Version = "12"
+            ssn_Channel = "#{Slack:Channel}"
+            ssn_Color = "#2f93e0"
+            ssn_HookUrl = "#{Slack:WebhookURL}"
+            ssn_IconUrl = "http://octopusdeploy.com/content/resources/favicon.png"
+            ssn_Message = "Release `#{Octopus.Release.Number}` to *#{Octopus.Environment.Name}*"
+            ssn_Title = "Deployment started - #{Octopus.Project.Name}"
+            ssn_Username = "Octopus Deploy"
+        }
+
+    }
+}
+
+step "Clear Staging Slot" {
+    start_trigger = "StartWithPrevious"
+
+    action {
+        action_type = "Octopus.AzurePowerShell"
+        environments = ["Production"]
+        properties = {
+            Octopus.Action.Azure.AccountId = "#{AzureServicePrincipalAccountId}"
+            Octopus.Action.Script.ScriptBody = <<-EOT
+                #Remove the staging slot if it exists
+                #Remove-AzureWebsite -Name #{WebAppName} -Slot Staging -Force
+                Remove-AzureRmWebAppSlot -ResourceGroupName #{ResourceGroupName} -Name #{WebAppName} -Slot Staging -Force
+                 
+                #Create the staging slot
+                #New-AzureWebsite -Name #{WebAppName} -Slot Staging
+                New-AzureRmWebAppSlot -ResourceGroupName #{ResourceGroupName} -Name #{WebAppName} -Slot Staging
+            EOT
+            Octopus.Action.Script.ScriptSource = "Inline"
+            Octopus.Action.Script.Syntax = "PowerShell"
+        }
+
+    }
+}
+
+step "Deploy Octopurls App Service" {
+    properties = {
+        Octopus.Action.TargetRoles = "octopurls"
+    }
+
+
+    action {
+        action_type = "Octopus.AzureAppService"
+        notes = "Uses the new [zip-deploy-based app service step](https://octopusdeploy.slack.com/archives/C3Q17599U/p1613430758032900)."
+        properties = {
+            Octopus.Action.Azure.DeploymentSlot = "#{Slot}"
+            Octopus.Action.Azure.DeploymentType = "Package"
+            Octopus.Action.EnabledFeatures = "Octopus.Features.JsonConfigurationVariables,Octopus.Features.ConfigurationTransforms,Octopus.Features.SubstituteInFiles"
+            Octopus.Action.Package.DownloadOnTentacle = "False"
+            Octopus.Action.Package.FeedId = "Octopus Server (built-in)"
+            Octopus.Action.Package.PackageId = "Octopurls"
+            Octopus.Action.RunOnServer = "true"
+        }
+
+        worker_pool = "Hosted Windows 2019"
+
+        packages {
+            acquisition_location = "Server"
+            feed = "Octopus Server (built-in)"
+            package_id = "Octopurls"
+            properties = {
+                SelectionMode = "immediate"
+            }
+
+        }
+    }
+}
+
+step "Ping Staging Slot" {
+
+    action {
+        properties = {
+            ExpectedCode = "200"
+            ExpectedResponse = "pong"
+            Octopus.Action.Template.Id = "ActionTemplates-261"
+            Octopus.Action.Template.Version = "13"
+            TimeoutSeconds = "60"
+            Uri = "#{WebsiteUrl}/ping"
+            UseWindowsAuth = "False"
+        }
+
+        worker_pool = "Hosted Windows 2019"
+    }
+}
+
+step "Swap Staging slot to Production" {
+
+    action {
+        action_type = "Octopus.AzurePowerShell"
+        environments = ["Production"]
+        properties = {
+            Octopus.Action.Azure.AccountId = "#{AzureServicePrincipalAccountId}"
+            Octopus.Action.Script.ScriptBody = <<-EOT
+                #Switch-AzureWebsiteSlot -Name #{WebAppName} -Slot1 Staging -Slot2 Production -Force
+                Switch-AzureRmWebAppSlot -SourceSlotName Staging -DestinationSlotName Production -ResourceGroupName #{ResourceGroupName} -Name #{WebAppName}
+            EOT
+            Octopus.Action.Script.ScriptSource = "Inline"
+            Octopus.Action.Script.Syntax = "PowerShell"
+        }
+
+    }
+}
+
+step "Reinstall Let's Encrypt extension" {
+
+    action {
+        environments = ["Production"]
+        properties = {
+            AzSiteExt_AppServicePlanName = "#{AppServicePlanName}"
+            AzSiteExt_AzureAccountId = "#{AzureServicePrincipalAccountId}"
+            AzSiteExt_ExtensionName = "letsencrypt"
+            AzSiteExt_ResourceGroupName = "#{ResourceGroupName}"
+            AzSiteExt_SiteName = "#{WebAppName}"
+            Octopus.Action.Template.Id = "ActionTemplates-401"
+            Octopus.Action.Template.Version = "12"
+        }
+
+    }
+}
+
+step "Ping Production" {
+    start_trigger = "StartWithPrevious"
+
+    action {
+        environments = ["Production"]
+        properties = {
+            ExpectedCode = "200"
+            ExpectedResponse = "pong"
+            Octopus.Action.Template.Id = "ActionTemplates-261"
+            Octopus.Action.Template.Version = "13"
+            TimeoutSeconds = "60"
+            Uri = "https://g.octopushq.com/ping"
+            UseWindowsAuth = "False"
+        }
+
+        worker_pool = "Hosted Windows 2019"
+    }
+}
+
+step "Notify #octopurls-alerts of deployment result" {
+    condition = "Always"
+
+    action {
+        environments = ["Production"]
+        properties = {
+            Octopus.Action.RunOnServer = "true"
+            Octopus.Action.Template.Id = "ActionTemplates-404"
+            Octopus.Action.Template.Version = "12"
+            ssn_Channel = "#{Slack:Channel}"
+            ssn_Color = "#{if Octopus.Deployment.Error}danger#{/if}#{unless Octopus.Deployment.Error}good#{/unless}"
+            ssn_HookUrl = "#{Slack:WebhookURL}"
+            ssn_IconUrl = "http://octopusdeploy.com/content/resources/favicon.png"
+            ssn_Message = "Release `#{Octopus.Release.Number}` to *#{Octopus.Environment.Name}*"
+            ssn_Title = "Deployment *#{if Octopus.Deployment.Error}failed#{/if}#{unless Octopus.Deployment.Error}succeeded#{/unless}*"
+            ssn_Username = "Octopus Deploy"
+        }
+
+    }
+}

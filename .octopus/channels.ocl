@@ -1,0 +1,24 @@
+channel "Release" {
+    lifecycle = "Octopurls Release"
+
+    rules {
+        tag = "^$"
+
+        deployment_action_packages {
+            step = "Deploy Octopurls App Service"
+        }
+    }
+}
+
+channel "Pre-release" {
+    is_default = true
+    lifecycle = "Octopurls Pre-release"
+
+    rules {
+        tag = ".+"
+
+        deployment_action_packages {
+            step = "Deploy Octopurls App Service"
+        }
+    }
+}
