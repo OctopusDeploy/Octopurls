@@ -372,7 +372,7 @@
   "TFS-VSTS-compat": "https://octopus.com/docs/packaging-applications/build-servers/tfs-azure-devops/using-octopus-extension/extension-compatibility",
   "BuildInformation": "https://octopus.com/docs/packaging-applications/build-servers#build-information",
   "ReleaseNotesTemplate": "https://octopus.com/docs/releases/release-notes#Release-Notes-Templates",
-  "DeploymentChangesTemplate": "https://octopus.com/docs/releases/deployment-notes#Templates",
+  "DeploymentChangesTemplate": "https://octopus.com/docs/releases/deployment-notes#templates",
   "KubernetesTarget": "https://octopus.com/docs/infrastructure/deployment-targets/kubernetes-target#kubectl",
   "KubernetesSecurityContext": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context",
   "KubernetesSecurityContextSupplementalGroups": "https://kubernetes.io/docs/concepts/policy/pod-security-policy/#users-and-groups",
