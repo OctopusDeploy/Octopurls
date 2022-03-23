@@ -668,7 +668,6 @@
   "ECSContainerDefinitionWorkingDir": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#ContainerDefinition-workingDirectory",
   "ECSContainerDefinitionEnvVariables": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/taskdef-envfiles.html",
   "ECSContainerDefinitionDockerLabels": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockerlabels",
-  "ECSContainerDefinitionHealthCheck": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html",
   "ECSContainerDefinitionRegistryAuth": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/private-auth.html",
   "ECSServiceLoadBalancers": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_definition_parameters.html#Service-loadBalancers",
   "ECSTaskVolumes": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#volumes",
@@ -695,5 +694,6 @@
   "CloudTargetDiscovery": "https://octopus.com/docs/infrastructure/deployment-targets/cloud-target-discovery",
   "CloudTargetDiscoveryFeedbackForm": "https://octopusdeploy.typeform.com/to/PNaHQRoN",
   "superpowers": "https://github.com/weeyin83/Presentations/tree/main/2022/superpowerscombine",
-  "bicepoctopus": "https://github.com/weeyin83/Presentations/tree/main/2022/bicepoctopus"
+  "bicepoctopus": "https://github.com/weeyin83/Presentations/tree/main/2022/bicepoctopus",
+  "MultiTenantChannels": "https://octopus.com/docs/tenants/tenant-lifecycles"
 }
