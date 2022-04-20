@@ -702,5 +702,6 @@
   "bicepoctopus": "https://github.com/weeyin83/Presentations/tree/main/2022/bicepoctopus",
   "MultiTenantChannels": "https://octopus.com/docs/tenants/tenant-lifecycles",
   "OctopusCLIVersions": "https://api.nuget.org/v3-flatcontainer/octopustools/index.json",
-  "awsiac": "https://github.com/weeyin83/Presentations/tree/main/2022/awscloudformation"
+  "awsiac": "https://github.com/weeyin83/Presentations/tree/main/2022/awscloudformation",
+  "hybridlivestream"; "https://www.techielass.com/the-future-of-hybrid/"
 }
