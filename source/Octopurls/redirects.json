@@ -475,6 +475,7 @@
   "BambooAddOnPage": "https://marketplace.atlassian.com/apps/1217235/octopus-deploy-bamboo-add-on?hosting=server&tab=overview",
   "DynamicWorkerPools": "https://octopus.com/docs/infrastructure/workers/dynamic-worker-pools",
   "DeprecatedWorkerImages": "https://octopus.com/docs/infrastructure/workers/dynamic-worker-pools#deprecation",
+  "CachedWorkerToolsImages": "https://octopus.com/docs/infrastructure/workers/dynamic-worker-pools#installing-software-on-dynamic-workers",
   "AppServiceDocumentation": "https://docs.microsoft.com/en-us/azure/app-service/",
   "DotNetCoreHostingBundle": "https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/index?view=aspnetcore-2.1#install-the-net-core-hosting-bundle",
   "TroubleshootingInvalidCertificates": "https://octopus.com/docs/deployments/certificates/troubleshooting",
