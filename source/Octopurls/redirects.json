@@ -704,5 +704,8 @@
   "MultiTenantChannels": "https://octopus.com/docs/tenants/tenant-lifecycles",
   "OctopusCLIVersions": "https://api.nuget.org/v3-flatcontainer/octopustools/index.json",
   "awsiac": "https://github.com/weeyin83/Presentations/tree/main/2022/awscloudformation",
-  "hybridlivestream": "https://www.techielass.com/the-future-of-hybrid/"
+  "hybridlivestream": "https://www.techielass.com/the-future-of-hybrid/",
+  "AWSAuthenticationCredentials": "https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials-node.html",
+  "AWSAuthenticationIAMRoles": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html",
+  "AWSAuthenticationExternalId": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html"
 }
