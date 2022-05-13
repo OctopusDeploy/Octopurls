@@ -707,5 +707,6 @@
   "hybridlivestream": "https://www.techielass.com/the-future-of-hybrid/",
   "AWSAuthenticationCredentials": "https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials-node.html",
   "AWSAuthenticationIAMRoles": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html",
-  "AWSAuthenticationExternalId": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html"
+  "AWSAuthenticationExternalId": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html",
+  "ServiceNowIntegration": "https://docs.google.com/document/d/16OKPBZ4EFtAPtpXlCznT-4DR2bI0TwicEMStM7zPzCM/edit?usp=sharing"
 }
