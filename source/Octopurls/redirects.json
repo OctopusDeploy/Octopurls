@@ -21,6 +21,7 @@
   "BuiltInFeed": "https://octopus.com/docs/packaging-applications/package-repositories/built-in-repository",
   "Renew": "https://octopus.com/upgrade",
   "LicenseUpgrade": "https://octopus.com/upgrade",
+  "UpgradeWorkers": "https://octopus.com/pricing/overview#feature-comparison",  
   "Purchase": "https://octopus.com/purchase",
   "ApiDocs": "https://github.com/OctopusDeploy/OctopusDeploy-Api/wiki",
   "CryptoRequiresUserProfile": "https://github.com/OctopusDeploy/Issues/issues/353",
