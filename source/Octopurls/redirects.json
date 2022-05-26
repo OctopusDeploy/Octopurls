@@ -700,6 +700,7 @@
   "DDOG": "https://github.com/weeyin83/Presentations/blob/main/2022/gettingstartedwithoctopus/resources.md",
   "CloudTargetDiscovery": "https://octopus.com/docs/infrastructure/deployment-targets/cloud-target-discovery",
   "CloudTargetDiscoveryFeedbackForm": "https://octopusdeploy.typeform.com/to/PNaHQRoN",
+  "KubernetesCloudTargetDiscovery": "https://oc.to/KubernetesCloudTargetDiscovery",
   "superpowers": "https://github.com/weeyin83/Presentations/tree/main/2022/superpowerscombine",
   "bicepoctopus": "https://github.com/weeyin83/Presentations/tree/main/2022/bicepoctopus",
   "MultiTenantChannels": "https://octopus.com/docs/tenants/tenant-lifecycles",
