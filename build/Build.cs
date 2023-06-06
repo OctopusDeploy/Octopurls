@@ -11,7 +11,6 @@ using Serilog;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
-[CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
 class Build : NukeBuild
 {
@@ -28,7 +27,7 @@ class Build : NukeBuild
     [Parameter("Branch name for OctoVersion to use to calculate the version number. Can be set via the environment variable " + CiBranchNameEnvVariable + ".", Name = CiBranchNameEnvVariable)]
     string BranchName { get; set; }
 
-    [OctoVersion(BranchParameter = nameof(BranchName), AutoDetectBranchParameter = nameof(AutoDetectBranch))] 
+    [OctoVersion(Framework = "net6.0", BranchMember = nameof(BranchName), AutoDetectBranchMember = nameof(AutoDetectBranch))] 
     public OctoVersionInfo OctoVersionInfo;
 
     AbsolutePath SourceDirectory => RootDirectory / "source";
@@ -60,6 +59,7 @@ class Build : NukeBuild
     Target Compile => _ => _
         .DependsOn(CalculateVersion)
         .DependsOn(Clean)
+        .Requires(() => OctoVersionInfo)
         .DependsOn(Restore)
         .Executes(() =>
         {
