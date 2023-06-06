@@ -712,5 +712,6 @@
   "AWSAuthenticationExternalId": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html",
   "ServiceNowIntegration": "https://octopus.com/docs/approvals/service-now",
   "PrivateSpaceDocs": "https://octopus.com/docs/administration/spaces/private-space",
-  "ScriptCSDeprecation": "https://octopus.com/blog/rfc-migrate-scriptcs-dotnet-script"
+  "ScriptCSDeprecation": "https://octopus.com/blog/rfc-migrate-scriptcs-dotnet-script",
+  "MonoDeprecation": "https://octopus.com/blog/deprecating-mono"
 }
