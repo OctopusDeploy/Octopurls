@@ -1,3 +1,9 @@
+# This project is archived, we no longer run Octopurls
+We have moved url shortening to short.io.
+
+
+
+
 The Octopus Deploy docs URL redirector.
 
 ## Adding a new short URL redirect
